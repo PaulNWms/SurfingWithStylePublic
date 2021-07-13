@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Surfing With Style">
+    <link rel="icon" href="http://surfingwithstyle.com//favicon.ico">
+    <title>open chord prog - Surfing With Style</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+        href="http://surfingwithstyle.com//css/highlight/github.css">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/theme.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/bootie-docs.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/site.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/math.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/mini-metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/calculator.css">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML"></script>
+</head>
+
+<body role="document">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="http://surfingwithstyle.com//">Surfing With Style</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tools
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/tools/timer/">Timer</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/calculator/">Calculator</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/old-english-letters/">Old English Letters</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Study
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/study/flashcards/">Flashcards</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Practice
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/practice/metronome/">Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome/">Scheduled Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/accelerating-metronome/">Accelerating Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome-presets/">Presets</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/chords/">Chords</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Notes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/notes/data-science/">Data Science</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/ms/">MS</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/python/">Python</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/designpatterns/">Design Patterns</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/git/">Git</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/solid/">SOLID</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/sql/">SQL</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Other ...</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="">Tools2</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Books</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                
+
+                
+
+
+                
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div class="container">
+
+<div class="row">
+	<div class="col-sm-8 doc-main">
+		<main role="main">
+			<div class="doc-list-header">
+				<h3>Pages in open chord prog</h3>
+			</div>
+			<div class="doc-list-entry">
+			<ul>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-a_a&#43;_d_dm6/">
+					<span class="doc-entry-title">A A&#43; D Dm6</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-a_a7_d_dm/">
+					<span class="doc-entry-title">A A7 D Dm</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-a_a7_d_dm6_e7sus_e7_em7_e7/">
+					<span class="doc-entry-title">A A7 D Dm6 E7sus E7 Em7 E7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-a_amaj7_am_b7_e/">
+					<span class="doc-entry-title">A AMaj7 Am B7 E</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2021-01-10">January 10, 2021</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-a_c_d_e/">
+					<span class="doc-entry-title">A C D E</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-a_e&#43;_a_e7/">
+					<span class="doc-entry-title">A E&#43; A E7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-a7sus_am7_gsus_g/">
+					<span class="doc-entry-title">A7sus Am7 Gsus G</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-aadd9_a9_d9_d7_dm7_g7_cadd9_e7/">
+					<span class="doc-entry-title">Aadd9 A9 D9 D7 Dm7 G7 Cadd9 E7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-aadd9_c9_dm7_e/">
+					<span class="doc-entry-title">Aadd9 C9 Dm7 E</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-am_c7_dm_e7/">
+					<span class="doc-entry-title">Am C7 Dm E7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-am_dm6_e7_am/">
+					<span class="doc-entry-title">Am Dm6 E7 Am</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-am7_d9_d7_gmaj7_e9/">
+					<span class="doc-entry-title">Am7 D9 D7 Gmaj7 E9</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-amaj7_dmaj7_gmaj7_cmaj7/">
+					<span class="doc-entry-title">AMaj7 DMaj7 GMaj7 CMaj7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2021-01-10">January 10, 2021</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-asus_a_e7sus_e7/">
+					<span class="doc-entry-title">Asus A E7sus E7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-c_am_dm_g/">
+					<span class="doc-entry-title">C Am Dm G</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-c_am7_dm7_g7/">
+					<span class="doc-entry-title">C Am7 Dm7 G7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-c_c6_am6_e/">
+					<span class="doc-entry-title">C C6 Am6 E</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-c_cmaj7_c6_em7/">
+					<span class="doc-entry-title">C Cmaj7 C6 Em7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-c_cmaj7_c9_fmaj7/">
+					<span class="doc-entry-title">C Cmaj7 C9 Fmaj7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-c_dm_em_g_a_d/">
+					<span class="doc-entry-title">C Dm Em G A D</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-c_dm_g7_c/">
+					<span class="doc-entry-title">C Dm G7 C</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-c_dm7_g7_cmaj7/">
+					<span class="doc-entry-title">C Dm7 G7 CMaj7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2021-01-10">January 10, 2021</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-c_dm7_g7sus_g7/">
+					<span class="doc-entry-title">C Dm7 G7sus G7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-c_fmaj7_em_a7_d/">
+					<span class="doc-entry-title">C FMaj7 Em A7 D</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2021-01-10">January 10, 2021</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-c_g_am_em_dm_e7_am7_g7/">
+					<span class="doc-entry-title">C G Am Em Dm E7 Am7 G7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-c_g_d_e_g_a/">
+					<span class="doc-entry-title">C G D E G A</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-cadd9_c_esus_e/">
+					<span class="doc-entry-title">Cadd9 C Esus E</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-cadd9_em7_a7_dm6_g9/">
+					<span class="doc-entry-title">Cadd9 Em7 A7 Dm6 G9</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-d_d&#43;_d6_d7/">
+					<span class="doc-entry-title">D D&#43; D6 D7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-d_dmaj7_d7_d6/">
+					<span class="doc-entry-title">D DMaj7 D7 D6</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2021-01-10">January 10, 2021</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-d_dsus_a7sus_a7/">
+					<span class="doc-entry-title">D Dsus A7sus A7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-d_e7_g7_a7/">
+					<span class="doc-entry-title">D E7 G7 A7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-d_g_c_a/">
+					<span class="doc-entry-title">D G C A</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-e_a_b7_e/">
+					<span class="doc-entry-title">E A B7 E</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-e_a_e_d/">
+					<span class="doc-entry-title">E A E D</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-e_amaj7_emaj7_a7_dmaj7_g6_cmaj7_b7/">
+					<span class="doc-entry-title">E AMaj7 EMaj7 A7 DMaj7 G6 CMaj7 B7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2021-01-10">January 10, 2021</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-e_e6_e7_a6/">
+					<span class="doc-entry-title">E E6 E7 A6</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-e_emaj7_e7_a/">
+					<span class="doc-entry-title">E EMaj7 E7 A</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2021-01-10">January 10, 2021</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-e6_a6_d6_g6/">
+					<span class="doc-entry-title">E6 A6 D6 G6</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-e6_a6_dm6_e6/">
+					<span class="doc-entry-title">E6 A6 Dm6 E6</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-e6_g6_a7_b7/">
+					<span class="doc-entry-title">E6 G6 A7 B7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-e9_a9_a7_dadd9_d_g/">
+					<span class="doc-entry-title">E9 A9 A7 Dadd9 D G</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-em_a_d_e/">
+					<span class="doc-entry-title">Em A D E</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-em_a7_d7sus_d7/">
+					<span class="doc-entry-title">Em A7 D7sus D7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-em_am_b7_em/">
+					<span class="doc-entry-title">Em Am B7 Em</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-em_c_em6_c/">
+					<span class="doc-entry-title">Em C Em6 C</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-em_g_am_c/">
+					<span class="doc-entry-title">Em G Am C</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-em6_am6_em_d6/">
+					<span class="doc-entry-title">Em6 Am6 Em D6</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-em7_a7_dm7_e7/">
+					<span class="doc-entry-title">Em7 A7 Dm7 E7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-em7_am7_dm7_am7/">
+					<span class="doc-entry-title">Em7 Am7 Dm7 Am7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-g_c_d_am_d_e/">
+					<span class="doc-entry-title">G C D Am D E</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-g_e_a_c_g/">
+					<span class="doc-entry-title">G E A C G</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-g_e7_a7_d7/">
+					<span class="doc-entry-title">G E7 A7 D7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-g_em_am_d7/">
+					<span class="doc-entry-title">G Em Am D7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-g_g&#43;_e7sus_e7/">
+					<span class="doc-entry-title">G G&#43; E7sus E7</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+				<li><a class="doc-entry" href="/practice/chords/open_chord_prog-gadd9_eadd9_aadd9_dadd9/">
+					<span class="doc-entry-title">Gadd9 Eadd9 Aadd9 Dadd9</span>
+					<span class="doc-entry-meta in-list">
+						(<time datetime="2020-12-08">December 08, 2020</time>)
+					</span>
+				</a></li>
+	
+			</ul>
+			</div>
+		</main>
+	</div> 
+
+	
+<div class="col-sm-3 col-sm-offset-1 doc-sidebar">
+	<div class="sidebar-module">
+		<h4 class="sidebar-heading">Pages in Categories</h4>
+		<ul class="sidebar-category-list">
+		
+		</ul>
+	</div>
+	<div class="sidebar-module">
+		<h4 class="sidebar-heading">Tags</h4>
+		<div class="tag-box">
+		
+			<a class="tag-item" href="http://surfingwithstyle.com//tags/chord-prog">chord-prog</a>
+		
+			<a class="tag-item" href="http://surfingwithstyle.com//tags/moveable-chord">moveable-chord</a>
+		
+			<a class="tag-item" href="http://surfingwithstyle.com//tags/open-chord">open-chord</a>
+		
+			<a class="tag-item" href="http://surfingwithstyle.com//tags/open-chord-prog">open-chord-prog</a>
+		
+			<a class="tag-item" href="http://surfingwithstyle.com//tags/open-scale">open-scale</a>
+		
+			<a class="tag-item" href="http://surfingwithstyle.com//tags/scale-pattern">scale-pattern</a>
+		
+		</div>
+	</div>
+</div>
+
+</div> 
+
+
+
+
+</div> 
+
+<footer class="doc-footer">
+	
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+<script src="http://surfingwithstyle.com//js/bootie-docs.js"></script>
+
+</body>
+</html>

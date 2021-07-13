@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Surfing With Style">
+    <link rel="icon" href="http://surfingwithstyle.com//favicon.ico">
+    <title>ScikitLearn - Surfing With Style</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+        href="http://surfingwithstyle.com//css/highlight/github.css">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/theme.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/bootie-docs.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/site.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/math.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/mini-metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/calculator.css">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML"></script>
+</head>
+
+<body role="document">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="http://surfingwithstyle.com//">Surfing With Style</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tools
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/tools/timer/">Timer</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/calculator/">Calculator</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/old-english-letters/">Old English Letters</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Study
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/study/flashcards/">Flashcards</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Practice
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/practice/metronome/">Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome/">Scheduled Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/accelerating-metronome/">Accelerating Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome-presets/">Presets</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/chords/">Chords</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Notes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/notes/data-science/">Data Science</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/ms/">MS</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/python/">Python</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/designpatterns/">Design Patterns</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/git/">Git</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/solid/">SOLID</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/sql/">SQL</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Other ...</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="">Tools2</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Books</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                
+
+                
+
+
+                
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div class="container">
+
+<div class="row">
+	<div class="col-sm-offset-2 col-sm-8 doc-main">
+		<main role="main">
+			<article>
+				<a id="title"></a>
+				<h1 class="doc-entry-title">ScikitLearn</h1>
+				<div class="doc-entry-meta">
+					<span><time datetime="2020-06-18">June 18, 2020</time></span>
+				</div>
+				<section>
+					<h1 id="scikit-learn">scikit-learn</h1>
+<p>Links:<br>
+<a href="http://scikit-learn.org/stable/index.html">scikit-learn</a><br>
+<a href="https://scikit-learn.org/stable/modules/outlier_detection.html">Novelty and Outlier Detection</a><br>
+<a href="https://towardsdatascience.com/a-brief-overview-of-outlier-detection-techniques-1e0b2c19e561">A Brief Overview of Outlier Detection Techniques</a><br>
+<a href="https://scikit-learn.org/stable/modules/compose.html">Pipelines and composite estimators</a><br>
+<a href="https://scikit-learn.org/stable/modules/preprocessing.html#custom-transformers">Custom transformers</a><br>
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.FunctionTransformer.html#sklearn.preprocessing.FunctionTransformer">FunctionTransformer</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># linear regression</span>
+<span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> LinearRegression
+model <span style="color:#f92672">=</span> LinearRegression()
+model <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>fit(X, y)
+prediction <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>predict(<span style="color:#f92672">...</span>)
+
+<span style="color:#75715e"># polynomial regression</span>
+<span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> LinearRegression
+<span style="color:#f92672">from</span> sklearn.preprocessing <span style="color:#f92672">import</span> PolynomialFeatures
+poly_feat <span style="color:#f92672">=</span> PolynomialFeatures(degree<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+X_poly <span style="color:#f92672">=</span> poly_feat<span style="color:#f92672">.</span>fit_transform(X)
+poly_model <span style="color:#f92672">=</span> LinearRegression()
+poly_model<span style="color:#f92672">.</span>fit(X_poly,y)
+
+<span style="color:#75715e"># regularization</span>
+<span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> Lasso, LinearRegression
+lasso_reg <span style="color:#f92672">=</span> Lasso()
+lasso_reg<span style="color:#f92672">.</span>fit(X, y)
+model <span style="color:#f92672">=</span> LinearRegression()
+model<span style="color:#f92672">.</span>fit(X, y)
+
+<span style="color:#75715e"># feature scaling + regularization</span>
+<span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> Lasso, LinearRegression
+scaler <span style="color:#f92672">=</span> StandardScaler()
+X_scaled <span style="color:#f92672">=</span> scaler<span style="color:#f92672">.</span>fit_transform(X)
+lasso_reg <span style="color:#f92672">=</span> Lasso()
+lasso_reg<span style="color:#f92672">.</span>fit(X_scaled, y)
+model <span style="color:#f92672">=</span> LinearRegression()
+model<span style="color:#f92672">.</span>fit(X, y)
+
+<span style="color:#75715e"># split the data into training and testing sets</span>
+<span style="color:#f92672">from</span> sklearn.cross_validation <span style="color:#f92672">import</span> train_test_split
+X_train, X_test, y_train, y_test <span style="color:#f92672">=</span> train_test_split(features, outcomes, test_size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+
+<span style="color:#75715e"># The accuracy score measures the measures accuracy between to vectors</span>
+<span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> accuracy_score
+acc <span style="color:#f92672">=</span> accuracy_score(y, y_pred)
+
+<span style="color:#75715e"># decision tree classifier</span>
+<span style="color:#f92672">from</span> sklearn.tree <span style="color:#f92672">import</span> DecisionTreeClassifier
+model <span style="color:#f92672">=</span> DecisionTreeClassifier(max_depth <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, min_samples_leaf <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+
+<span style="color:#75715e"># support vector machine</span>
+<span style="color:#f92672">from</span> sklearn.svm <span style="color:#f92672">import</span> SVC
+model <span style="color:#f92672">=</span> SVC(kernel<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;poly&#39;</span>, degree<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>, C<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>)
+
+<span style="color:#75715e"># Adaboost - requires a weak learner</span>
+<span style="color:#75715e"># base_estimator: The model utilized for the weak learners (Warning: Don&#39;t forget to import the model that you decide to use for the weak learner).</span>
+<span style="color:#75715e"># n_estimators: The maximum number of weak learners used.</span>
+<span style="color:#f92672">from</span> sklearn.ensemble <span style="color:#f92672">import</span> AdaBoostClassifier
+<span style="color:#f92672">from</span> sklearn.tree <span style="color:#f92672">import</span> DecisionTreeClassifier
+model <span style="color:#f92672">=</span> AdaBoostClassifier(base_estimator <span style="color:#f92672">=</span> DecisionTreeClassifier(max_depth<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>), n_estimators <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
+
+<span style="color:#75715e"># related links</span>
+</code></pre></div><p><a href="http://scikit-learn.org/stable/modules/ensemble.html">Ensemble methods</a><br>
+<a href="http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingClassifier.html#sklearn.ensemble.BaggingClassifier">sklearn.ensemble.BaggingClassifier</a><br>
+<a href="http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier">sklearn.ensemble.RandomForestClassifier</a><br>
+<a href="http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostClassifier.html#sklearn.ensemble.AdaBoostClassifier">sklearn.ensemble.AdaBoostClassifier</a><br>
+<a href="http://scikit-learn.org/stable/modules/generated/sklearn.metrics.fbeta_score.html">sklearn.metrics.fbeta_score</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># K-fold cross validation</span>
+<span style="color:#f92672">from</span> sklearn.model <span style="color:#f92672">import</span> KFold
+kf <span style="color:#f92672">=</span> KFold(<span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">3</span>, shuffle<span style="color:#f92672">=</span>True)
+
+<span style="color:#75715e"># Grid search various kernels</span>
+<span style="color:#75715e"># 1. Import GridSearchCV</span>
+<span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> GridSearchCV
+
+<span style="color:#75715e"># 2. Select the parameters:</span>
+<span style="color:#75715e"># Here we pick what are the parameters we want to choose from, and form a dictionary.</span>
+<span style="color:#75715e"># In this dictionary, the keys will be the names of the parameters, and the values will be the lists of possible values for each parameter.</span>
+parameters <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;kernel&#39;</span>:[<span style="color:#e6db74">&#39;poly&#39;</span>, <span style="color:#e6db74">&#39;rbf&#39;</span>],<span style="color:#e6db74">&#39;C&#39;</span>:[<span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>]}
+
+<span style="color:#75715e"># 3. Create a scorer.</span>
+<span style="color:#75715e"># We need to decide what metric we&#39;ll use to score each of the candidate models. In here, we&#39;ll use F1 Score.</span>
+<span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> make_scorer
+<span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> f1_score
+scorer <span style="color:#f92672">=</span> make_scorer(f1_score)
+
+<span style="color:#75715e"># 4. Create a GridSearch Object with the parameters, and the scorer. Use this object to fit the data.</span>
+<span style="color:#75715e"># Create the object.</span>
+grid_obj <span style="color:#f92672">=</span> GridSearchCV(clf, parameters, scoring<span style="color:#f92672">=</span>scorer)
+<span style="color:#75715e"># Fit the data</span>
+grid_fit <span style="color:#f92672">=</span> grid_obj<span style="color:#f92672">.</span>fit(X, y)
+
+<span style="color:#75715e"># 5. Get the best estimator.</span>
+best_clf <span style="color:#f92672">=</span> grid_fit<span style="color:#f92672">.</span>best_estimator_
+
+<span style="color:#75715e"># Random grid search</span>
+clf_svm <span style="color:#f92672">=</span> SVC()
+<span style="color:#75715e"># Set up the hyperparameter search</span>
+param_dist <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;C&#34;</span>: [<span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>],
+              <span style="color:#e6db74">&#34;kernel&#34;</span>: [<span style="color:#e6db74">&#39;linear&#39;</span>,<span style="color:#e6db74">&#39;rbf&#39;</span>]}
+<span style="color:#75715e"># Run a randomized search over the hyperparameters</span>
+random_search <span style="color:#f92672">=</span> RandomizedSearchCV(clf_svm, param_distributions<span style="color:#f92672">=</span>param_dist)
+<span style="color:#75715e"># Fit the model on the training data</span>
+random_search<span style="color:#f92672">.</span>fit(X_train, y_train)
+<span style="color:#75715e"># Make predictions on the test data</span>
+svc_preds <span style="color:#f92672">=</span> random_search<span style="color:#f92672">.</span>best_estimator_<span style="color:#f92672">.</span>predict(X_test)
+<span style="color:#75715e"># Return your metrics on test data</span>
+ch<span style="color:#f92672">.</span>print_metrics(y_test, svc_preds, <span style="color:#e6db74">&#39;svc&#39;</span>)
+
+<span style="color:#75715e"># logistic regression (see also pandas)</span>
+log_mod <span style="color:#f92672">=</span> LogisticRegression()
+log_mod<span style="color:#f92672">.</span>fit(X_train, y_train)
+preds <span style="color:#f92672">=</span> log_mod<span style="color:#f92672">.</span>predict(X_test)
+confusion_matrix(y_test, preds) <span style="color:#75715e"># ⚠️ Warning: scikit-learn outputs binary tables with true positives (1, 1) in the lower right </span>
+accuracy_score(y_test, preds)
+recall_score(y_test, preds)
+precision_score(y_test, preds) 
+
+
+
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> preprocessing
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> pipeline
+poly <span style="color:#f92672">=</span> preprocessing<span style="color:#f92672">.</span>PolynomialFeatures(degree<span style="color:#f92672">=</span><span style="color:#ae81ff">60</span>, include_bias<span style="color:#f92672">=</span>False)
+scaler <span style="color:#f92672">=</span> preprocessing<span style="color:#f92672">.</span>StandardScaler()
+lin_reg2 <span style="color:#f92672">=</span> linear_model<span style="color:#f92672">.</span>LinearRegression()
+pipeline_reg <span style="color:#f92672">=</span> pipeline<span style="color:#f92672">.</span>Pipeline([(<span style="color:#e6db74">&#39;poly&#39;</span>, poly), (<span style="color:#e6db74">&#39;scal&#39;</span>, scaler), (<span style="color:#e6db74">&#39;lin&#39;</span>, lin_reg2)])
+pipeline_reg<span style="color:#f92672">.</span>fit(Xfull, yfull)
+
+<span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
+train_set, test_set <span style="color:#f92672">=</span> train_test_split(housing, test_size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+
+<span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> StratifiedShuffleSplit
+split <span style="color:#f92672">=</span> StratifiedShuffleSplit(n_splits<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, test_size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+<span style="color:#66d9ef">for</span> train_index, test_index <span style="color:#f92672">in</span> split<span style="color:#f92672">.</span>split(housing, housing[<span style="color:#e6db74">&#34;income_cat&#34;</span>]):
+    strat_train_set <span style="color:#f92672">=</span> housing<span style="color:#f92672">.</span>loc[train_index]
+    strat_test_set <span style="color:#f92672">=</span> housing<span style="color:#f92672">.</span>loc[test_index]
+
+<span style="color:#f92672">from</span> sklearn.preprocessing <span style="color:#f92672">import</span> Imputer
+imputer <span style="color:#f92672">=</span> Imputer(strategy<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;median&#34;</span>)
+imputer<span style="color:#f92672">.</span>fit(housing_num)
+imputer<span style="color:#f92672">.</span>statistics_
+X <span style="color:#f92672">=</span> imputer<span style="color:#f92672">.</span>transform(housing_num)
+
+<span style="color:#f92672">from</span> future_encoders <span style="color:#f92672">import</span> OrdinalEncoder
+ordinal_encoder <span style="color:#f92672">=</span> OrdinalEncoder()
+housing_cat_encoded <span style="color:#f92672">=</span> ordinal_encoder<span style="color:#f92672">.</span>fit_transform(housing_cat)
+housing_cat_encoded[:<span style="color:#ae81ff">10</span>]
+ordinal_encoder<span style="color:#f92672">.</span>categories_
+
+<span style="color:#f92672">from</span> future_encoders <span style="color:#f92672">import</span> OneHotEncoder
+cat_encoder <span style="color:#f92672">=</span> OneHotEncoder()
+housing_cat_1hot <span style="color:#f92672">=</span> cat_encoder<span style="color:#f92672">.</span>fit_transform(housing_cat)
+housing_cat_1hot
+housing_cat_1hot<span style="color:#f92672">.</span>toarray()
+
+<span style="color:#f92672">from</span> sklearn.pipeline <span style="color:#f92672">import</span> Pipeline
+<span style="color:#f92672">from</span> sklearn.preprocessing <span style="color:#f92672">import</span> StandardScaler
+num_pipeline <span style="color:#f92672">=</span> Pipeline([
+        (<span style="color:#e6db74">&#39;imputer&#39;</span>, Imputer(strategy<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;median&#34;</span>)),
+        (<span style="color:#e6db74">&#39;attribs_adder&#39;</span>, CombinedAttributesAdder()),
+        (<span style="color:#e6db74">&#39;std_scaler&#39;</span>, StandardScaler()),
+    ])
+housing_num_tr <span style="color:#f92672">=</span> num_pipeline<span style="color:#f92672">.</span>fit_transform(housing_num)
+
+<span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> mean_squared_error
+housing_predictions <span style="color:#f92672">=</span> lin_reg<span style="color:#f92672">.</span>predict(housing_prepared)
+lin_mse <span style="color:#f92672">=</span> mean_squared_error(housing_labels, housing_predictions)
+lin_rmse <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sqrt(lin_mse)
+
+<span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> mean_absolute_error
+lin_mae <span style="color:#f92672">=</span> mean_absolute_error(housing_labels, housing_predictions)
+
+<span style="color:#f92672">from</span> sklearn.tree <span style="color:#f92672">import</span> DecisionTreeRegressor
+tree_reg <span style="color:#f92672">=</span> DecisionTreeRegressor(random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+tree_reg<span style="color:#f92672">.</span>fit(housing_prepared, housing_labels)
+
+<span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> cross_val_score
+scores <span style="color:#f92672">=</span> cross_val_score(tree_reg, housing_prepared, housing_labels,
+                         scoring<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;neg_mean_squared_error&#34;</span>, cv<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
+tree_rmse_scores <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sqrt(<span style="color:#f92672">-</span>scores)
+
+<span style="color:#f92672">from</span> sklearn.ensemble <span style="color:#f92672">import</span> RandomForestRegressor
+forest_reg <span style="color:#f92672">=</span> RandomForestRegressor(random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+forest_reg<span style="color:#f92672">.</span>fit(housing_prepared, housing_labels)
+housing_predictions <span style="color:#f92672">=</span> forest_reg<span style="color:#f92672">.</span>predict(housing_prepared)
+forest_mse <span style="color:#f92672">=</span> mean_squared_error(housing_labels, housing_predictions)
+forest_rmse <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sqrt(forest_mse)
+
+<span style="color:#f92672">from</span> sklearn.svm <span style="color:#f92672">import</span> SVR
+svm_reg <span style="color:#f92672">=</span> SVR(kernel<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;linear&#34;</span>)
+svm_reg<span style="color:#f92672">.</span>fit(housing_prepared, housing_labels)
+housing_predictions <span style="color:#f92672">=</span> svm_reg<span style="color:#f92672">.</span>predict(housing_prepared)
+svm_mse <span style="color:#f92672">=</span> mean_squared_error(housing_labels, housing_predictions)
+svm_rmse <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sqrt(svm_mse)
+
+<span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> GridSearchCV
+param_grid <span style="color:#f92672">=</span> [
+    <span style="color:#75715e"># try 12 (3×4) combinations of hyperparameters</span>
+    {<span style="color:#e6db74">&#39;n_estimators&#39;</span>: [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">30</span>], <span style="color:#e6db74">&#39;max_features&#39;</span>: [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>]},
+    <span style="color:#75715e"># then try 6 (2×3) combinations with bootstrap set as False</span>
+    {<span style="color:#e6db74">&#39;bootstrap&#39;</span>: [False], <span style="color:#e6db74">&#39;n_estimators&#39;</span>: [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">10</span>], <span style="color:#e6db74">&#39;max_features&#39;</span>: [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]},
+  ]
+forest_reg <span style="color:#f92672">=</span> RandomForestRegressor(random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+<span style="color:#75715e"># train across 5 folds, that&#39;s a total of (12+6)*5=90 rounds of training </span>
+grid_search <span style="color:#f92672">=</span> GridSearchCV(forest_reg, param_grid, cv<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>,
+                           scoring<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;neg_mean_squared_error&#39;</span>, return_train_score<span style="color:#f92672">=</span>True)
+grid_search<span style="color:#f92672">.</span>fit(housing_prepared, housing_labels)
+grid_search<span style="color:#f92672">.</span>best_params_
+grid_search<span style="color:#f92672">.</span>best_estimator_
+cvres <span style="color:#f92672">=</span> grid_search<span style="color:#f92672">.</span>cv_results_
+<span style="color:#66d9ef">for</span> mean_score, params <span style="color:#f92672">in</span> zip(cvres[<span style="color:#e6db74">&#34;mean_test_score&#34;</span>], cvres[<span style="color:#e6db74">&#34;params&#34;</span>]):
+    <span style="color:#66d9ef">print</span>(np<span style="color:#f92672">.</span>sqrt(<span style="color:#f92672">-</span>mean_score), params)
+
+<span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> RandomizedSearchCV
+<span style="color:#f92672">from</span> scipy.stats <span style="color:#f92672">import</span> randint
+param_distribs <span style="color:#f92672">=</span> {
+        <span style="color:#e6db74">&#39;n_estimators&#39;</span>: randint(low<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, high<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>),
+        <span style="color:#e6db74">&#39;max_features&#39;</span>: randint(low<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, high<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>),
+    }
+forest_reg <span style="color:#f92672">=</span> RandomForestRegressor(random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+rnd_search <span style="color:#f92672">=</span> RandomizedSearchCV(forest_reg, param_distributions<span style="color:#f92672">=</span>param_distribs,
+                                n_iter<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, cv<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, scoring<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;neg_mean_squared_error&#39;</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+rnd_search<span style="color:#f92672">.</span>fit(housing_prepared, housing_labels)
+cvres <span style="color:#f92672">=</span> rnd_search<span style="color:#f92672">.</span>cv_results_
+<span style="color:#66d9ef">for</span> mean_score, params <span style="color:#f92672">in</span> zip(cvres[<span style="color:#e6db74">&#34;mean_test_score&#34;</span>], cvres[<span style="color:#e6db74">&#34;params&#34;</span>]):
+    <span style="color:#66d9ef">print</span>(np<span style="color:#f92672">.</span>sqrt(<span style="color:#f92672">-</span>mean_score), params)
+feature_importances <span style="color:#f92672">=</span> grid_search<span style="color:#f92672">.</span>best_estimator_<span style="color:#f92672">.</span>feature_importances_
+
+<span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> SGDClassifier
+sgd_clf <span style="color:#f92672">=</span> SGDClassifier(max_iter<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+sgd_clf<span style="color:#f92672">.</span>fit(X_train, y_train_5)
+sgd_clf<span style="color:#f92672">.</span>predict([some_digit])
+
+<span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> cross_val_predict
+y_train_pred <span style="color:#f92672">=</span> cross_val_predict(sgd_clf, X_train, y_train_5, cv<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+
+<span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> confusion_matrix
+confusion_matrix(y_train_5, y_train_pred)
+
+<span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> precision_recall_curve
+precisions, recalls, thresholds <span style="color:#f92672">=</span> precision_recall_curve(y_train_5, y_scores)
+
+<span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> roc_curve
+fpr, tpr, thresholds <span style="color:#f92672">=</span> roc_curve(y_train_5, y_scores)
+
+<span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> roc_auc_score
+roc_auc_score(y_train_5, y_scores)
+
+<span style="color:#75715e"># hierarchical clustering</span>
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> datasets, cluster
+X <span style="color:#f92672">=</span> datasets<span style="color:#f92672">.</span>load_iris()<span style="color:#f92672">.</span>data[:<span style="color:#ae81ff">10</span>]
+clust <span style="color:#f92672">=</span> cluster<span style="color:#f92672">.</span>AgglomerativeClustering(n_clusters<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, linkage<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ward&#39;</span>)
+labels <span style="color:#f92672">=</span> clust<span style="color:#f92672">.</span>fit_predict(X)
+
+<span style="color:#75715e"># DBSCAN</span>
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> datasets, cluster
+X <span style="color:#f92672">=</span> datasets<span style="color:#f92672">.</span>load_iris()<span style="color:#f92672">.</span>data
+db <span style="color:#f92672">=</span> cluster<span style="color:#f92672">.</span>DBSCAN(eps<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>, min_samples<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
+db<span style="color:#f92672">.</span>fit(X)
+
+<span style="color:#75715e"># GMM</span>
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> datasets, mixture
+X <span style="color:#f92672">=</span> datasets<span style="color:#f92672">.</span>load_iris()<span style="color:#f92672">.</span>data[:<span style="color:#ae81ff">10</span>]
+gmm <span style="color:#f92672">=</span> mixture<span style="color:#f92672">.</span>GaussianMixture(n_components<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+gmm<span style="color:#f92672">.</span>fit(X)
+clustering<span style="color:#f92672">=</span>gmm<span style="color:#f92672">.</span>predict(X)
+
+<span style="color:#75715e"># PCA</span>
+<span style="color:#f92672">from</span> sklearn.decomposition <span style="color:#f92672">import</span> PCA
+<span style="color:#f92672">from</span> sklearn.preprocessing <span style="color:#f92672">import</span> StandardScaler
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">do_pca</span>(n_components, data):
+    <span style="color:#e6db74">&#39;&#39;&#39;
+</span><span style="color:#e6db74">    Transforms data using PCA to create n_components, and provides back the results of the
+</span><span style="color:#e6db74">    transformation.
+</span><span style="color:#e6db74">    
+</span><span style="color:#e6db74">    INPUT: n_components - int - the number of principal components to create
+</span><span style="color:#e6db74">           data - the data you would like to transform
+</span><span style="color:#e6db74">           
+</span><span style="color:#e6db74">    OUTPUT: pca - the pca object created after fitting the data
+</span><span style="color:#e6db74">            X_pca - the transformed X matrix with new number of components
+</span><span style="color:#e6db74">    &#39;&#39;&#39;</span>
+    X <span style="color:#f92672">=</span> StandardScaler()<span style="color:#f92672">.</span>fit_transform(data)
+    pca <span style="color:#f92672">=</span> PCA(n_components)
+    X_pca <span style="color:#f92672">=</span> pca<span style="color:#f92672">.</span>fit_transform(X)
+    <span style="color:#66d9ef">return</span> pca, X_pca
+
+<span style="color:#75715e"># Random Projection</span>
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> random_projection
+rp <span style="color:#f92672">=</span> random_projection<span style="color:#f92672">.</span>SparseRandomProjection()
+new_X <span style="color:#f92672">=</span> rp<span style="color:#f92672">.</span>fit_transform(X)
+
+<span style="color:#75715e"># ICA</span>
+<span style="color:#f92672">from</span> sklearn.decomposition <span style="color:#f92672">import</span> FastICA
+X <span style="color:#f92672">=</span> list(zip(signal_1, signal_2, signal_3))
+ica <span style="color:#f92672">=</span> FastICA(n_components<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
+components <span style="color:#f92672">=</span> ica<span style="color:#f92672">.</span>fit_transform(X)
+</code></pre></div>
+				</section>
+			</article>
+		</main>
+	</div> 
+
+	
+
+</div> 
+
+
+
+
+</div> 
+
+<footer class="doc-footer">
+	
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+<script src="http://surfingwithstyle.com//js/bootie-docs.js"></script>
+
+</body>
+</html>

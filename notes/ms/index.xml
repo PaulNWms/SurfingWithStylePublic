@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MS on Surfing With Style</title>
+    <link>http://surfingwithstyle.com/notes/ms/</link>
+    <description>Recent content in MS on Surfing With Style</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://surfingwithstyle.com/notes/ms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AspNetCore</title>
+      <link>http://surfingwithstyle.com/notes/ms/aspnetcore/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/ms/aspnetcore/</guid>
+      <description>ASP.NET Core Links:
+OWIN
+The content root is the root folder of deployment.
+The web root is the base path for static files.
+The startup.cs file contains the class designated to configure the request pipeline.
+Startup.ConfigureServices is used to add in the dependency injection mechanism services that the application expects to use.
+Startup.Configure serves the purpose of configuring previously requested services.
+ASPNETCORE_ENVIRONMENT</description>
+    </item>
+    
+    <item>
+      <title>CSharp</title>
+      <link>http://surfingwithstyle.com/notes/ms/csharp/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/ms/csharp/</guid>
+      <description>C# Contextual keywords allow keywords to be used as identifiers.
+To use a keyword as an identifier, escape it with @, e.g. @class.
+Generics (C# 2), e.g. List&amp;lt;int&amp;gt;
+Nullable types (C# 2), e.g. int?
+Iterators (C# 2), e.g. IEnumerator&amp;lt;int&amp;gt; w/ yield return
+Anonymous types (C# 3) with the var keyword.
+Object initializers (C# 3), e.g. var x = new C() { Prop = val };
+Collection initializers (C# 3), e.g. var x = new List&amp;lt;int&amp;gt; { 1, 2, 3 };</description>
+    </item>
+    
+    <item>
+      <title>DotNet</title>
+      <link>http://surfingwithstyle.com/notes/ms/dotnet/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/ms/dotnet/</guid>
+      <description>.NET Code Access Security (CAS) sandboxes code.
+The Common Language Infrastructure (CLI) is an ECMA standard that specifies the runtime infrastructure.
+The CLI defines the Virtual Execution System (VES), the Common Intermediate Language (IL), metadata and file format.
+The Common Type System (CTS) defines types available to CLI-compliant languages.
+The Common Language Specification (CLS) is a subset of CTS types that are guaranteed to be compatible across languages.
+The BCL is CLS-compliant.</description>
+    </item>
+    
+    <item>
+      <title>FSharp</title>
+      <link>http://surfingwithstyle.com/notes/ms/fsharp/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/ms/fsharp/</guid>
+      <description>F# // line comment
+(* multiline comment *)
+Open the F# Interactive window with CTRL+ALT+F
+Terminate a statement in F# Interactive with &amp;lsquo;;;&amp;rsquo;
+Reorder files in the Solution Explorer with ALT+UP &amp;amp; ALT+DOWN</description>
+    </item>
+    
+    <item>
+      <title>MSBuild</title>
+      <link>http://surfingwithstyle.com/notes/ms/msbuild/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/ms/msbuild/</guid>
+      <description>MSBuild Links:
+Walkthrough: Creating an MSBuild Project File from Scratch
+Common MSBuild Project Items
+MSBuild Well-known Item Metadata
+MSBuild Task Reference
+MSBuild Extension Pack
+Minimal project template:
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;utf-8&amp;#34; ?&amp;gt; &amp;lt;Project DefaultTargets=&amp;#34;Build&amp;#34; xmlns=&amp;#34;http://schemas.microsoft.com/developer/msbuild/2003&amp;#34;&amp;gt; &amp;lt;PropertyGroup&amp;gt; &amp;lt;AssemblyName&amp;gt;MSBuildSample&amp;lt;/AssemblyName&amp;gt; &amp;lt;OutputPath&amp;gt;Bin\&amp;lt;/OutputPath&amp;gt; &amp;lt;/PropertyGroup&amp;gt; &amp;lt;ItemGroup&amp;gt; &amp;lt;Compile Include=&amp;#34;helloworld.cs&amp;#34; /&amp;gt; &amp;lt;/ItemGroup&amp;gt; &amp;lt;Target Name=&amp;#34;Build&amp;#34;&amp;gt; &amp;lt;MakeDir Directories=&amp;#34;$(OutputPath)&amp;#34; Condition=&amp;#34;!Exists(&amp;#39;$(OutputPath)&amp;#39;)&amp;#34; /&amp;gt; &amp;lt;Csc Sources=&amp;#34;@(Compile)&amp;#34; OutputAssembly=&amp;#34;$(OutputPath)$(AssemblyName).exe&amp;#34; /&amp;gt; &amp;lt;/Target&amp;gt; &amp;lt;Target Name=&amp;#34;Clean&amp;#34;&amp;gt; &amp;lt;Delete Files=&amp;#34;$(OutputPath)$(AssemblyName).exe&amp;#34; /&amp;gt; &amp;lt;/Target&amp;gt; &amp;lt;Target Name=&amp;#34;Rebuild&amp;#34; DependsOnTargets=&amp;#34;Clean;Build&amp;#34; /&amp;gt; &amp;lt;/Project&amp;gt; Targets can be called explicitly (uncommon) with the CallTarget task</description>
+    </item>
+    
+    <item>
+      <title>Powershell</title>
+      <link>http://surfingwithstyle.com/notes/ms/powershell/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/ms/powershell/</guid>
+      <description># show version $PSVersionTable # online help help &amp;lt;cmdlet&amp;gt; -Online # pop up a window Show-Command &amp;lt;cmdlet&amp;gt; Get-PSProvider Get-PSDrive New-Item -ItemType File empty.txt Set-Item -Path alias:npp -Value &amp;#34;C:\Program Files\Notepad++\notepad++.exe&amp;#34; # change registry value Set-ItemProperty Export-CSV, Export-CliXML diff -ReferenceObject &amp;lt;object 1&amp;gt; -DifferenceObject &amp;lt;object 2&amp;gt; Out-File, Out-Printer, Out-GridView Get-Process -Name notepad | Stop-Process $ConfirmPreference # list snapins Get-PSSnapin # show module path Get-Content env:PSModulePath # load a module and list its API Import-Module DnsClient Get-Command -Module DnsClient Get-Member Import-Module PSWorkflow Format-Table, Format-List, Format-Wide </description>
+    </item>
+    
+  </channel>
+</rss>

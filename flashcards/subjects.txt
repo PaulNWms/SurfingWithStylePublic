@@ -1,0 +1,5 @@
+CSharp
+DesignPatterns
+DiscreteMath
+Git
+SOLID

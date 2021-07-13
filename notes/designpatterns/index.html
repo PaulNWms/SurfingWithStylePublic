@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Surfing With Style">
+    <link rel="icon" href="http://surfingwithstyle.com//favicon.ico">
+    <title>DesignPatterns - Surfing With Style</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+        href="http://surfingwithstyle.com//css/highlight/github.css">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/theme.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/bootie-docs.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/site.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/math.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/mini-metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/calculator.css">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML"></script>
+</head>
+
+<body role="document">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="http://surfingwithstyle.com//">Surfing With Style</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tools
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/tools/timer/">Timer</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/calculator/">Calculator</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/old-english-letters/">Old English Letters</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Study
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/study/flashcards/">Flashcards</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Practice
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/practice/metronome/">Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome/">Scheduled Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/accelerating-metronome/">Accelerating Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome-presets/">Presets</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/chords/">Chords</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Notes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/notes/data-science/">Data Science</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/ms/">MS</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/python/">Python</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/designpatterns/">Design Patterns</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/git/">Git</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/solid/">SOLID</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/sql/">SQL</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Other ...</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="">Tools2</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Books</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                
+
+                
+
+
+                
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div class="container">
+
+<div class="row">
+	<div class="col-sm-offset-2 col-sm-8 doc-main">
+		<main role="main">
+			<article>
+				<a id="title"></a>
+				<h1 class="doc-entry-title">DesignPatterns</h1>
+				<div class="doc-entry-meta">
+					<span><time datetime="2020-06-18">June 18, 2020</time></span>
+				</div>
+				<section>
+					<p>Links:<br>
+<a href="https://sourcemaking.com/design_patterns">Design patterns (and anti-patterns) site</a><br>
+<a href="http://www.tutorialspoint.com/design_pattern">Design patterns in Java tutorial</a></p>
+<pre><code class="language-lang-none" data-lang="lang-none">Abstract Factory
+- A Factory represents a &quot;family&quot; of objects that it can create
+- Everyday usage: DbProviderFactory is an abstract base class for SqlClientFactory
+- Everyday usage: SqlClientFactory.CreateCommand() creates instances of DbCommand
+- Creational
+
+Active Record
+- A database table or view is wrapped into a class.
+- Typically, foreign key relationships will be exposed as an object instance of the appropriate
+  type via a property. 
+- Everyday usage: Entity Framework or any other ORM, object persistence tools
+
+Adapter
+- Resolves incompatible interfaces
+- Everyday usage: Entity Framework
+- Structural
+
+Bridge
+- Abstraction -&gt; Abstraction -&gt; Implementation
+- Everyday usage: .NET provider model, e.g. IFormatProvider
+- Structural
+
+Builder
+- Useful when you have a constructor with lots of parameters
+- Example: Jimmy John's (order from a menu) vs. Subway (specify all the ingredients)
+- Has a Director base class, which defines the assembly steps
+- Has 2 or more Concrete Builder child classes, which actually create objects
+- Similar to Template Method, but for constructors
+- Creational
+
+Chain of Responsibility
+- Everyday usage: exception handling
+- Message handling
+- Behavioral
+
+Command
+- Represent an action as an object
+- Everyday usage: ICommand (in MVVM or just generally)
+- ICommand may include additional methods like Validate(), Undo(), Compensate(), etc.
+- Behavioral
+
+Composite (Tree)
+- Treats leaves and branches the same (nodes)
+- Everyday usage: Email can send to individuals or groups
+- Structural
+
+Decorator (wrapper)
+- Attach additional responsibilities to an object (but use the same interface)
+- Example: caching repository
+- Even sealed classes can be wrapped
+- Structural
+
+Event Aggregator
+- Subscibers subscribe only to the event aggregator instead of all the subscribers
+- The event aggregator typically uses weak references to minimize memory leaks
+- Use when: there are many publishers and subscribers
+
+Façade
+- Hides complexity
+- Everyday usage: foreach
+- Structural
+
+Factory Method
+- A base class or interface defines the creation method
+- Subclasses implement the creation method in different ways 
+- &quot;Everyday&quot; usage: IDbCommand.CreateParameter(),
+  System.Windows.Forms.Control.CreateControlsInstance()
+- Creational
+
+Flyweight
+- Instead of each instance containing all the data, shared objects are passed in
+- Everyday usage: Graphics context in drawing, string interning
+- Structural
+
+Identity Map
+- Everyday usage: Database table has a unique primary key
+
+IIFE (Immediately-Invoked Function Expression) (JavaScript ES5)
+- Anonymous function that's invoked at the time it's declared
+- Provides encapsulation
+- Reduces global scope pollution
+- (function() { ... })();
+
+Interpreter
+- The interpreter builds objects based on a grammar expressed in EBNF
+- Related to composite pattern
+- Example: a laser scanner interprets a UPC bar code
+- Behavioral
+
+Iterator
+- Everyday usage: foreach and IEnumerable&amp;lt;T&amp;gt;
+- MoveNext() and Current
+- yield return
+- Behavioral
+
+Lazy Load (several variations)
+- lazy initialization
+  - Every property checks to see if its backing field has been initialized 
+  - Requires all access to the value to go through the property 
+  - .NET provides the Lazy&amp;lt;T&amp;gt; type to enforce this
+- virtual proxy
+  - Can introduce identity problems 
+    - Proxy isn’t really the object – different object identities and states
+    - Override the equality method (Equals()) 
+  - Most useful for collections
+- value holder
+  - Provides lazy load functionality without encapsulation 
+  - Calling code knows it is working with a Value Holder type
+  - You're probably better off using Lazy&amp;lt;T&amp;gt;
+- ghosts
+  - A ghost is a real object in a partial state.
+  - Initially, the ghost only contains its id. 
+  - Whenever any property is accessed, the ghost class loads all of its state from the
+    persistence 
+  - Essentially, the object is its own virtual proxy
+    - Note that this violates the Single Responsibility Principle
+  - Avoids identity concerns of virtual proxy technique 
+
+Mediator
+- Mediator provides a centralized location for communication between many instances of like
+  classes 
+- Use when: There are many objects of a similar type that need to communicate with each other.
+- Colleagues: Individual components that need to communicate with each other 
+  - Implement the same base type (abstract class or interface)
+  - Have knowledge of the Mediator component
+- Mediator: The centralized component that managed communication between the colleague
+  components
+- Behavioral
+
+Memento
+- Operations are placed on an Undo stack, undone operations are placed on a Redo stack
+- The &lt;em&gt;originator&lt;/em&gt; is the object whose state is being tracked.
+- The &lt;em&gt;caretaker&lt;/em&gt; performs operations on the originator.
+- The &lt;em&gt;memento&lt;/em&gt; holds the state of the originator.
+- Use when: undo/redo
+- Behavioral
+
+MVP
+
+MVVM
+
+Null Object
+- Provide a non-functional object in place of a null reference
+- Often implemented as a static inner class of a base class
+
+Observer
+- Uses events to notify changes automatically
+- Publish/Subscribe relationship
+- Synchronous; the observable notifies the observers immediately (either directly or through
+  an Event Aggregator)
+- Risk of memory leaks, see Event Aggregator
+- Everyday usage: Event Handlers
+- Everyday usage: IObservable&amp;lt;T&amp;gt; and IObserver&amp;lt;T&amp;gt;
+- Behavioral
+
+Prototype
+- Creational
+
+Proxy
+- Placeholder / Stand-in for actual object
+- Everyday usage: SOAP Service Proxies
+- Structural
+
+Publish/Subscribe
+- Uses events to notify changes explicitly
+- Publish/Subscribe relationship
+- Asynchronous, generally uses a message queue
+
+Repository
+
+Revealing Module (JavaScript ES5)
+- Function scoping provides encapsulation
+- 2 flavors: Singleton or Constructor Function
+
+Rules
+- Separate the logic of each individual rule and its effects into its own class
+- Separate the selection and processing of rules into a separate Evaluator class
+- Use when you have a growing amount of conditional complexity
+- Special case of the Command pattern
+- Links:
+  - [Soft Coding](http://thedailywtf.com/articles/soft_coding.aspx)
+  - [Should You Use a Rules Engine?](http://www.jessrules.com/guidelines.shtml)
+  - [Simple .NET Rules Engine Discussion (StackOverflow)](http://bit.ly/fDH8r)
+  - [Business Rules Engines](http://en.wikipedia.org/wiki/Business_rules_engine)
+  - [Intro to WF Rules Engine](http://bit.ly/aetfj0)
+
+Service Locator
+- Identify a service through configuration
+- Example: Domain Name Service, IoC container
+- Createional
+
+Simple Factory
+- Decides which concrete type to return
+- Everyday usage: System.Threading.Tasks.TaskFactory.Run() creates instances of Task
+- Creational
+
+Singleton
+- Example: return (instance == null) ? new MyClass() : instance;
+- Everyday usage: static
+- Breaks Single Responsibility Principle
+- Difficult to test
+- Anti-pattern, better to use IoC container
+- Creational
+
+Specification
+- Defines a predicate that matches qualifying objects
+- Predicates in LINQ look like Expression&amp;lt;Func&amp;lt;T, bool&amp;gt;&amp;gt; to play nicely with ORMs
+- Part of domain-driven design (DDD)
+
+State
+- Implement an FSM with state objects derived from a base class
+- Use when: the behavior changes at runtime
+- Code smell: switch statements based on state
+- Behavioral
+
+Strategy
+- A class behavior or its algorithm can be changed at run time.
+- Everyday usage: delegate parameter in method call
+- Everyday usage: delegate parameter in constructor
+- Behavioral
+
+Template Method
+- Base class defines the (sealed) template method, subclasses override steps
+- Clients depend on base class
+- Everyday usage: ASP.NET
+- Use when:
+  - 2 or more classes follow the same workflow
+  - The workflow is invariant
+  - Some workflow steps may be encapsulated in the base class
+- Behavioral
+
+Unit of Work
+- Track changes in persistent objects and commit them in a batch
+- Everyday usage: ADO.NET SqlDataAdapter, Entity Framework
+  - Efficient data access
+  - Reduces concurrency problems
+  - Manages transactions
+
+Visitor
+- Puts all the logic for all of the classes in a single Visitor class
+- Implement interface IBlah { void Accept(IVisitor visitor); } in each of the classes (double
+  dispatch)
+- Implement interface IVisitor, which has a method for each type to be visited
+- Use when: looping over a collection of unrelated objects and performing an operation on each,
+  without modifying them
+- Behavioral
+</code></pre>
+				</section>
+			</article>
+		</main>
+	</div> 
+
+	
+
+</div> 
+
+
+
+
+</div> 
+
+<footer class="doc-footer">
+	
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+<script src="http://surfingwithstyle.com//js/bootie-docs.js"></script>
+
+</body>
+</html>

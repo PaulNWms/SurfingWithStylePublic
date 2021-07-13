@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Surfing With Style</title>
+    <link>http://surfingwithstyle.com/notes/python/</link>
+    <description>Recent content in Python on Surfing With Style</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Jun 2020 15:20:13 -0800</lastBuildDate><atom:link href="http://surfingwithstyle.com/notes/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python</title>
+      <link>http://surfingwithstyle.com/notes/python/python/</link>
+      <pubDate>Wed, 17 Jun 2020 15:21:50 -0800</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/python/python/</guid>
+      <description>Python Links:
+Testing Your Code
+Requests: HTTP for Humans™
+SQL Alchemy
+Flask SQLAlchemy
+Example Google Style Python Docstrings
+Inno Setup install wizard creator
+nltk.tokenize
+The beginner&amp;rsquo;s guide to contributing to a GitHub project
+How to Version Control Your Production Machine Learning Models
+The Flask Mega-Tutorial Part IV: Database
+Getting Started on Heroku with Python
+pytest Configuration
+pytest Installation and Getting Started
+The Python Package Index (PyPI)
+pdb — The Python Debugger</description>
+    </item>
+    
+    <item>
+      <title>MatPlotLib</title>
+      <link>http://surfingwithstyle.com/notes/python/matplotlib/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/python/matplotlib/</guid>
+      <description>Matplotlib &amp;amp; seaborn Links:
+Matplotlib
+Colormaps in Matplotlib
+Choosing color palettes
+How The Rainbow Color Map Misleads
+No more rainbows!
+How to choose a color palette for choropleth maps
+import matplotlib.pyplot as plt import seaborn as sb %matplotlib inline # inspect data df.hist(); sns.heatmap(df.corr(), annot=True, fmt=&amp;#39;.2f&amp;#39;); # plot bars plt.bar([1, 2, 3], [224, 620, 425]) # specify x coordinates of tick labels and their labels plt.xticks([1, 2, 3], [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, &amp;#39;c&amp;#39;]); # plot bars with x tick labels plt.</description>
+    </item>
+    
+    <item>
+      <title>NumPy</title>
+      <link>http://surfingwithstyle.com/notes/python/numpy/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/python/numpy/</guid>
+      <description>NumPy &amp;amp; SciPy Links:
+Numpy and Scipy Documentation
+Stat Trek Hypothesis Testing
+NumPy Docstring Guide
+X = np.linspace(0, 110000, 1000) # to make this notebook&amp;#39;s output identical at every run np.random.seed(42) # Divide by 1.5 to limit the number of income categories housing[&amp;#34;income_cat&amp;#34;] = np.ceil(housing[&amp;#34;median_income&amp;#34;] / 1.5) # Label those above 5 as 5 housing[&amp;#34;income_cat&amp;#34;].where(housing[&amp;#34;income_cat&amp;#34;] &amp;lt; 5, 5.0, inplace=True) housing[&amp;#34;income_cat&amp;#34;].value_counts() # Translates slice objects to concatenation along the first axis. example_images = np.</description>
+    </item>
+    
+    <item>
+      <title>Pandas</title>
+      <link>http://surfingwithstyle.com/notes/python/pandas/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/python/pandas/</guid>
+      <description>pandas Links:
+pandas
+Cheat Sheet 1 (PDF)
+Cheat Sheet 2 (PDF)
+10 Minutes to pandas
+Pandas Basic Functionality
+Data Science TDD
+TDD for Data Science
+TDD is Essential for Good Data Science Here&amp;rsquo;s Why
+Testing Your Code (general python TDD)
+Code Review
+Code Review Best Practices
+# load DataFrame import pandas as pd df = pd.read_csv(&amp;#39;student_scores.csv&amp;#39;, index_col=&amp;#39;ID&amp;#39;) # save DataFrame df_powerplant.to_csv(&amp;#39;powerplant_data_edited.csv&amp;#39;, index=False) Pandas actually stores pointers to strings in dataframes and series, which is why object instead of str appears as the datatype.</description>
+    </item>
+    
+    <item>
+      <title>ScikitLearn</title>
+      <link>http://surfingwithstyle.com/notes/python/scikitlearn/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/python/scikitlearn/</guid>
+      <description>scikit-learn Links:
+scikit-learn
+Novelty and Outlier Detection
+A Brief Overview of Outlier Detection Techniques
+Pipelines and composite estimators
+Custom transformers
+FunctionTransformer
+# linear regression from sklearn.linear_model import LinearRegression model = LinearRegression() model = model.fit(X, y) prediction = model.predict(...) # polynomial regression from sklearn.linear_model import LinearRegression from sklearn.preprocessing import PolynomialFeatures poly_feat = PolynomialFeatures(degree=4) X_poly = poly_feat.fit_transform(X) poly_model = LinearRegression() poly_model.fit(X_poly,y) # regularization from sklearn.linear_model import Lasso, LinearRegression lasso_reg = Lasso() lasso_reg.fit(X, y) model = LinearRegression() model.</description>
+    </item>
+    
+    <item>
+      <title>TensorFlow</title>
+      <link>http://surfingwithstyle.com/notes/python/tensorflow/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/python/tensorflow/</guid>
+      <description>TensorFlow™ Links:
+TensorFlow™
+# Make sure TensorFlow™ is using the GPU import tensorflow as tf if tf.test.gpu_device_name(): print(&amp;#39;Default GPU Device: {}&amp;#39;.format(tf.test.gpu_device_name())) else: print(&amp;#34;Please install GPU version of TF&amp;#34;) # Hello import tensorflow as tf hello_constant = tf.constant(&amp;#39;Hello World!&amp;#39;) with tf.Session() as sess: output = sess.run(hello_constant) print(output) tf.placeholder() tensors hold data.
+tf.placeholder() and tf.constant() tensors can&amp;rsquo;t be modified.
+The tf.Variable class creates a tensor with an initial value that can be modified, much like a normal Python variable.</description>
+    </item>
+    
+  </channel>
+</rss>

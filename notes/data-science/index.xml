@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science on Surfing With Style</title>
+    <link>http://surfingwithstyle.com/notes/data-science/</link>
+    <description>Recent content in Data Science on Surfing With Style</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://surfingwithstyle.com/notes/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Analysis</title>
+      <link>http://surfingwithstyle.com/notes/data-science/data-analysis/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/data-science/data-analysis/</guid>
+      <description>Links:
+Markdown Cheatsheet
+A Review and Comparison of Methods for Detecting Outliers in Univariate Data Sets Understanding Q-Q Plots
+Kolmogorov–Smirnov test
+Generalized Linear Models
+Sampling Distribution of the Mean
+What is a p-value and how do you calculate it?
+An Introduction to Statistical Learning
+Markdown Syntax
+Hide the input cells from your IPython slides
+Conda Cheatsheet
+Conda: Myths and Misconceptions
+Conda docs
+magic keywords
+pdb — The Python Debugger
+# convert .</description>
+    </item>
+    
+    <item>
+      <title>Data Science</title>
+      <link>http://surfingwithstyle.com/notes/data-science/data-science/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/data-science/data-science/</guid>
+      <description>Links:
+A Kaggle Master Explains Gradient Boosting
+Density-Based Clustering Validation
+Speaker Verification Using Adapted Gaussian Mixture Models
+Independent component analysis: algorithms and applications
+Nonparametric discovery of human routines from sensor data
+Random projection in dimensionality reduction: Applications to image and text data
+Dynamic Principal Component Analysis in Multivariate Time-Series Segmentation
+SVMs - Stanford&amp;rsquo;s CS229 Lecture notes
+TDD for Data Science
+Using Hierarchical Clustering of Secreted Protein Families to Classify and Rank Candidate Effectors of Rust Fungi</description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>http://surfingwithstyle.com/notes/data-science/deep-learning/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/data-science/deep-learning/</guid>
+      <description>Links:
+German Traffic Sign dataset and project
+Exploring LSTMs
+CIFAR-10 Competition Winners
+A Theoretical and Empirical Analysis of Expected Sarsa
+Issues in Using Function Approximation for Reinforcement Learning (1993) 
+Learning Deep Features for Discriminative Localization
+Understanding LSTM Networks
+CS231n: Convolutional Neural Networks for Visual Recognition
+Commonly used activation functions
+Visualizing what ConvNets learn)
+Deep Reinforcement Learning: Pong from Pixels
+Linear Combinations
+Neural Networks and Deep Learning (book)
+Why are deep neural networks hard to train?</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>http://surfingwithstyle.com/notes/data-science/machine-learning/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/data-science/machine-learning/</guid>
+      <description>Links:
+Sample code
+Data sets:
+UC Irvine Machine Learning Repository
+Kaggle
+Open Data on AWS
+http://dataportals.org/
+OPENDATAMONITOR
+Quandl
+Wikipedia&amp;rsquo;s list of datasets
+Quora
+Datasets&#39; Discord server
+In supervised learning, the training data is labelled.
+Typical supervised learning tasks include classification and predicting a target numeric value.
+Some of the most important supervised learning algorithms include
+ k-nearest neighbors linear regression logistical regression support vector machines decision trees and random forests neural networks  In unsupervised learning, the training data is unlabelled.</description>
+    </item>
+    
+  </channel>
+</rss>

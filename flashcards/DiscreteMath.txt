@@ -1,0 +1,513 @@
+﻿∧ connective
+conjunction
+
+∨ connective
+disjunction
+
+⊕ connective
+exclusive or
+
+→ connective
+implication
+
+↔ connective
+biconditional
+
+converse of p → q
+q → p
+
+contrapositive of p → q
+¬q → ¬p
+
+A compound proposition that is always true is a ____.
+tautology
+
+A compound proposition that is always false is a ____.
+contradiction
+
+____ are formed from existing propositions using logical operators.
+Compound propositions
+
+Compound propositions that always have the same truth value are ____.
+logically equivalent
+
+The propositions p and q are called ___ if p ↔ q is a tautology.
+logically equivalent
+
+p ⇔ q
+logical equivalence
+
+universal quantifier
+∀x P(x)
+
+existential quantifier
+∃x P(x)
+
+unique quantifier
+∃!x P(x)
+
+negation of ∀x P(x) is equivalent to 
+¬∀x P(x) ⇔ ∃x ¬P(x)
+
+negation of ∃x P(x) is equivalent to
+¬∃x P(x) ⇔ ∀x ¬P(x)
+
+p ∧ T ⇔ p
+Identity law
+
+p ∨ F ⇔ p
+Identity law
+
+p ∨ T ⇔ T
+Domination law
+
+p ∧ F ⇔ F
+Domination law
+
+p ∨ p ⇔ p
+Idempotent law
+
+p ∧ p ⇔ p
+Idempotent law
+
+¬(¬p) ⇔ p
+Double negation law
+
+p ∨ q ⇔ q ∨ p
+Commutative law
+
+p ∧ q ⇔ q ∧ p
+Commutative law
+
+(p ∨ q) ∨ r ⇔ p ∨ (q ∨ r)
+Associative law
+
+(p ∧ q) ∧ r ⇔ p ∧ (q ∧ r)
+Associative law
+
+p ∨ (q ∧ r) ⇔ (p ∨ q) ∧ (p ∨ r)
+Distributive law
+
+p ∧ (q ∨ r) ⇔ (p ∧ q) ∨ (p ∧ r)
+Distributive law
+
+¬(p ∧ q) ⇔ ¬p ∨ ¬q
+DeMorgan's law
+
+¬(p ∨ q) ⇔ ¬p ∧ ¬q
+DeMorgan's law
+
+R = {x|x is a real number} is an example of ____ notation.
+set builder
+
+universal set symbol
+U
+
+natural numbers symbol
+N
+
+integers symbol
+Z
+
+real numbers symbol
+R
+
+|S| is called
+cardinality
+
+∀x(x|x ∈ A → x ∈ B)
+A ⊆ B
+
+The set of all subsets
+power set
+
+A × B = {(a,b)|a ∈ A ∧ b ∈ B}
+Cartesion product
+
+A ∪ B = {x|x ∈ A ∨ x ∈ B}
+union
+
+A ∩ B = {x|x ∈ A ∧ x ∈ B}
+intersection
+
+A ∩ B = ∅
+disjoint
+
+A - B = {x|x ∈ A ∧ x ∉ B}
+difference
+compelement of B w/ respect to A
+
+A̅ = {x|x ∉ A}
+complement
+
+A ∪ ∅ = A
+Identity law
+
+A ∩ U = A
+Identity law
+
+A ∪ U = U
+Domination law
+
+A ∩ ∅ = ∅
+Domination law
+
+A ∪ A = A
+Idempotent law
+
+A ∩ A = A
+Idempotent law
+
+$$\overline{\bar{A}} = A$$
+Complementation law
+
+A ∪ B = B ∪ A
+Commutative law
+
+A ∩ B = B ∩ A
+Commutative law
+
+A ∪ (B ∪ C) = (A ∪ B) ∪ C
+Associative law
+
+A ∩ (B ∩ C) = (A ∩ B) ∩ C
+Associative law
+ 
+A ∩ (B ∪ C) =  (A ∩ B) ∪ (A ∩ C)
+Distributive law
+
+A ∪ (B ∩ C) =  (A ∪ B) ∩ (A ∪ C)
+Distributive law
+ 
+$$\overline{A ∪ B} = \bar{A} ∩ \bar{B}$$
+DeMorgan's law
+
+$$\overline{A ∩ B} = \bar{A} ∪ \bar{B}$$
+DeMorgan's law
+ 
+Truth table for sets
+membership table
+ 
+Computer implementation of sets sometimes use ____ to indicate membership.
+bit strings
+ 
+If f is a  function from A to B, A is the ____ of f and B is the ____ of f.
+domain
+codomain
+
+If f(a) = b, b is the ____ of a.
+image
+
+If f(a) = b, a is the ____ of b.
+pre-image
+
+f is ____ if f(x) ≠ f(y) whenever x ≠ y.
+one-to-one
+injective
+
+f is ____ IFF ∀b: b ∈ B, ∃a: a ∈ A with f(a) = b
+onto
+surjective
+
+f is a _____ if it is both one-to-one and onto.
+one-to-one correspondence
+bijection
+
+A function that is not _____ is not invertible.
+one-to-one
+
+(f  ∘ g)(a) = f(g(a))
+composition
+
+|a + b| ≤ |a| + |b|
+triangle inequality
+
+complexity of (f₁ + f₂)(x) = ____ (Theorem 1.1)
+O(max(g₁(x), g₂(x)))
+
+complexity of (f₁f₂)(x) = ____ (Theorem 1.2)
+O(g₁(x)g₂(x))
+
+if a|b and a|c, then a|____ (Theorem 2.1.1)
+a|b + c
+
+if a|b then a|____ for all integers c (Theorem 2.1.2)
+a|bc
+
+if a|b and b|c, then a|_____ (Theorem 2.1.3)
+a|c
+
+Every positive integer can be written uniquely as the product of primes.
+The Fundamental Theorem of Arithmetic
+
+If n is a composite integer, then n has a prime divisor ≤ ____. (Theorem 2.3)
+√n
+
+There are unique integers q & r, with 0 ≤ r < d, s. th. a = ____. (The Division Algorithm)
+a = dq + r
+
+The integers a and b are ____ if their gcd is 1.
+relatively prime
+
+____ = gcd(a,b)lcm(a,b) (Theorm 2.5)
+ab = gcd(a,b)lcm(a,b), where a & b are positive integers
+
+a ≡ b (mod m) IFF
+a mod m = b mod m
+
+a ≡ b (mod m) IFF there is an integer k s.th. a = ____ (Theorem 2.6)
+a = b + km
+
+If a ≡ b (mod m) and c ≡ d (mod m), then a + c  ≡ ____ (Theorem 2.7.1)
+a + c  ≡ b + d (mod m)
+
+If a ≡ b (mod m) and c ≡ d (mod m), then ac ≡ ____ (Theorem 2.7.2)
+ac ≡ bd (mod m)
+
+A ∨ B, where A & B are boolean matrices
+join
+
+A ∧ B, where A & B are boolean matrices
+meet
+
+A ⊙ B, where A & B are boolean matrices
+binary product
+
+p → (p ∨ q)
+addition
+
+(p ∧ q) → p
+simplification
+
+[p ∧ (p → q)] → q
+modus ponens
+law of detachment
+
+[¬q ∧ (p → q)] → ¬p
+modus tollens
+
+[(p → q) ∧ (q → r)] → (p → r)
+hypothetical syllogism
+
+[(p ∨ q) ∧ ¬p] → q
+disjunctive syllogism
+
+[(p → q) ∧ q] ↛ p
+fallacy of affirming the conclusion
+
+[(p → q) ∧ ¬p] ↛ ¬q
+fallacy of denying the hypothesis
+
+One or more steps of a proof are based on the truth of the statement being proved.
+fallacy of circular reasoning
+
+(p → q) ∧ (p ⇔ F)
+vacuous proof
+
+(p → q) ∧ (q ⇔ T)
+trivial proof
+
+p → q can be proved by showing that if p is true, q must also be true.
+direct proof
+
+p → q can be proved by showing that its contrapositive ¬q → ¬p is true.
+indirect proof
+
+If a contradiction q can be found s.th. ¬p → q is true, then p must be true.
+proof by contradiction
+
+If p ⇔ (p1 ∨ p2) and (p1 ∨ p2) → q, then p → q.
+proof by cases
+
+(p ↔ q) ↔ [(p → q) ∧ (q → p)]
+proof of equivalence
+
+Proving ∃x P(x) by finding a s.th. P(a) is true.
+constructive existence proof
+
+Proving ∃x P(x) without finding an example (such as by contradiction)
+nonconstructive existence proof
+
+An element x s.th. P(x) is false
+counterexample
+
+Every nonempty set of nonnegative integers has a least element.
+The Well-Ordering Property
+
+Induction: P(1) is shown to be true.
+basis step
+
+Induction: P(n) → P(n + 1) is shown to be true.
+inductive step
+
+[P(1) ∧ ∀n(P(n) → P(n + 1))] → ∀nP(n)
+mathematical induction
+
+[P(1) ∧ P(2) ∧ ... ∧ P(n -1)] → P(n)
+second principle of mathematical induction
+
+[p{S1}q ∧ q{S2}r ]→ p{S1;S2}r
+composition rule
+
+[(p ∧ condition){S}q ∧ ((p ∧ ¬condition) → q)] → p{if condition then S}q
+conditional rule
+
+[(p ∧ condition){S1}q ∧ (p ∧ ¬condition){S2}q] → p{if condition then S1 else S2}q
+conditional rule
+
+[(p ∧ condition){S}p] → p{while condition S}(¬condition ∧ p)
+loop invariant
+
+the study of the arrangement of objects
+combinatorics
+
+the counting of the arrangement of objects
+enumeration
+
+an ordered arrangement of the elements of a set
+permutation
+
+an ordered arrangement of r elements of a set
+r-permutation
+
+an unordered arrangement of r elements of a set
+r-combination
+
+the number of r-combinations of a set of n elements
+$${n \choose r}$$
+
+time complexity of consecutive loops
+Sum Rule
+
+time complexity of nested loops
+Product Rule
+
+when more than k objects are placed in k boxes
+Pigeonhole Principle
+
+when N objects are placed in k boxes there must be a box containing ____ objects
+$$\lceil N/k \rceil$$
+
+$$P(n,r) = \frac{n!}{(n - r)!}$$
+permutation formula (Theorem 4.3.1)
+
+$$C(n,r) = \frac{n!}{r!(n - r)!}$$
+combination formula (Theorem 4.3.2)
+
+C(n + 1,k) = C(n,k - 1) + C(n,k)
+Pascal's Identity
+
+$$(x + y)^n = \sum_{k=0}^{n} C(n,k)x^{n-k}y^k$$
+Binomial Theorem
+
+There are ____ r-permutations of a set with n elements when repetition is allowed.
+$$n^r$$
+
+There are ____ r-combinations of a set with n elements when repetition is allowed.
+$$C(n + r - 1, r) = \frac{(n + r - 1)!}{r!(n - r)!}$$
+
+$$\sum_{k=0}^{n} C(n,k) = \textrm{____ (Theorem 4.3.4)}$$
+$$2^n$$
+
+$$C(m + n,r) = \sum_{k=0}^{n} C(m,r - k)C(n,k)$$
+Vandermonde's Identity
+
+$$\sum_{k=0}^{n} (-1)^k C(n,k) = \textrm{____ (Theorem 4.3.7)}$$
+0
+
+p(E̅) = ____ (Theorem 4.4.1)
+p(E̅) = 1 - p(E)
+
+p(E₁ ⋃ E₂) = ____ (Theorem 4.4.2)
+p(E₁ ⋃ E₂) = p(E₁) + p(E₂) - p(E₁ ⋂ E₂)
+
+A sequence is uniquely determined by a ____ and ____.
+recurrence relation
+initial conditions
+
+$$a_n = c_1a_{n-1} + c_2a_{n-2} + \cdots + c_k a_{n-k}$$
+A linear homogeneous recurrence relation of degree k
+
+Compound interest is an LHRR of degree ____.
+1
+
+Fibonnacci numbers are an LHRR of degree ____.
+2
+
+$$a_n = a_{n-1} + a_{n-2}^2 \textrm{ is not an LHRR because}$$
+it is not linear.
+
+$$H_n = 2H_{n-1} + 1 \textrm{ is not an LHRR because}$$
+it is not homogeneous.
+
+$$B_n = nB_{n-1} \textrm{ is not an LHRR because}$$
+it does not have constant coefficients.
+
+Linear homogeneous recurrence relations are studied because ____ and ____.
+they occur frequently
+they can be systematically solved
+
+To solve linear homogeneous recurrence relations, look for solutions of the form
+$$a_n = r^n$$
+
+$$a_n = r^n\textrm{ is a solution to a linear homogeneous recurrence IFF}$$
+$$a_n = c_1r^{n-1} + c_2r^{n-2} + \cdots + c_k r^{n-k}$$
+
+$$\textrm{characteristic function of }a_n = c_1r^{n-1} + c_2r^{n-2} + \cdots + c_k r^{n-k}$$
+$$r^k - c_1r^{k-1} - c_2r^{k-2} - \cdots - c_{k-1}r - c_k = 0$$
+
+The solutions of a characteristic equation are the ____ of a recurrence relation.
+characteristic roots
+
+$$\textrm{LHRR: } a_n = c_1 a_{n-1} + c_2 a_{n-2}$$
+$$\{a_n\} \textrm{ is a solution to an LHRR of degree } 2$$
+
+$$\textrm{LHRR: } r^2 - c_1r - c_2 = 0$$
+LHRR of degree 2 with 2 roots: characteristic equation
+LHRR of degree 2 with 1 root: characteristic equation
+
+$$\textrm{LHRR: } a_n = \alpha_1 r_1^n + \alpha_2 r_2^2$$
+LHRR of degree 2 with 2 roots: closed form
+
+$$\textrm{LHRR: } a_n = \alpha_1 r_0^n + \alpha_2 nr_0^2$$
+LHRR of degree 2 with 1 root: closed form
+
+$$\textrm{LHRR: } a_n = c_1 a_{n-1} + c_2 a_{n-2} + \cdots + c_k a_{n-k}$$
+$$\{a_n\} \textrm{ is a solution to an LHRR of degree } k$$
+
+$$\textrm{LHRR: } r^k - c_1r^{k-1} - \cdots - c_k = 0$$
+LHRR of degree k with k roots: characteristic equation
+
+$$\textrm{LHRR: } a_n = \alpha_1 r_1^n + \alpha_2 r_2^2 + \cdots + \alpha_k r_k^n$$
+LHRR of degree k with k roots: closed form
+
+$$n^m - C(n,1)(n - 1)^m + C(n,2)(n - 2)^m - \cdots + (-1)^{n-1}C(n,n - 1)^m$$
+The number of onto functions from a set with m elements to a set with n elements.
+
+A permutation that leaves no object in its original position is a ____.
+derangement
+
+$$D_n = n!\left[1 - \frac{1}{1!} + \frac{1}{2!} - \frac{1}{3!} + \cdots + (-1)^n\frac{1}{n!}\right]$$
+the number of derangements of a set with n elements
+
+A binary relation from A to B is a subset of ____.
+A × B
+
+aRb denotes
+(a,b) ∈ R
+
+a̸Rb denotes
+(a,b) ∉ R
+
+A relation on the set A is a relation from ____ to ____.
+A
+A
+
+R is ____ if (a,a) ∈ R for every element a ∈ A.
+reflexive
+
+R is ____ if (b,a) ∈ R whenever (a,b) ∈ R, for a, b ∈ A.
+symmetric
+
+R is ____ if (a,b) ∈ R and (b,a) ∈ R only if a = b, for a, b ∈ A.
+antisymmetric

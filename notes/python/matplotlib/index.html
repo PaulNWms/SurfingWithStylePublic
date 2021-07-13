@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Surfing With Style">
+    <link rel="icon" href="http://surfingwithstyle.com//favicon.ico">
+    <title>MatPlotLib - Surfing With Style</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+        href="http://surfingwithstyle.com//css/highlight/github.css">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/theme.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/bootie-docs.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/site.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/math.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/mini-metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/calculator.css">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML"></script>
+</head>
+
+<body role="document">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="http://surfingwithstyle.com//">Surfing With Style</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tools
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/tools/timer/">Timer</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/calculator/">Calculator</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/old-english-letters/">Old English Letters</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Study
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/study/flashcards/">Flashcards</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Practice
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/practice/metronome/">Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome/">Scheduled Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/accelerating-metronome/">Accelerating Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome-presets/">Presets</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/chords/">Chords</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Notes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/notes/data-science/">Data Science</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/ms/">MS</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/python/">Python</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/designpatterns/">Design Patterns</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/git/">Git</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/solid/">SOLID</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/sql/">SQL</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Other ...</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="">Tools2</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Books</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                
+
+                
+
+
+                
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div class="container">
+
+<div class="row">
+	<div class="col-sm-offset-2 col-sm-8 doc-main">
+		<main role="main">
+			<article>
+				<a id="title"></a>
+				<h1 class="doc-entry-title">MatPlotLib</h1>
+				<div class="doc-entry-meta">
+					<span><time datetime="2020-06-18">June 18, 2020</time></span>
+				</div>
+				<section>
+					<h1 id="matplotlib--seaborn">Matplotlib &amp; seaborn</h1>
+<p>Links:<br>
+<a href="https://matplotlib.org/">Matplotlib</a><br>
+<a href="https://matplotlib.org/tutorials/colors/colormaps.html">Colormaps in Matplotlib</a><br>
+<a href="https://seaborn.pydata.org/tutorial/color_palettes.html">Choosing color palettes</a><br>
+<a href="https://eagereyes.org/basics/rainbow-color-map">How The Rainbow Color Map Misleads</a><br>
+<a href="https://agilescientific.com/blog/2017/12/14/no-more-rainbows">No more rainbows!</a><br>
+<a href="https://blog.datawrapper.de/how-to-choose-a-color-palette-for-choropleth-maps/">How to choose a color palette for choropleth maps</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
+<span style="color:#f92672">import</span> seaborn <span style="color:#f92672">as</span> sb
+<span style="color:#f92672">%</span>matplotlib inline
+
+<span style="color:#75715e"># inspect data</span>
+df<span style="color:#f92672">.</span>hist();
+sns<span style="color:#f92672">.</span>heatmap(df<span style="color:#f92672">.</span>corr(), annot<span style="color:#f92672">=</span>True, fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;.2f&#39;</span>);
+
+<span style="color:#75715e"># plot bars</span>
+plt<span style="color:#f92672">.</span>bar([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#ae81ff">224</span>, <span style="color:#ae81ff">620</span>, <span style="color:#ae81ff">425</span>])
+
+<span style="color:#75715e"># specify x coordinates of tick labels and their labels</span>
+plt<span style="color:#f92672">.</span>xticks([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;c&#39;</span>]);
+
+<span style="color:#75715e"># plot bars with x tick labels</span>
+plt<span style="color:#f92672">.</span>bar([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#ae81ff">224</span>, <span style="color:#ae81ff">620</span>, <span style="color:#ae81ff">425</span>], tick_label<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;c&#39;</span>])
+plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Some Title&#39;</span>)
+plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;Some X Label&#39;</span>)
+plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;Some Y Label&#39;</span>);
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">save_fig</span>(fig_id, tight_layout<span style="color:#f92672">=</span>True):
+    path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(PROJECT_ROOT_DIR, <span style="color:#e6db74">&#34;images&#34;</span>, CHAPTER_ID, fig_id <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;.png&#34;</span>)
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Saving figure&#34;</span>, fig_id)
+    <span style="color:#66d9ef">if</span> tight_layout:
+        plt<span style="color:#f92672">.</span>tight_layout()
+    plt<span style="color:#f92672">.</span>savefig(path, format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;png&#39;</span>, dpi<span style="color:#f92672">=</span><span style="color:#ae81ff">300</span>)
+
+housing<span style="color:#f92672">.</span>hist(bins<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>, figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">20</span>,<span style="color:#ae81ff">15</span>))
+save_fig(<span style="color:#e6db74">&#34;attribute_histogram_plots&#34;</span>)
+plt<span style="color:#f92672">.</span>show()
+
+country_stats<span style="color:#f92672">.</span>plot(kind<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;scatter&#39;</span>, x<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;GDP per capita&#34;</span>, y<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Life satisfaction&#39;</span>)
+
+<span style="color:#75715e"># plot histogram w/ lines on the confidence intervals</span>
+alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+lower, upper <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>percentile(means, alpha<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>), np<span style="color:#f92672">.</span>percentile(p_diffs, <span style="color:#ae81ff">100</span><span style="color:#f92672">-</span>alpha<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>)
+plt<span style="color:#f92672">.</span>hist(means);
+plt<span style="color:#f92672">.</span>axvline(x<span style="color:#f92672">=</span>lower, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;r&#39;</span>, linewidth<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>);
+plt<span style="color:#f92672">.</span>axvline(x<span style="color:#f92672">=</span>upper, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;r&#39;</span>, linewidth<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>);
+
+<span style="color:#75715e"># visually check for collinearity between variables</span>
+sb<span style="color:#f92672">.</span>pairplot(df[[<span style="color:#e6db74">&#39;area&#39;</span>, <span style="color:#e6db74">&#39;bedrooms&#39;</span>, <span style="color:#e6db74">&#39;bathrooms&#39;</span>]])
+
+<span style="color:#75715e"># basic bar chart</span>
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+sb<span style="color:#f92672">.</span>countplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>, color <span style="color:#f92672">=</span> base_color)
+
+<span style="color:#75715e"># bar chart with sorted x-axis</span>
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+cat_order <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;cat_var&#39;</span>]<span style="color:#f92672">.</span>value_counts()<span style="color:#f92672">.</span>index
+sb<span style="color:#f92672">.</span>countplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>, color <span style="color:#f92672">=</span> base_color, order <span style="color:#f92672">=</span> cat_order)
+
+<span style="color:#75715e"># horizontal bar chart</span>
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+sb<span style="color:#f92672">.</span>countplot(data <span style="color:#f92672">=</span> df, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>, color <span style="color:#f92672">=</span> base_color)
+
+<span style="color:#75715e"># vertical bars with rotated labels</span>
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+sb<span style="color:#f92672">.</span>countplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>, color <span style="color:#f92672">=</span> base_color)
+plt<span style="color:#f92672">.</span>xticks(rotation <span style="color:#f92672">=</span> <span style="color:#ae81ff">90</span>)
+
+<span style="color:#75715e"># proportional bar chart</span>
+<span style="color:#75715e"># get proportion taken by most common group for derivation</span>
+<span style="color:#75715e"># of tick marks</span>
+n_points <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>]
+max_count <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;cat_var&#39;</span>]<span style="color:#f92672">.</span>value_counts()<span style="color:#f92672">.</span>max()
+max_prop <span style="color:#f92672">=</span> max_count <span style="color:#f92672">/</span> n_points
+<span style="color:#75715e"># generate tick mark locations and names</span>
+tick_props <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0</span>, max_prop, <span style="color:#ae81ff">0.05</span>)
+tick_names <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;{:0.2f}&#39;</span><span style="color:#f92672">.</span>format(v) <span style="color:#66d9ef">for</span> v <span style="color:#f92672">in</span> tick_props]
+<span style="color:#75715e"># create the plot</span>
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+sb<span style="color:#f92672">.</span>countplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>, color <span style="color:#f92672">=</span> base_color)
+plt<span style="color:#f92672">.</span>yticks(tick_props <span style="color:#f92672">*</span> n_points, tick_names)
+plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;proportion&#39;</span>)
+
+<span style="color:#75715e"># plot counts of missing data</span>
+na_counts <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>isna()<span style="color:#f92672">.</span>sum()
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+sb<span style="color:#f92672">.</span>barplot(na_counts<span style="color:#f92672">.</span>index<span style="color:#f92672">.</span>values, na_counts, color <span style="color:#f92672">=</span> base_color)
+
+<span style="color:#75715e"># pie chart</span>
+sorted_counts <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;cat_var&#39;</span>]<span style="color:#f92672">.</span>value_counts()
+plt<span style="color:#f92672">.</span>pie(sorted_counts, labels <span style="color:#f92672">=</span> sorted_counts<span style="color:#f92672">.</span>index, startangle <span style="color:#f92672">=</span> <span style="color:#ae81ff">90</span>,
+        counterclock <span style="color:#f92672">=</span> False);
+plt<span style="color:#f92672">.</span>axis(<span style="color:#e6db74">&#39;square&#39;</span>)
+
+<span style="color:#75715e"># doughnut plot</span>
+sorted_counts <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;cat_var&#39;</span>]<span style="color:#f92672">.</span>value_counts()
+plt<span style="color:#f92672">.</span>pie(sorted_counts, labels <span style="color:#f92672">=</span> sorted_counts<span style="color:#f92672">.</span>index, startangle <span style="color:#f92672">=</span> <span style="color:#ae81ff">90</span>,
+        counterclock <span style="color:#f92672">=</span> False, wedgeprops <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;width&#39;</span> : <span style="color:#ae81ff">0.4</span>});
+plt<span style="color:#f92672">.</span>axis(<span style="color:#e6db74">&#39;square&#39;</span>)
+
+<span style="color:#75715e"># histogram with explicit bin edges</span>
+width <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+bin_edges <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0</span>, df[<span style="color:#e6db74">&#39;num_var&#39;</span>]<span style="color:#f92672">.</span>max()<span style="color:#f92672">+</span>width, width)
+plt<span style="color:#f92672">.</span>hist(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var&#39;</span>, bins <span style="color:#f92672">=</span> bin_edges)
+
+<span style="color:#75715e"># similar, but with distribution plot</span>
+width <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+bin_edges <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0</span>, df[<span style="color:#e6db74">&#39;num_var&#39;</span>]<span style="color:#f92672">.</span>max()<span style="color:#f92672">+</span>width, width)
+sb<span style="color:#f92672">.</span>distplot(df[<span style="color:#e6db74">&#39;num_var&#39;</span>], bins <span style="color:#f92672">=</span> bin_edges)
+
+<span style="color:#75715e"># subplot functions</span>
+plt<span style="color:#f92672">.</span>subplot()
+plt<span style="color:#f92672">.</span>subplots()
+ax <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>gca()
+<span style="color:#75715e"># or</span>
+fig <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>figure()
+fig<span style="color:#f92672">.</span>add_subplot()
+axes <span style="color:#f92672">=</span> fig<span style="color:#f92672">.</span>get_axes()
+
+<span style="color:#75715e"># Get current size</span>
+fig_size <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>rcParams[<span style="color:#e6db74">&#34;figure.figsize&#34;</span>]
+<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Current size:&#34;</span>, fig_size)
+fig_size[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>
+fig_size[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>
+plt<span style="color:#f92672">.</span>rcParams[<span style="color:#e6db74">&#34;figure.figsize&#34;</span>] <span style="color:#f92672">=</span> fig_size
+
+<span style="color:#75715e"># histogram for discrete data</span>
+width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+bin_edges <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">1.5</span>, <span style="color:#ae81ff">12.5</span><span style="color:#f92672">+</span>width, width)
+plt<span style="color:#f92672">.</span>hist(die_rolls, bins <span style="color:#f92672">=</span> bin_edges, rwidth <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.7</span>)
+plt<span style="color:#f92672">.</span>xticks(np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">12</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>))
+
+<span style="color:#75715e"># limit histogram domain with xlim</span>
+width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+bin_edges <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">35</span><span style="color:#f92672">+</span>width, width)
+plt<span style="color:#f92672">.</span>hist(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;skew_var&#39;</span>, bins <span style="color:#f92672">=</span> bin_edges)
+plt<span style="color:#f92672">.</span>xlim(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">35</span>) <span style="color:#75715e"># could also be called as plt.xlim((0, 35))</span>
+
+<span style="color:#75715e"># histogram with log transform</span>
+width <span style="color:#f92672">=</span> <span style="color:#f92672">.</span><span style="color:#ae81ff">1</span>
+bin_edges <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">**</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0.8</span>, np<span style="color:#f92672">.</span>log10(ln_data<span style="color:#f92672">.</span>max())<span style="color:#f92672">+</span>width, width)
+plt<span style="color:#f92672">.</span>hist(ln_data, bins <span style="color:#f92672">=</span> bin_edges)
+plt<span style="color:#f92672">.</span>xscale(<span style="color:#e6db74">&#39;log&#39;</span>)
+tick_locs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">300</span>, <span style="color:#ae81ff">1000</span>, <span style="color:#ae81ff">3000</span>]
+plt<span style="color:#f92672">.</span>xticks(tick_locs, tick_locs)
+
+<span style="color:#75715e"># scatter plot</span>
+plt<span style="color:#f92672">.</span>scatter(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var1&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var2&#39;</span>)
+sb<span style="color:#f92672">.</span>regplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var1&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var2&#39;</span>)
+
+<span style="color:#75715e"># scatter plot with log scale on the y axis</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">log_trans</span>(x, inverse <span style="color:#f92672">=</span> False):
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> inverse:
+        <span style="color:#66d9ef">return</span> np<span style="color:#f92672">.</span>log10(x)
+    <span style="color:#66d9ef">else</span>:
+        <span style="color:#66d9ef">return</span> np<span style="color:#f92672">.</span>power(<span style="color:#ae81ff">10</span>, x)
+sb<span style="color:#f92672">.</span>regplot(df[<span style="color:#e6db74">&#39;num_var1&#39;</span>], df[<span style="color:#e6db74">&#39;num_var2&#39;</span>]<span style="color:#f92672">.</span>apply(log_trans))
+tick_locs <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">500</span>]
+plt<span style="color:#f92672">.</span>yticks(log_trans(tick_locs), tick_locs)
+
+<span style="color:#75715e"># overplotting - transparency</span>
+plt<span style="color:#f92672">.</span>scatter(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;disc_var1&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;disc_var2&#39;</span>, alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">5</span>)
+
+<span style="color:#75715e"># overplotting - transparency and jitter</span>
+sb<span style="color:#f92672">.</span>regplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;disc_var1&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;disc_var2&#39;</span>, fit_reg <span style="color:#f92672">=</span> False,
+           x_jitter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>, y_jitter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>, scatter_kws <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;alpha&#39;</span> : <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">3</span>})
+
+<span style="color:#75715e"># heat map</span>
+width <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+height <span style="color:#f92672">=</span> <span style="color:#ae81ff">50</span>
+bins_x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">10.5</span><span style="color:#f92672">+</span>width,width)
+bins_y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#f92672">-</span><span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">10.5</span><span style="color:#f92672">+</span>height,height)
+plt<span style="color:#f92672">.</span>hist2d(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;disc_var1&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;disc_var2&#39;</span>,
+           bins <span style="color:#f92672">=</span> [bins_x, bins_y], cmap <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;viridis_r&#39;</span>, cmin <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>)
+plt<span style="color:#f92672">.</span>colorbar();
+
+<span style="color:#75715e"># in case you want to add counts to the above heat map, use plt.txt()</span>
+<span style="color:#75715e"># loop through the cell counts and add text annotations for each</span>
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(counts<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>]):
+    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(counts<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">1</span>]):
+        c <span style="color:#f92672">=</span> counts[i,j]
+        <span style="color:#66d9ef">if</span> c <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">7</span>: <span style="color:#75715e"># increase visibility on darkest cells</span>
+            plt<span style="color:#f92672">.</span>text(bins_x[i]<span style="color:#f92672">+</span><span style="color:#ae81ff">0.5</span>, bins_y[j]<span style="color:#f92672">+</span><span style="color:#ae81ff">0.5</span>, int(c),
+                     ha <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;center&#39;</span>, va <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;center&#39;</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;white&#39;</span>)
+        <span style="color:#66d9ef">elif</span> c <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+            plt<span style="color:#f92672">.</span>text(bins_x[i]<span style="color:#f92672">+</span><span style="color:#ae81ff">0.5</span>, bins_y[j]<span style="color:#f92672">+</span><span style="color:#ae81ff">0.5</span>, int(c),
+                     ha <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;center&#39;</span>, va <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;center&#39;</span>, color <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;black&#39;</span>)
+
+<span style="color:#75715e"># violin plot</span>
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+sb<span style="color:#f92672">.</span>violinplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var&#39;</span>, color <span style="color:#f92672">=</span> base_color,
+              inner <span style="color:#f92672">=</span> None)
+
+<span style="color:#75715e"># violin plot showing quartile</span>
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+sb<span style="color:#f92672">.</span>violinplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var&#39;</span>, color <span style="color:#f92672">=</span> base_color,
+              inner <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;quartile&#39;</span>)
+
+<span style="color:#75715e"># horizontal violin plot</span>
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+sb<span style="color:#f92672">.</span>violinplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>, color <span style="color:#f92672">=</span> base_color,
+              inner <span style="color:#f92672">=</span> None)
+
+<span style="color:#75715e"># box plot - similar to violin plot</span>
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+sb<span style="color:#f92672">.</span>boxplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var&#39;</span>, color <span style="color:#f92672">=</span> base_color))
+
+<span style="color:#75715e"># clustered bar chart</span>
+ax <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>countplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var1&#39;</span>, hue <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var2&#39;</span>)
+<span style="color:#75715e"># optional: reposition the legend</span>
+ax<span style="color:#f92672">.</span>legend(loc <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>, ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, framealpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var2&#39;</span>)
+
+<span style="color:#75715e"># a heatmap showing the same data requires creating a new DataFrame</span>
+ct_counts <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>groupby([<span style="color:#e6db74">&#39;cat_var1&#39;</span>, <span style="color:#e6db74">&#39;cat_var2&#39;</span>])<span style="color:#f92672">.</span>size()
+ct_counts <span style="color:#f92672">=</span> ct_counts<span style="color:#f92672">.</span>reset_index(name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;count&#39;</span>)
+ct_counts <span style="color:#f92672">=</span> ct_counts<span style="color:#f92672">.</span>pivot(index <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var2&#39;</span>, columns <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var1&#39;</span>, values <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;count&#39;</span>)
+sb<span style="color:#f92672">.</span>heatmap(ct_counts, annot <span style="color:#f92672">=</span> True, fmt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;d&#39;</span>)
+
+<span style="color:#75715e"># faceting - plot multiple histograms faceted by a categorical variable</span>
+g <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>FacetGrid(data <span style="color:#f92672">=</span> df, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>)
+g<span style="color:#f92672">.</span>map(plt<span style="color:#f92672">.</span>hist, <span style="color:#e6db74">&#34;num_var&#34;</span>)
+
+<span style="color:#75715e"># faceting - similar, but forcing the same bin edges for a better comparison</span>
+width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">3</span>
+bin_edges <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#f92672">-</span><span style="color:#ae81ff">3</span>, df[<span style="color:#e6db74">&#39;num_var&#39;</span>]<span style="color:#f92672">.</span>max()<span style="color:#f92672">+</span>width, width)
+g <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>FacetGrid(data <span style="color:#f92672">=</span> df, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>)
+g<span style="color:#f92672">.</span>map(plt<span style="color:#f92672">.</span>hist, <span style="color:#e6db74">&#34;num_var&#34;</span>, bins <span style="color:#f92672">=</span> bin_edges)
+
+<span style="color:#75715e"># faceting - sorting and wrapping</span>
+group_means <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>groupby([<span style="color:#e6db74">&#39;many_cat_var&#39;</span>])<span style="color:#f92672">.</span>mean()
+group_order <span style="color:#f92672">=</span> group_means<span style="color:#f92672">.</span>sort_values([<span style="color:#e6db74">&#39;num_var&#39;</span>], ascending <span style="color:#f92672">=</span> False)<span style="color:#f92672">.</span>index
+g <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>FacetGrid(data <span style="color:#f92672">=</span> df, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;many_cat_var&#39;</span>, col_wrap <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>,
+                 col_order <span style="color:#f92672">=</span> group_order)
+g<span style="color:#f92672">.</span>map(plt<span style="color:#f92672">.</span>hist, <span style="color:#e6db74">&#39;num_var&#39;</span>, bins <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">15</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>))
+g<span style="color:#f92672">.</span>set_titles(<span style="color:#e6db74">&#39;{col_name}&#39;</span>)
+
+<span style="color:#75715e"># bar plot</span>
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+sb<span style="color:#f92672">.</span>barplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var&#39;</span>, color <span style="color:#f92672">=</span> base_color)
+
+<span style="color:#75715e"># point plot</span>
+sb<span style="color:#f92672">.</span>pointplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var&#39;</span>, linestyles <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
+
+<span style="color:#75715e"># line plot with error bars</span>
+<span style="color:#75715e"># set bin edges, compute centers</span>
+width <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">4</span>
+xbin_edges <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0.5</span>, df[<span style="color:#e6db74">&#39;num_var1&#39;</span>]<span style="color:#f92672">.</span>max()<span style="color:#f92672">+</span>width, width)
+xbin_centers <span style="color:#f92672">=</span> (xbin_edges <span style="color:#f92672">+</span> width<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>)[:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+<span style="color:#75715e"># compute statistics in each bin</span>
+data_xbins <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>cut(df[<span style="color:#e6db74">&#39;num_var1&#39;</span>], xbin_edges, right <span style="color:#f92672">=</span> False, include_lowest <span style="color:#f92672">=</span> True)
+y_means <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;num_var2&#39;</span>]<span style="color:#f92672">.</span>groupby(data_xbins)<span style="color:#f92672">.</span>mean()
+y_sems <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;num_var2&#39;</span>]<span style="color:#f92672">.</span>groupby(data_xbins)<span style="color:#f92672">.</span>sem()
+<span style="color:#75715e"># plot the summarized data</span>
+plt<span style="color:#f92672">.</span>errorbar(x <span style="color:#f92672">=</span> xbin_centers, y <span style="color:#f92672">=</span> y_means, yerr <span style="color:#f92672">=</span> y_sems)
+
+<span style="color:#75715e"># swarm plot</span>
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+sb<span style="color:#f92672">.</span>swarmplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var&#39;</span>, color <span style="color:#f92672">=</span> base_color)
+
+<span style="color:#75715e"># rug plot</span>
+g <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>JointGrid(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var1&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var2&#39;</span>)
+g<span style="color:#f92672">.</span>plot_joint(plt<span style="color:#f92672">.</span>scatter)
+g<span style="color:#f92672">.</span>plot_marginals(sb<span style="color:#f92672">.</span>rugplot, height <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.25</span>)
+
+<span style="color:#75715e"># strip plot</span>
+plt<span style="color:#f92672">.</span>figure(figsize <span style="color:#f92672">=</span> [<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">5</span>])
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+<span style="color:#75715e"># left plot: strip plot</span>
+plt<span style="color:#f92672">.</span>subplot(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>)
+ax1 <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>stripplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>,
+                   color <span style="color:#f92672">=</span> base_color)
+<span style="color:#75715e"># right plot: violin plot with inner strip plot as lines</span>
+plt<span style="color:#f92672">.</span>subplot(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">2</span>)
+sb<span style="color:#f92672">.</span>violinplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var&#39;</span>, color <span style="color:#f92672">=</span> base_color,
+             inner <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;stick&#39;</span>)
+
+<span style="color:#75715e"># encoding a third variable by shape</span>
+cat_markers <span style="color:#f92672">=</span> [[<span style="color:#e6db74">&#39;A&#39;</span>, <span style="color:#e6db74">&#39;o&#39;</span>],
+               [<span style="color:#e6db74">&#39;B&#39;</span>, <span style="color:#e6db74">&#39;s&#39;</span>]]
+<span style="color:#66d9ef">for</span> cat, marker <span style="color:#f92672">in</span> cat_markers:
+    df_cat <span style="color:#f92672">=</span> df[df[<span style="color:#e6db74">&#39;cat_var1&#39;</span>] <span style="color:#f92672">==</span> cat]
+    plt<span style="color:#f92672">.</span>scatter(data <span style="color:#f92672">=</span> df_cat, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var1&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var2&#39;</span>, marker <span style="color:#f92672">=</span> marker)
+plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#39;A&#39;</span>,<span style="color:#e6db74">&#39;B&#39;</span>])
+
+<span style="color:#75715e"># encoding a third variable by size</span>
+plt<span style="color:#f92672">.</span>scatter(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var1&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var2&#39;</span>, s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var3&#39;</span>)
+<span style="color:#75715e"># dummy series for adding legend</span>
+sizes <span style="color:#f92672">=</span> [<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">50</span>]
+base_color <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>color_palette()[<span style="color:#ae81ff">0</span>]
+legend_obj <span style="color:#f92672">=</span> []
+<span style="color:#66d9ef">for</span> s <span style="color:#f92672">in</span> sizes:
+    legend_obj<span style="color:#f92672">.</span>append(plt<span style="color:#f92672">.</span>scatter([], [], s <span style="color:#f92672">=</span> s, color <span style="color:#f92672">=</span> base_color))
+plt<span style="color:#f92672">.</span>legend(legend_obj, sizes)
+
+<span style="color:#75715e"># two-color scatter plot</span>
+g <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>FacetGrid(data <span style="color:#f92672">=</span> df, hue <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var1&#39;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>)
+g<span style="color:#f92672">.</span>map(plt<span style="color:#f92672">.</span>scatter, <span style="color:#e6db74">&#39;num_var1&#39;</span>, <span style="color:#e6db74">&#39;num_var2&#39;</span>)
+g<span style="color:#f92672">.</span>add_legend()
+
+<span style="color:#75715e"># multicolor scatter plot</span>
+plt<span style="color:#f92672">.</span>scatter(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var1&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var2&#39;</span>, c <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var3&#39;</span>)
+plt<span style="color:#f92672">.</span>colorbar()
+
+<span style="color:#75715e"># color palettes</span>
+<span style="color:#75715e"># qualatative palette for nominal-type data</span>
+sb<span style="color:#f92672">.</span>palplot(sb<span style="color:#f92672">.</span>color_palette(n_colors<span style="color:#f92672">=</span><span style="color:#ae81ff">9</span>))
+<span style="color:#75715e"># sequential palette for ordinal or numeric data</span>
+sb<span style="color:#f92672">.</span>palplot(sb<span style="color:#f92672">.</span>color_palette(<span style="color:#e6db74">&#39;viridis&#39;</span>, <span style="color:#ae81ff">9</span>))
+<span style="color:#75715e"># diverging palette for ordinal or numeric data with meaningful zero or center value</span>
+sb<span style="color:#f92672">.</span>palplot(sb<span style="color:#f92672">.</span>color_palette(<span style="color:#e6db74">&#39;vlag&#39;</span>, <span style="color:#ae81ff">9</span>))
+</code></pre></div><p>Qualitative (all up to 6 colors): &lsquo;deep&rsquo;, &lsquo;pastel&rsquo;, &lsquo;dark&rsquo;, &lsquo;muted&rsquo;, &lsquo;bright&rsquo;, &lsquo;colorblind&rsquo;<br>
+Sequential: &lsquo;rocket&rsquo; (white-orange-red-purple-black), &lsquo;mako&rsquo; (mint-green-blue-purple-black)<br>
+Diverging: &lsquo;vlag&rsquo; (blue-white-red), &lsquo;icefire&rsquo; (blue-black-orange)
+For all of these strings, appending &lsquo;_r&rsquo; reverses the palette</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># faceted boxplot</span>
+g <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>FacetGrid(data <span style="color:#f92672">=</span> df, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var1&#39;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>)
+g<span style="color:#f92672">.</span>map(sb<span style="color:#f92672">.</span>boxplot, <span style="color:#e6db74">&#39;cat_var2&#39;</span>, <span style="color:#e6db74">&#39;num_var2&#39;</span>)
+
+<span style="color:#75715e"># faceted scatter plot</span>
+g <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>FacetGrid(data <span style="color:#f92672">=</span> df, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var2&#39;</span>, row <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var1&#39;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.5</span>,
+                margin_titles <span style="color:#f92672">=</span> True)
+g<span style="color:#f92672">.</span>map(plt<span style="color:#f92672">.</span>scatter, <span style="color:#e6db74">&#39;num_var1&#39;</span>, <span style="color:#e6db74">&#39;num_var2&#39;</span>)
+
+<span style="color:#75715e"># clustered bar chart</span>
+ax <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>barplot(data <span style="color:#f92672">=</span> df, x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var1&#39;</span>, y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;num_var2&#39;</span>, hue <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var2&#39;</span>)
+ax<span style="color:#f92672">.</span>legend(loc <span style="color:#f92672">=</span> <span style="color:#ae81ff">8</span>, ncol <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, framealpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var2&#39;</span>)
+
+<span style="color:#75715e"># multiple line plot</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mean_poly</span>(x, y, bins <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, <span style="color:#f92672">**</span>kwargs):
+    <span style="color:#e6db74">&#34;&#34;&#34; Custom adapted line plot code. &#34;&#34;&#34;</span>
+    <span style="color:#75715e"># set bin edges if none or int specified</span>
+    <span style="color:#66d9ef">if</span> type(bins) <span style="color:#f92672">==</span> int:
+        bins <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(x<span style="color:#f92672">.</span>min(), x<span style="color:#f92672">.</span>max(), bins<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)
+    bin_centers <span style="color:#f92672">=</span> (bin_edges[<span style="color:#ae81ff">1</span>:] <span style="color:#f92672">+</span> bin_edges[:<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
+    <span style="color:#75715e"># compute counts</span>
+    data_bins <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>cut(x, bins, right <span style="color:#f92672">=</span> False,
+                       include_lowest <span style="color:#f92672">=</span> True)
+    means <span style="color:#f92672">=</span> y<span style="color:#f92672">.</span>groupby(data_bins)<span style="color:#f92672">.</span>mean()
+    <span style="color:#75715e"># create plot</span>
+    plt<span style="color:#f92672">.</span>errorbar(x <span style="color:#f92672">=</span> bin_centers, y <span style="color:#f92672">=</span> means, <span style="color:#f92672">**</span>kwargs)
+width <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>
+bin_edges <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(<span style="color:#ae81ff">0.25</span>, df[<span style="color:#e6db74">&#39;num_var1&#39;</span>]<span style="color:#f92672">.</span>max()<span style="color:#f92672">+</span>width, width)
+g <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>FacetGrid(data <span style="color:#f92672">=</span> df, hue <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cat_var2&#39;</span>, size <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>)
+g<span style="color:#f92672">.</span>map(mean_poly, <span style="color:#e6db74">&#34;num_var1&#34;</span>, <span style="color:#e6db74">&#34;num_var2&#34;</span>, bins <span style="color:#f92672">=</span> bin_edges)
+g<span style="color:#f92672">.</span>set_ylabels(<span style="color:#e6db74">&#39;mean(num_var2)&#39;</span>)
+g<span style="color:#f92672">.</span>add_legend()
+
+<span style="color:#75715e"># plot matrix</span>
+g <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>PairGrid(data <span style="color:#f92672">=</span> df, vars <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;num_var1&#39;</span>, <span style="color:#e6db74">&#39;num_var2&#39;</span>, <span style="color:#e6db74">&#39;num_var3&#39;</span>])
+g<span style="color:#f92672">.</span>map_diag(plt<span style="color:#f92672">.</span>hist)
+g<span style="color:#f92672">.</span>map_offdiag(plt<span style="color:#f92672">.</span>scatter)
+
+<span style="color:#75715e"># pair plot</span>
+g <span style="color:#f92672">=</span> sb<span style="color:#f92672">.</span>PairGrid(data <span style="color:#f92672">=</span> df, x_vars <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;num_var1&#39;</span>, <span style="color:#e6db74">&#39;num_var2&#39;</span>, <span style="color:#e6db74">&#39;num_var3&#39;</span>],
+                y_vars <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;cat_var1&#39;</span>,<span style="color:#e6db74">&#39;cat_var2&#39;</span>])
+g<span style="color:#f92672">.</span>map(sb<span style="color:#f92672">.</span>violinplot, inner <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;quartile&#39;</span>)
+
+<span style="color:#75715e"># heatmap of correlation matrix</span>
+sb<span style="color:#f92672">.</span>heatmap(df<span style="color:#f92672">.</span>corr(), annot <span style="color:#f92672">=</span> True, fmt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;.2f&#39;</span>, cmap <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;vlag_r&#39;</span>, center <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+</code></pre></div><p>Another way that you can perform feature engineering is to use the cut function to divide a numeric variable into ordered bins.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># plot dendograms</span>
+<span style="color:#f92672">from</span> scipy.cluster.hierarchy <span style="color:#f92672">import</span> dendogram, ward, single
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> datasets
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
+X <span style="color:#f92672">=</span> datasets<span style="color:#f92672">.</span>load_iris()<span style="color:#f92672">.</span>data[:<span style="color:#ae81ff">10</span>]
+linkage_matrix <span style="color:#f92672">=</span> ward(X)
+dendogram(linkage_matrix)
+plt<span style="color:#f92672">.</span>show()
+
+<span style="color:#75715e"># plot fancy dendogram</span>
+<span style="color:#f92672">import</span> seaborn <span style="color:#f92672">as</span> sns
+sns<span style="color:#f92672">.</span>clustermap(normalized_X, figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">12</span>,<span style="color:#ae81ff">18</span>), method<span style="color:#f92672">=</span>linkage_type, cmap<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;viridis&#39;</span>)
+plt<span style="color:#f92672">.</span>show()
+</code></pre></div>
+				</section>
+			</article>
+		</main>
+	</div> 
+
+	
+
+</div> 
+
+
+
+
+</div> 
+
+<footer class="doc-footer">
+	
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+<script src="http://surfingwithstyle.com//js/bootie-docs.js"></script>
+
+</body>
+</html>

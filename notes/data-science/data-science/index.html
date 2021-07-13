@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Surfing With Style">
+    <link rel="icon" href="http://surfingwithstyle.com//favicon.ico">
+    <title>Data Science - Surfing With Style</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+        href="http://surfingwithstyle.com//css/highlight/github.css">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/theme.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/bootie-docs.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/site.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/math.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/mini-metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/calculator.css">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML"></script>
+</head>
+
+<body role="document">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="http://surfingwithstyle.com//">Surfing With Style</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tools
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/tools/timer/">Timer</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/calculator/">Calculator</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/old-english-letters/">Old English Letters</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Study
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/study/flashcards/">Flashcards</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Practice
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/practice/metronome/">Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome/">Scheduled Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/accelerating-metronome/">Accelerating Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome-presets/">Presets</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/chords/">Chords</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Notes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/notes/data-science/">Data Science</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/ms/">MS</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/python/">Python</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/designpatterns/">Design Patterns</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/git/">Git</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/solid/">SOLID</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/sql/">SQL</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Other ...</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="">Tools2</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Books</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                
+
+                
+
+
+                
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div class="container">
+
+<div class="row">
+	<div class="col-sm-offset-2 col-sm-8 doc-main">
+		<main role="main">
+			<article>
+				<a id="title"></a>
+				<h1 class="doc-entry-title">Data Science</h1>
+				<div class="doc-entry-meta">
+					<span><time datetime="2020-06-17">June 17, 2020</time></span>
+				</div>
+				<section>
+					<p>Links:<br>
+<a href="http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/">A Kaggle Master Explains Gradient Boosting</a><br>
+<a href="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=83C3BD5E078B1444CB26E243975507E1?doi=10.1.1.707.9034&amp;rep=rep1&amp;type=pdf">Density-Based Clustering Validation</a><br>
+<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.117.338&amp;rep=rep1&amp;type=pdf">Speaker Verification Using Adapted Gaussian Mixture Models</a><br>
+<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.322.679&amp;rep=rep1&amp;type=pdf">Independent component analysis: algorithms and applications</a><br>
+<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.681.3152&amp;rep=rep1&amp;type=pdf">Nonparametric discovery of human routines from sensor data</a><br>
+<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.76.8124&amp;rep=rep1&amp;type=pdf">Random projection in dimensionality reduction: Applications to image and text data</a><br>
+<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.853.2380&amp;rep=rep1&amp;type=pdf">Dynamic Principal Component Analysis  in Multivariate Time-Series Segmentation</a><br>
+<a href="http://cs229.stanford.edu/notes/cs229-notes3.pdf">SVMs - Stanford&rsquo;s CS229 Lecture notes</a><br>
+<a href="http://engineering.pivotal.io/post/test-driven-development-for-data-science/">TDD for Data Science</a><br>
+<a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029847">Using Hierarchical Clustering of Secreted Protein Families to Classify and Rank Candidate Effectors of Rust Fungi</a><br>
+<a href="http://papers.nips.cc/paper/1091-independent-component-analysis-of-electroencephalographic-data.pdf">Independent Component Analysis of Electroencephalographic Data</a><br>
+<a href="http://rob.schapire.net/papers/explaining-adaboost.pdf">Explaining AdaBoost</a><br>
+<a href="http://www.ai.mit.edu/projects/vsam/Publications/stauffer_cvpr98_track.pdf">Adaptive background mixture models for real-time tracking</a><br>
+<a href="http://www.cs.otago.ac.nz/cosc453/student_tutorials/principal_components.pdf">A tutorial on Principal Components Analysis</a><br>
+<a href="https://arxiv.org/abs/1205.6221">Application of the Gaussian mixture model in pulsar astronomy</a><br>
+<a href="https://arxiv.org/pdf/1801.01571.pdf">Robust PCA for Anomaly Detection in Cyber Networks</a><br>
+<a href="https://chrisalbon.com/">Technical Notes On Using Data Science &amp; Artificial Intelligence</a><br>
+<a href="https://cseweb.ucsd.edu/~yfreund/papers/IntroToBoosting.pdf">A Short Introduction to Boosting</a><br>
+<a href="https://db-engines.com/en/ranking">DB-Engines Ranking</a><br>
+<a href="https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff">Bias and Variance</a><br>
+<a href="https://en.wikipedia.org/wiki/Support_vector_machine">Support Vector Machines</a><br>
+<a href="https://github.com/lyst/MakingLyst/tree/master/code-reviews">Code Review</a><br>
+<a href="https://hackernoon.com/the-ai-hierarchy-of-needs-18f111fcc007">The AI Hierarchy of Needs</a><br>
+<a href="https://ieeexplore.ieee.org/abstract/document/5946052/">Anomaly detection in temperature data using dbscan algorithm</a><br>
+<a href="https://medium.com/%40karijdempsey/test-driven-development-is-essential-for-good-data-science-heres-why-db7975a03a44">TDD is Essential for Good Data Science Here&rsquo;s Why</a><br>
+<a href="https://medium.com/@@karpathy/yes-you-should-understand-backprop-e2f06eab496b">Yes, you should understand backprop</a><br>
+<a href="https://mubaris.com/posts/kmeans-clustering/">K-Means Clustering in Python</a><br>
+<a href="https://pages.cpsc.ucalgary.ca/~mahanti/papers/clustering.pdf">Traffic Classification Using Clustering Algorithms</a><br>
+<a href="https://papers.nips.cc/paper/3901-random-projections-for-k-means-clustering.pdf">Random Projections for k-means Clustering</a><br>
+<a href="https://pdfs.semanticscholar.org/a34b/e08a20eba7523600203a32abb026a8dd85a3.pdf">Applying Independent Component Analysis to Factor Model in Finance</a><br>
+<a href="https://people.cs.pitt.edu/~milos/courses/cs2750/Readings/boosting.pdf">Experiments with a New Boosting Algorithm</a><br>
+<a href="https://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py">Faces recognition example using eigenfaces and SVMs</a><br>
+<a href="https://sebastianraschka.com/Articles/2015_pca_in_3_steps.html">https://sebastianraschka.com/Articles/2015_pca_in_3_steps.html</a><br>
+<a href="https://www.kevinlondon.com/2015/05/05/code-review-best-practices.html">Code Review Best Practices</a><br>
+<a href="https://www.linkedin.com/pulse/data-science-test-driven-development-sam-savage/">Data Science TDD</a><br>
+<a href="https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/">Visualizing DBSCAN Clustering</a><br>
+<a href="https://www.naftaliharris.com/blog/visualizing-k-means-clustering/">Visualizing K-Means Clustering</a><br>
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2669932/">PRINCIPAL COMPONENTS ANALYSIS TO SUMMARIZE MICROARRAY EXPERIMENTS: APPLICATION TO SPORULATION TIME SERIES</a><br>
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/21129376">Association between composition of the human gastrointestinal microbiome and development of fatty liver with choline deficiency.</a><br>
+<a href="https://www.predictiveanalyticsworld.com/patimes/four-ways-data-science-goes-wrong-and-how-test-driven-data-analysis-can-help/6947/">Four Ways Data Science Goes Wrong and How Test Driven Data Analysis Can Help</a><br>
+<a href="https://www.predictiveanalyticsworld.com/patimes/four-ways-data-science-goes-wrong-and-how-test-driven-data-analysis-can-help/6947/">Four Ways Data Science Goes Wrong and How Test-Driven Data Analysis Can Help</a><br>
+<a href="https://www.quora.com/What-is-an-intuitive-explanation-of-Gradient-Boosting">What is an intuitive explanation of Gradient Boosting?</a><br>
+<a href="https://www.youtube.com/watch?v=59Hbtz7XgjM">A lecture from Stanford&rsquo;s CS231n course</a><br>
+<a href="https://www.youtube.com/watch?v=PFDu9oVAE-g">Eigenvectors and eigenvalues (YouTube)</a><br>
+<a href="https://ains.co/blog/things-which-arent-magic-flask-part-1.html">how @app.route works</a><br>
+<a href="https://realpython.com/primer-on-python-decorators/">general decorators tutorial</a></p>
+<p>Classification -&gt; categorical outcomes
+Regression -&gt; numerical outcomes</p>
+<ul>
+<li>Supervised learning
+<ul>
+<li>Classification</li>
+<li>Regression</li>
+</ul>
+</li>
+<li>Unsupervised learning
+<ul>
+<li>Classification</li>
+</ul>
+</li>
+<li>Reinforcement learning</li>
+</ul>
+<p>Absolute Trick (to move a line towards a point)
+Given y = w₁x + w₂, point (p, q) and learning rate α
+y = (w₁ + pα)x + (w₂ + α)</p>
+<p>Square Trick
+y = (w₁ + p(q - q')α)x + (w₂ + (q - q')α)</p>
+<p>Mean Absolute Error:</p>
+<p>$$Error = \frac{1}{m}\sum_{i=1}^m{|y - \hat y|}$$
+Mean Squared Error:
+$$Error = \frac{1}{2m}\sum_{i=1}^m{(y - \hat y)^2}$$</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Example: calculate MSE explicitly to update line (don&#39;t actually use this)</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">MSEStep</span>(X, y, W, b, learn_rate <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.005</span>):
+    y_pred <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>matmul(X, W) <span style="color:#f92672">+</span> b
+    error <span style="color:#f92672">=</span> y <span style="color:#f92672">-</span> y_pred
+    W_new <span style="color:#f92672">=</span> W <span style="color:#f92672">+</span> learn_rate <span style="color:#f92672">*</span> np<span style="color:#f92672">.</span>matmul(error, X)
+    b_new <span style="color:#f92672">=</span> b <span style="color:#f92672">+</span> learn_rate <span style="color:#f92672">*</span> error<span style="color:#f92672">.</span>sum()
+    <span style="color:#66d9ef">return</span> W_new, b_new
+</code></pre></div><p>L1 regularization adds the polynomial coefficients and adds them to the error, penalizing complexity.
+L2 regularization adds the squares of the coefficients.</p>
+<p>λ is the coefficient used to tune L1 &amp; L2 regularization.</p>
+<p>L1 regularization</p>
+<ul>
+<li>Computationally inefficient (unless data is sparse)</li>
+<li>Better for sparse outputs</li>
+<li>Feature selection (drives less relevant columns to 0)
+L2 regularization</li>
+<li>Computationally efficient</li>
+<li>Better for non-sparse outputs</li>
+<li>No feature selection</li>
+</ul>
+<p>Standardizing is completed by taking each value of your column, subtracting the mean of the column, and then dividing by the standard deviation of the column.
+Normalizing scales data between 0 and 1.</p>
+<p>When Should I Use Feature Scaling?</p>
+<ul>
+<li>When your algorithm uses a distance based metric to predict.</li>
+<li>When you incorporate regularization.</li>
+</ul>
+<p>Linear boundary:
+w₁x₁ + w₂x₂ + b = 0 
+Wx + b = 0
+W = (w₁, w₂)
+x = (x₁, x₂)</p>
+<p>Perceptron:
+ŷ = 1 if Wx + b ≥ 0
+0 if Wx + b &lt; 0</p>
+<p>Entropy in a set for 2 classes and multi-class:</p>
+<p>$$entropy = -\frac{m}{m+n}log_2(\frac{m}{m+n})-\frac{n}{m+n}log_2(\frac{n}{m+n})$$
+$$entropy = -\sum_{i=1}^n p_i\log_2(p_i)$$</p>
+<p>As entropy increases, knowledge decreases, and vice versa.</p>
+<p>Information gain is a change in entropy.</p>
+<p>When you split a dataset, the information gain is the difference between the entropy of the parent and the average entropy of the children.</p>
+<p>$$InformationGain = Entropy(Parent) - (\frac{m}{m+n}Entropy(Child₁) + \frac{n}{m+n}Entropy(Child₂))$$</p>
+<p>The decision tree algorithm looks a the possible splits that each column gives, calculates the information gain, and picks the largest one.</p>
+<p>Common hyperparameters for decision trees:</p>
+<ul>
+<li>Maximum depth</li>
+<li>Minimum number of samples per leaf</li>
+<li>Minimum number of samples per split</li>
+<li>Maximum number of features</li>
+</ul>
+<p>Naïve Bayes assumes that conditions are independent.</p>
+<p>P(spam|&lsquo;easy&rsquo;,&lsquo;money&rsquo;) ∝ P(&lsquo;easy&rsquo;|spam)⋅P(&lsquo;money&rsquo;|spam)⋅P(spam)</p>
+<p>Error in Support Vector Machines:  ERROR = C⋅CLASSIFICATION_ERROR + MARGIN_ERROR</p>
+<p>$$Margin = \frac{2}{|W|} \qquad Error = |W|^2$$</p>
+<p>SVMs can have linear, polynomial or radial basis function (RBF) kernels.</p>
+<p>In an RBF kernel, large γ is similar to having a large value of C, that is your algorithm will attempt to classify every point correctly.</p>
+<p>By combining algorithms, we can often build models that perform better by meeting in the middle in terms of bias and variance.</p>
+<p>The introduction of randomness combats the tendency of these algorithms to overfit.  There are two main ways that randomness is introduced:</p>
+<ul>
+<li>Bootstrap the data - that is, sampling the data with replacement and fitting your algorithm and fitting your algorithm to the sampled data.</li>
+<li>Subset the features - in each split of a decision tree or with each algorithm used an ensemble only a subset of the total possible features are used.</li>
+</ul>
+<p>A random forest builds multiple decision trees from multiple subsets of <!-- raw HTML omitted -->features<!-- raw HTML omitted -->, and then takes a vote.</p>
+<p>Bagging takes random samples of <!-- raw HTML omitted -->data<!-- raw HTML omitted --> and splits each subset, and then combines the splits.</p>
+<p>Adaboost tries a model, adds weight to misclassified points, creates a new model etc., then combines the models.</p>
+<p>Bias and Variance:</p>
+<ul>
+<li>High Bias, Low Variance models tend to underfit data, as they are not flexible. Linear models fall into this category of models.</li>
+<li>High Variance, Low Bias models tend to overfit data, as they are too flexible. Decision trees fall into this category of models.</li>
+</ul>
+<p>Ensemble Models: There were two randomization techniques you saw to combat overfitting:</p>
+<ul>
+<li>Bootstrap the data - that is, sampling the data with replacement and fitting your algorithm and fitting your algorithm to the sampled data.</li>
+<li>Subset the features - in each split of a decision tree or with each algorithm used an ensemble only a subset of the total possible features are used.</li>
+</ul>
+<p>Thou shalt never use your testing data for training.</p>
+<p>Confusion Matrix: Type 1 and Type 2 Errors
+Type 1 Error (Error of the first kind, or False Positive): In the medical example, this is when we misdiagnose a healthy patient as sick.
+Type 2 Error (Error of the second kind, or False Negative): In the medical example, this is when we misdiagnose a sick patient as healthy.</p>
+<p>Precision: TP / (TP + FP) - Think: murder trial
+Recall:    TP / (TP + FN) - Think: parachute manufacturer</p>
+<p>$$HarmonicMean= \frac{2xy}{x+y} \qquad F_1 = 2\cdot\frac{Precision\times Recall}{Precision+Recall}$$
+$$F_\beta = (1+N^2) \cdot \frac{\text{Precision} \cdot \text{Recall}}{N^2 \cdot \text{Precision} + \text{Recall}} = \frac{\text{Precision} \cdot \text{Recall}}{\frac{N^2}{1+N^2}\text{Precision} + \frac{1}{1+N^2}\text{Recall}}$$</p>
+<p>The area under the Receiver Operating Characteristic (ROC) Curve is 1 for a perfect split, and .5 for a random split.</p>
+<p>Classification metrics:</p>
+<ul>
+<li>Accuracy</li>
+<li>Precision</li>
+<li>Recall</li>
+<li>F<!-- raw HTML omitted -->β<!-- raw HTML omitted --> Score</li>
+<li>ROC Curve &amp; AUC</li>
+</ul>
+<p>Regression metrics:</p>
+<ul>
+<li>Mean absolute error</li>
+<li>MSE</li>
+<li>r2 score = 1 - MSE / (score of a horizontal line)</li>
+</ul>
+<p>Underfitting = high bias
+Overfitting = high variance</p>
+<p>Model Complexity Graph</p>
+<ul>
+<li>Underfitting gives a high error on both training and cross-validation sets</li>
+<li>Overfitting gives a low error on the training set and high error on the cross-validation set</li>
+</ul>
+<p>K-fold cross validation (see scikit-learn)</p>
+<p>A model with high bias converges to a high error as the number of training points increases
+A model that&rsquo;s just right converges to a low error
+A model with high variance does not converge</p>
+<p>Some Supervised Learning Models available in scikit-learn</p>
+<ul>
+<li>Gaussian Naive Bayes (GaussianNB)</li>
+<li>Decision Trees</li>
+<li>Ensemble Methods (Bagging, AdaBoost, Random Forest, Gradient Boosting)</li>
+<li>K-Nearest Neighbors (KNeighbors)</li>
+<li>Stochastic Gradient Descent Classifier (SGDC)</li>
+<li>Support Vector Machines (SVM)</li>
+<li>Logistic Regression</li>
+</ul>
+<p>Backpropagation:</p>
+<p>$$\delta^h_j = \sum{W_{jk}\delta^0_kf'(h_j)}$$
+$$\Delta w_{ij} = \eta \delta^h_jx_i$$</p>
+<p>2 popular methods for unsupervised machine learning:</p>
+<ul>
+<li>Clustering</li>
+<li>Dimensionality Reduction</li>
+</ul>
+<p>In the K-means algorithm &lsquo;k&rsquo; represents the number of clusters you have in your dataset.</p>
+<p>When you have no idea how many clusters exist in your dataset, a common strategy for determining k is the elbow method.  In the elbow method, you create a plot of the number of clusters (on the x-axis) vs. the average distance of the center of the cluster to each point (on the y-axis). This plot is called a scree plot</p>
+<p>To use KMeans, you need to follow three steps:</p>
+<ol>
+<li>Instantiate your model.</li>
+<li>Fit your model to the data.</li>
+<li>Predict the labels for the data.</li>
+</ol>
+<p>The starting points of the centroids can actually make a difference as to the final results you obtain from the k-means algorithm.</p>
+<p>The best set of clusters is then the clustering that creates the smallest average distance from each point to its corresponding centroid.</p>
+<p>Feature scaling - there are two ways that are most common:</p>
+<ul>
+<li>Normalizing or Max-Min Scaling - this type of scaling moves variables between 0 and 1.</li>
+<li>Standardizing or Z-Score Scaling - this type of scaling creates variables with a mean of 0 and standard deviation of 1.</li>
+</ul>
+<p>I. Clustering</p>
+<ul>
+<li>Visual Inspection of your data.</li>
+<li>Pre-conceived ideas of the number of clusters.</li>
+<li>The elbow method, which compares the average distance of each point to the cluster center for different numbers of centers.</li>
+</ul>
+<p>II. K-Means
+You saw the k-means algorithm for clustering data, which has 3 steps:</p>
+<ol>
+<li>Randomly place k-centroids amongst your data.
+Then repeat the following two steps until convergence (the centroids don&rsquo;t change):
+2. Look at the distance from each centroid to each point. Assign each point to the closest centroid. 
+3. Move the centroid to the center of the points assigned to it.</li>
+</ol>
+<p>III. Concerns with K-Means</p>
+<ol>
+<li>Concern: The random placement of the centroids may lead to non-optimal solutions.
+Solution: Run the algorithm multiple times and choose the centroids that create the smallest average distance of the points to the centroids.</li>
+<li>Concern: Depending on the scale of the features, you may end up with different groupings of your points.
+Solution: Scale the features using Standardizing, which will create features with mean 0 and standard deviation 1 before running the k-means algorithm.</li>
+</ol>
+<p>Hierarchical Clustering</p>
+<ul>
+<li>
+<p>The first step is to assume that each point is already a cluster</p>
+</li>
+<li>
+<p>the next step would be to calculate the distances between each point and each other points</p>
+<ul>
+<li>choose the smallest distance between two clusters</li>
+<li>group those two points into a cluster</li>
+</ul>
+</li>
+<li>
+<p>Single link looks at the closest two points in the two clusters (not in sklearn)</p>
+</li>
+<li>
+<p>Complete link looks at the farthest two points in the two clusters</p>
+</li>
+<li>
+<p>Average link looks at the distance between every point and every other point in the other cluster and averages them</p>
+</li>
+<li>
+<p>Ward&rsquo;s method</p>
+</li>
+</ul>
+<p>Advantages of HC</p>
+<ul>
+<li>hierarchical representations are informative and they provide us with an additional ability to visualize the clustering structure of the datasets</li>
+<li>especially useful when the data contains real hierarchical relationships inside of it</li>
+</ul>
+<p>Disadvantages of HC</p>
+<ul>
+<li>sensitive to noise and outliers so you&rsquo;re going to have to clean up the data set from any noise and outliers beforehand</li>
+<li>O(n²)</li>
+</ul>
+<p>Density-based Clustering, DBSCAN (Density-based Spatial Clustering of Applications with Noise)</p>
+<p>Advantages of DBSCAN</p>
+<ul>
+<li>don&rsquo;t need to specify the number of clusters</li>
+<li>flexibility in the shapes and sizes of clusters it&rsquo;s able to find</li>
+<li>robust in that it&rsquo;s able to deal with noise and outliers in the data</li>
+</ul>
+<p>Disadvantages of DBSCAN</p>
+<ul>
+<li>not guaranteed to return the same clustering</li>
+<li>it has difficulties finding clusters of varying densities</li>
+</ul>
+<p>Gaussian Mixture Model (GMM)</p>
+<p>Expectation-Maximization for Gaussian Mixtures:</p>
+<ol>
+<li>Initialize k Gaussian distributions</li>
+<li>Soft-cluster data - &ldquo;expectation&rdquo;</li>
+<li>Re-estimate the Gaussians - &ldquo;maximization&rdquo;</li>
+<li>Evaluate the log-likelihood to check for convergence</li>
+<li>Repeat from step 2 until converged</li>
+</ol>
+<p>Advantages of GMM</p>
+<ul>
+<li>Soft-clustering (sample membership of multiple clusters)</li>
+<li>Cluster shape flexibility</li>
+</ul>
+<p>Disadvantages of GMM</p>
+<ul>
+<li>Sensitive to initialization values</li>
+<li>Possible to converge to a local optimum</li>
+<li>Slow convergence rate</li>
+</ul>
+<p>Principle Component Analysis (PCA)
+I. The amount of variance explained by each component. This is called an eigenvalue.
+II. The principal components themselves, each component is a vector of weights. In this case, the principal components help us understand which pixels of the image are most helpful in identifying the difference between between digits. Principal components are also known as eigenvectors.</p>
+<p>Dimensionality Reduction and Latent Features</p>
+<ul>
+<li>Principal Component Analysis is a technique that is used to reduce the dimensionality of your dataset. The reduced features are called principal components, which can be thought of as latent features. These principal components are simply a linear combination of the original features in your dataset.</li>
+<li>these components have two major properties:
+<ul>
+<li>They aim to capture the most amount of variability in the original dataset.</li>
+<li>They are orthogonal to (independent of) one another.
+Interpreting Results</li>
+</ul>
+</li>
+<li>The variance (eigenvalue) explained by each component.  Visualize this with scree plots to understand how many components you might keep based on how much information was being retained.</li>
+<li>The components (eigenvectors) give us an idea of which original features were most related to why a component was able to explain certain aspects about the original datasets.</li>
+</ul>
+<p>Random Projection</p>
+<p>Independent Component Analysis (ICA)</p>
+<p>Scikit Learn uses FastICA</p>
+<p>Three strategies for working with missing values include:</p>
+<ul>
+<li>We can remove (or “drop”) the rows or columns holding the missing values.</li>
+<li>We can impute the missing values.</li>
+<li>We can build models that work around them, and only use the information provided.</li>
+</ul>
+<p>The CRISP-DM Process (Cross Industry Process for Data Mining)</p>
+<ol>
+<li>Business Understanding</li>
+<li>Data Understanding</li>
+<li>Prepare Data</li>
+<li>Data Modeling</li>
+<li>Evaluate the Results</li>
+<li>Deploy</li>
+</ol>
+<p>GitHub README should have:</p>
+<ol>
+<li>Installation instructions</li>
+<li>Project Motivation</li>
+<li>File Descriptions</li>
+<li>How to Interact with your project</li>
+<li>Licensing, Authors, Acknowledgements, etc.</li>
+</ol>
+<p>Questions to Ask Yourself When Conducting a Code Review:
+Is the code clean and modular?</p>
+<ul>
+<li>Can I understand the code easily?</li>
+<li>Does it use meaningful names and whitespace?</li>
+<li>Is there duplicated code?</li>
+<li>Can you provide another layer of abstraction?</li>
+<li>Is each function and module necessary?</li>
+<li>Is each function or module too long?</li>
+</ul>
+<p>Is the code efficient?</p>
+<ul>
+<li>Are there loops or other steps we can vectorize?</li>
+<li>Can we use better data structures to optimize any steps?</li>
+<li>Can we shorten the number of calculations needed for any steps?</li>
+<li>Can we use generators or multiprocessing to optimize any steps?</li>
+</ul>
+<p>Is documentation effective?</p>
+<ul>
+<li>Are in-line comments concise and meaningful?</li>
+<li>Is there complex code that&rsquo;s missing documentation?</li>
+<li>Do function use effective docstrings?</li>
+<li>Is the necessary project documentation provided?</li>
+</ul>
+<p>Is the code well tested?</p>
+<ul>
+<li>Does the code high test coverage?</li>
+<li>Do tests check for interesting cases?</li>
+<li>Are the tests readable?</li>
+<li>Can the tests be made more efficient?</li>
+</ul>
+<p>Is the logging effective?</p>
+<ul>
+<li>Are log messages clear, concise, and professional?</li>
+<li>Do they include all relevant and useful information?</li>
+<li>Do they use the appropriate logging level?</li>
+</ul>
+<p>The 3 stages of an NLP pipeline are: Text Processing &gt; Feature Extraction &gt; Modeling.</p>
+<ul>
+<li>Text Processing: Take raw input text, clean it, normalize it, and convert it into a form that is suitable for feature extraction.</li>
+<li>Feature Extraction: Extract and produce feature representations that are appropriate for the type of NLP task you are trying
+to accomplish and the type of model you are planning to use.</li>
+<li>Modeling: Design a statistical or machine learning model, fit its parameters to training data, use an optimization procedure,
+and then use it to make predictions about unseen data.</li>
+</ul>
+<p>Text data from different sources is prepared with the following text processing steps:</p>
+<ol>
+<li>
+<p>Cleaning to remove irrelevant items, such as HTML tags</p>
+<ul>
+<li><a href="http://docs.python-requests.org/en/master/user/quickstart/#make-a-request">Requests</a></li>
+<li><a href="https://docs.python.org/3/library/re.html">Regular Expressions</a></li>
+<li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a></li>
+</ul>
+</li>
+<li>
+<p>Normalizing by converting to all lowercase and removing punctuation</p>
+<ul>
+<li><a href="https://docs.python.org/3/library/re.html">Regular Expressions</a></li>
+</ul>
+</li>
+<li>
+<p>Splitting text into words or tokens</p>
+<ul>
+<li><a href="http://www.nltk.org/api/nltk.tokenize.html">NLTK</a></li>
+</ul>
+</li>
+<li>
+<p>Removing words that are too common, also known as stop words</p>
+<ul>
+<li><a href="http://www.nltk.org">NLTK</a></li>
+</ul>
+</li>
+<li>
+<p>Identifying different parts of speech and named entities</p>
+<ul>
+<li>Part of Speech (POS) and Named Entity Recognition (NER)</li>
+<li><a href="http://www.nltk.org">NLTK</a></li>
+</ul>
+</li>
+<li>
+<p>Converting words into their dictionary forms, using lemmatization and then stemming</p>
+<ul>
+<li><a href="http://www.nltk.org">NLTK</a></li>
+</ul>
+</li>
+</ol>
+<p>Bag of Words</p>
+<ul>
+<li>collect all of the unique words in your corpus into a vocabulary</li>
+<li>create Document-Term Matrix, where each row is a sentence and each column is a word</li>
+<li>each entry in the matrix is a word frequency</li>
+<li>compare sentences in the matrix using cosine similarity</li>
+</ul>
+<p>$$\cos(\theta) = \frac{a \cdot b}{|a| \cdot |b|}$$</p>
+<p>TF-IDF (term frequency * inverse document frequency)</p>
+<p>Word Embeddings</p>
+<ul>
+<li>Word2Vec</li>
+<li>GloVe</li>
+<li>t-SNE</li>
+</ul>
+<p>If you have a lot of control over features, then you have an experiment.
+If you have no control over the features, then you have an observational study.
+If you have some control, then you have a quasi-experiment.</p>
+<p>In a between-subjects experiment, each unit only participates in, or sees, one of the conditions being used in the experiment.
+If an individual completes all conditions, rather than just one, this is known as a within-subjects design.</p>
+<p>Randomization still has a part in the within-subjects design in the order in which individuals complete conditions.</p>
+<p>In a simple random sample, each individual in the population has an equal chance of being selected.
+In a stratified random sample, we need to first divide the entire population into disjoint groups, or strata.  Then, from each group, 
+you take a simple random sample.</p>
+<p>Evaluation metrics are the metrics by which we compare groups.
+Invariant metrics are metrics that we hope will not be different between groups.</p>
+<p>If we aren&rsquo;t able to control all features or there is a lack of equivalence between groups, then we may be susceptible to confounding variables.</p>
+<p>Construct validity is tied to how well one&rsquo;s goals are aligned to the evaluation metrics used to evaluate it.
+Internal validity refers to the degree to which a causal relationship can be derived from an experiment&rsquo;s results.
+External validity is concerned with the ability of an experimental outcome to be generalized to a broader population.</p>
+<p>Biases in experiments are systematic effects that interfere with the interpretation of experimental results, 
+mostly in terms of internal validity.</p>
+<ul>
+<li>Sampling biases are those that cause our observations to not be representative of the population.
+<ul>
+<li>Studies that use surveys to collect data often have to deal with the self-selection bias.</li>
+<li>Survivor bias is one where losses or dropout of observed units is not accounted for in an analysis.</li>
+</ul>
+</li>
+<li>A novelty effect is one that causes observers to change their behavior simply because they&rsquo;re seeing something new.</li>
+<li>Order bias may occur when the order in which conditions are completed could have an effect on participant responses.
+<ul>
+<li>A primacy effect is one that affects early conditions, perhaps biasing them to be recalled better or
+to serve as anchor values for later conditions.</li>
+<li>A recency effect is one that affects later conditions, perhaps causing bias due to being fresher in memory or task fatigue.</li>
+</ul>
+</li>
+<li>Experimenter bias is where the presence or knowledge of the experimenter can affect participants' behaviors or performance.
+<ul>
+<li>The double-blind design hides condition information from both the administrator and participant
+in order to have a strong rein on experimenter-based biases.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Find p-value (two-sided test) - analytic approach</span>
+n_obs <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>]
+n_control <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#39;condition&#39;</span>)<span style="color:#f92672">.</span>size()[<span style="color:#ae81ff">0</span>]
+p <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>
+sd <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sqrt(p <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>p) <span style="color:#f92672">*</span> n_obs)
+z <span style="color:#f92672">=</span> ((n_control <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">-</span> p <span style="color:#f92672">*</span> n_obs) <span style="color:#f92672">/</span> sd
+<span style="color:#66d9ef">print</span>(z)
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> stats<span style="color:#f92672">.</span>norm<span style="color:#f92672">.</span>cdf(z))
+
+<span style="color:#75715e"># Find p-value (two-sided test) - simulation approach</span>
+n_obs <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>]
+n_control <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#39;condition&#39;</span>)<span style="color:#f92672">.</span>size()[<span style="color:#ae81ff">0</span>]
+p <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>
+n_trials <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>_000
+samples <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>binomial(n_obs, p, n_trials)
+np<span style="color:#f92672">.</span>logical_or(samples <span style="color:#f92672">&lt;=</span> n_control, samples <span style="color:#f92672">&gt;=</span> (n_obs <span style="color:#f92672">-</span> n_control))<span style="color:#f92672">.</span>mean()
+
+<span style="color:#75715e"># Perform hypothesis test (one-sided test) - analytic approach</span>
+p_click <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#39;condition&#39;</span>)<span style="color:#f92672">.</span>mean()[<span style="color:#e6db74">&#39;click&#39;</span>]
+n_control <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#39;condition&#39;</span>)<span style="color:#f92672">.</span>size()[<span style="color:#ae81ff">0</span>]
+n_exper <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#39;condition&#39;</span>)<span style="color:#f92672">.</span>size()[<span style="color:#ae81ff">1</span>]
+p_null <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#39;click&#39;</span>]<span style="color:#f92672">.</span>mean()
+se_p <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sqrt(p_null <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>p_null) <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>n_control <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>n_exper))
+z <span style="color:#f92672">=</span> (p_click[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> p_click[<span style="color:#ae81ff">0</span>]) <span style="color:#f92672">/</span> se_p
+<span style="color:#66d9ef">print</span>(z)
+<span style="color:#66d9ef">print</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>stats<span style="color:#f92672">.</span>norm<span style="color:#f92672">.</span>cdf(z))
+
+<span style="color:#75715e"># Perform hypothesis test (one-sided test) - simulation approach</span>
+n_control <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#39;condition&#39;</span>)<span style="color:#f92672">.</span>size()[<span style="color:#ae81ff">0</span>]
+n_exper <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#39;condition&#39;</span>)<span style="color:#f92672">.</span>size()[<span style="color:#ae81ff">1</span>]
+p_null <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#39;click&#39;</span>]<span style="color:#f92672">.</span>mean()
+n_trials <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>_000
+ctrl_clicks <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>binomial(n_control, p_null, n_trials)
+exp_clicks <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>binomial(n_exper, p_null, n_trials)
+samples <span style="color:#f92672">=</span> exp_clicks <span style="color:#f92672">/</span> n_exper <span style="color:#f92672">-</span> ctrl_clicks <span style="color:#f92672">/</span> n_control
+<span style="color:#66d9ef">print</span>((samples <span style="color:#f92672">&gt;=</span> (p_click[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">-</span> p_click[<span style="color:#ae81ff">0</span>]))<span style="color:#f92672">.</span>mean())
+</code></pre></div><p>SMART Experiment Design</p>
+<ul>
+<li>Specific: Make sure the goals of your experiment are specific.</li>
+<li>Measurable: Outcomes must be measurable using objective metrics</li>
+<li>Achievable: The steps taken for the experiment and the goals must be realistic.</li>
+<li>Relevant: The experiment needs to have purpose behind it.</li>
+<li>Timely: Results must be obtainable in a reasonable time frame.</li>
+</ul>
+
+				</section>
+			</article>
+		</main>
+	</div> 
+
+	
+
+</div> 
+
+
+
+
+</div> 
+
+<footer class="doc-footer">
+	
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+<script src="http://surfingwithstyle.com//js/bootie-docs.js"></script>
+
+</body>
+</html>

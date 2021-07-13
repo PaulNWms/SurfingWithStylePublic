@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Surfing With Style">
+    <link rel="icon" href="http://surfingwithstyle.com//favicon.ico">
+    <title>Machine Learning - Surfing With Style</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+        href="http://surfingwithstyle.com//css/highlight/github.css">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/theme.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/bootie-docs.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/site.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/math.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/mini-metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/calculator.css">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML"></script>
+</head>
+
+<body role="document">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="http://surfingwithstyle.com//">Surfing With Style</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tools
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/tools/timer/">Timer</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/calculator/">Calculator</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/old-english-letters/">Old English Letters</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Study
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/study/flashcards/">Flashcards</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Practice
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/practice/metronome/">Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome/">Scheduled Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/accelerating-metronome/">Accelerating Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome-presets/">Presets</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/chords/">Chords</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Notes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/notes/data-science/">Data Science</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/ms/">MS</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/python/">Python</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/designpatterns/">Design Patterns</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/git/">Git</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/solid/">SOLID</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/sql/">SQL</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Other ...</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="">Tools2</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Books</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                
+
+                
+
+
+                
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div class="container">
+
+<div class="row">
+	<div class="col-sm-offset-2 col-sm-8 doc-main">
+		<main role="main">
+			<article>
+				<a id="title"></a>
+				<h1 class="doc-entry-title">Machine Learning</h1>
+				<div class="doc-entry-meta">
+					<span><time datetime="2020-08-27">August 27, 2020</time></span>
+				</div>
+				<section>
+					<p>Links:<br>
+<a href="https://github.com/ageron/handson-ml">Sample code</a></p>
+<p>Data sets:<br>
+<a href="http://archive.ics.uci.edu/ml/index.php">UC Irvine Machine Learning Repository</a><br>
+<a href="https://www.kaggle.com/datasets">Kaggle</a><br>
+<a href="https://registry.opendata.aws/">Open Data on AWS</a><br>
+<a href="http://dataportals.org/">http://dataportals.org/</a><br>
+<a href="https://opendatamonitor.eu/">OPENDATAMONITOR</a><br>
+<a href="https://www.quandl.com/">Quandl</a><br>
+<a href="https://en.wikipedia.org/wiki/List_of_datasets_for_machine_learning_research">Wikipedia&rsquo;s list of datasets</a><br>
+<a href="https://www.quora.com/Where-can-I-find-large-datasets-open-to-the-public">Quora</a><br>
+<a href="https://www.reddit.com/r/datasets/">Datasets' Discord server</a></p>
+<p>In supervised learning, the training data is labelled.</p>
+<p>Typical supervised learning tasks include classification and predicting a target numeric value.</p>
+<p>Some of the most important supervised learning algorithms include</p>
+<ul>
+<li>k-nearest neighbors</li>
+<li>linear regression</li>
+<li>logistical regression</li>
+<li>support vector machines</li>
+<li>decision trees and random forests</li>
+<li>neural networks</li>
+</ul>
+<p>In unsupervised learning, the training data is unlabelled.</p>
+<p>Typical unsupervised learning tasks include</p>
+<ul>
+<li>clustering,</li>
+<li>visualization,</li>
+<li>dimensionality reduction / feature extraction,</li>
+<li>anomaly detection and</li>
+<li>association rule learning.</li>
+</ul>
+<p>Some of the most important unsupervised learning algorithms include</p>
+<ul>
+<li>clustering
+&ndash; k-means
+&ndash; hierarchical cluster analysis (HCA)
+&ndash; expectation maximization</li>
+<li>visualization and dimensionality reduction
+&ndash; principle component analysis (PCA)
+&ndash; kernel PCA
+&ndash; locally-linear embedding (LLE)
+&ndash; t-distributed stochastic neighbor embedding (t-SNE)</li>
+<li>association rule learning
+&ndash; Apriori
+&ndash; Eclat</li>
+</ul>
+<p>In semisupervised learning, some of the training data is labelled.</p>
+<p>In reinforcement learning, an agent observes the environment and receives rewards for actions performed.</p>
+<p>In batch learning, the system is trained using all available data.</p>
+<p>In online learning, the system is trained incrementally by feeding it data in mini-batches.</p>
+<p>In instance-based learning, the system learns examples by heart, then generalizes to new cases using a similarity measure.</p>
+<p>In model-based learning, a model is built from a set of examples, then the model is used to make predictions.</p>
+<p>Small data sets often suffer from sampling noise, and large data sets can still suffer from sampling bias.</p>
+<p>Feature engineering involves feature selection, feature extraction and feature creation.</p>
+<p>To fix overfitting you can</p>
+<ul>
+<li>simplify the model</li>
+<li>gather more training data</li>
+<li>fix data errors and remove outliers</li>
+</ul>
+<p>Regularization constrains a model to make it simpler and reduce the risk of overfitting.</p>
+<p>Underfitting occurs when your model is too simple to learn the underlying structure of the data.</p>
+<p>To fix underfitting you can</p>
+<ul>
+<li>select a more powerful model</li>
+<li>perform feature engineering</li>
+<li>reduce regularization</li>
+</ul>
+<p>To see how well a model will generalize to new cases, the data is split into a training set and a test set.</p>
+<p>It is common to use 80% of the data for training and hold out 20% for testing.</p>
+<p>In cross-validation, a validation set is randomly held out from the training set during training.</p>
+<p>The No Free Lunch Theorem states that there is no model that is guaranteed to work best on a given dataset.  The only way to know for sure is to evaluate them all.</p>
+<p>Project flow:</p>
+<ol>
+<li>Look at the big picture.</li>
+</ol>
+<ul>
+<li>Frame the problem
+&ndash; How will the model benefit the company?
+&ndash; What current solutions exist, if any?
+&ndash; Supervised, unsupervised, or reinforcement learning?
+&ndash; Classification, regression, or something else?
+&ndash; Batch learning or online learning?</li>
+<li>Select a performance measure (RMSE ‖∙‖<!-- raw HTML omitted -->2<!-- raw HTML omitted -->, MAE ‖∙‖<!-- raw HTML omitted -->1<!-- raw HTML omitted -->, or ?)</li>
+<li>Check any assumptions</li>
+</ul>
+<ol start="2">
+<li>Get the data.</li>
+</ol>
+<ul>
+<li>Familiarize yourself with it (pandas)</li>
+<li>Plot histograms (matplotlib)</li>
+<li>Create a test set</li>
+</ul>
+<ol start="3">
+<li>Discover and visualize the data to gain insights.</li>
+</ol>
+<ul>
+<li>Scatter plots (pandas)</li>
+<li>Correlations plots</li>
+</ul>
+<ol start="4">
+<li>Prepare the data.</li>
+</ol>
+<ul>
+<li>Clean data
+&ndash; Delete rows with nulls (dropna)
+&ndash; Delete attributes with nulls (drop)
+&ndash; Replace nulls with default value (fillna or imputer)</li>
+<li>Convert text to integers (factorize() to integer or one-hot encode)</li>
+<li>Feature scaling (min-max scaling or standardization)</li>
+</ul>
+<ol start="5">
+<li>Select a model and train it.</li>
+</ol>
+<ul>
+<li>Cross-validation (cross_val_score)</li>
+</ul>
+<ol start="6">
+<li>Fine-tune your model.</li>
+</ol>
+<ul>
+<li>GridSearchCV</li>
+<li>RandomizedSearchCV</li>
+</ul>
+<ol start="7">
+<li>Present your solution.</li>
+<li>Launch, monitor and maintain your system.</li>
+</ol>
+<p>A binary classifier distinguishes between 2 classes.</p>
+<p><code>cross_val_score()</code> splits the dataset into K-folds, then evaluates predictions made on each using a model trained on the remaining folds.</p>
+<p><code>cross_val_predict()</code> gets the actual predictions of the K-folds.</p>
+<p><code>confusion_matrix()</code> creates a matrix of true and false predictions, with true values on the diagonal.</p>
+<p>precision = TP / (TP + FP)</p>
+<p>recall (a.k.a sensitivity, true positive rate) = TP / (TP + FN)</p>
+<p>F₁ = TP / (TP + (FN + FP)/2)</p>
+<p><code>precision_recall_curve()</code> computes precision and recall for all possible threasholds.</p>
+<p>Another way to select a good precision/recall tradeoff is to plot precision vs. recall.</p>
+<p>ROC = receiver operating characteristic</p>
+<p>TPR = true positive rate (= recall)</p>
+<p>TNR = true negative rate (= specificity)</p>
+<p>FPR, FNR = false positive rate, false negative rate</p>
+<p>An ROC curve plots sensitivity (recall) vs. 1 - specificity.</p>
+<p><code>roc_curve()</code> computes the ROC curve.</p>
+<p>A good ROC AUC (area under curve) has a value close to 1, whereas a random classifier has a value of 0.5</p>
+<p><code>roc_auc_score()</code> computes the ROC AUC.</p>
+<p>OvO = one vs. one</p>
+<p>OvA = one vs. all, one vs. rest</p>
+<p>Multilabel classification outputs multiple binary labels.</p>
+<p>Multioutput classification output multiple multiclass labels.</p>
+<p>Linear regression model prediction</p>
+<p>$$\hat{y}=\theta_0+\theta_1x_1+\theta_2x_2+\cdots +\theta_nx_n$$</p>
+<p>Vectorized form</p>
+<p>$$\hat{y}=h_\theta(\textbf{x})=\theta^T\cdot \textbf{x}$$</p>
+<p>Cost function of the linear regression model</p>
+<p>$$MSE(\textbf{X},h_\theta)=\frac{1}{m}\sum_{i=1}^{m}\left(\theta^T\cdot \textbf{x}^{(i)}-y^{(i)}\right)^2$$</p>
+<p>Normal equation</p>
+<p>$$\hat{\theta}=\left(\textbf{X}^T\cdot\textbf{X}\right)^{-1}\cdot\textbf{X}^T\cdot\textbf{y}$$</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">X_b <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>c_[np<span style="color:#f92672">.</span>ones((<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">1</span>)), X]
+theta_best <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linalg<span style="color:#f92672">.</span>inv(X_b<span style="color:#f92672">.</span>T<span style="color:#f92672">.</span>dot(X_b))<span style="color:#f92672">.</span>dot(X_b<span style="color:#f92672">.</span>T)<span style="color:#f92672">.</span>dot(y)
+</code></pre></div><p>MSE for a linear regression model is a convex function, meaning that a line segment connecting any 2 points on the curve never crosses the curve.  This implies there are no local minima, just one global minimum.</p>
+<p>Preprocess the data with Scikit-Learn&rsquo;s <code>StandardScalar</code></p>
+<h3 id="batch-gradient-descent">Batch Gradient Descent</h3>
+<p>Partial derivatives of the cost function</p>
+<p>$$\frac{\delta}{\delta\theta_j}=\frac{2}{m}\sum_{i=1}^{m}\left(\theta^T\cdot\textbf{x}^{(i)}-y^{(i)}\right)x_j^{(i)}$$</p>
+<p>Gradient vector of the cost function</p>
+<p>$$\nabla_\theta MSE(\theta)=\begin{pmatrix}
+\frac{\delta}{\delta\theta_0}MSE(\theta) \<br>
+\frac{\delta}{\delta\theta_1}MSE(\theta) \<br>
+\vdots  \<br>
+\frac{\delta}{\delta\theta_n}MSE(\theta)
+\end{pmatrix}
+=\frac{2}{m}\textbf{X}^T\cdot(\textbf{X}\cdot\theta-\textbf{y})$$</p>
+<p>Gradient descent step</p>
+<p>$$\theta^{(\text{next step})}=\theta-\eta\nabla_\theta MSE(\theta)$$</p>
+<h3 id="stochastic-gradient-descent">Stochastic Gradient Descent</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">sgd_reg <span style="color:#f92672">=</span> SGDRegressor(n_iter<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>, penalty<span style="color:#f92672">=</span>None, eta0<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>)
+sgd_reg<span style="color:#f92672">.</span>fit(X, y<span style="color:#f92672">.</span>ravel())
+</code></pre></div><h3 id="regularized-linear-models">Regularized Linear Models</h3>
+<ul>
+<li>Ridge regression adds a regularization term to the cost function, forcing the learning algorithm to keep the weights as small as possible.</li>
+</ul>
+<p>$$J(\theta)=MSE(\theta)+\alpha\frac{1}{2}\sum_{i=1}^{n}\theta_i^2$$
+$$\hat{\theta}=\left(\textbf{X}^T\cdot\textbf{X}+\alpha\textbf{A}\right)^{-1}\cdot\textbf{X}^T\cdot \textbf{y}$$</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">ridge_reg <span style="color:#f92672">=</span> Ridge(alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, solver<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;cholesky&#34;</span>)
+ridge_reg<span style="color:#f92672">.</span>fit(X, y)
+ridge_reg<span style="color:#f92672">.</span>predict([[<span style="color:#ae81ff">1.5</span>]])
+</code></pre></div><ul>
+<li>Lasso regression tends to completely eliminate the weights of the least important features.</li>
+</ul>
+<p>$$J(\theta)=MSE(\theta)+\alpha\sum_{i=1}^{n}\left|\theta_i\right|$$</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">lasso_reg <span style="color:#f92672">=</span> Lasso(alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>)
+lasso_reg<span style="color:#f92672">.</span>fit(X, y)
+lasso_reg<span style="color:#f92672">.</span>predict([[<span style="color:#ae81ff">1.5</span>]])
+</code></pre></div><ul>
+<li>Elastic Net is a combination of the two.</li>
+</ul>
+<p>$$J(\theta)=MSE(\theta)+r\alpha\sum_{i=1}^{n}\left|\theta_i\right|+\frac{1-r}{2}\alpha\frac{1}{2}\sum_{i=1}^{n}\theta_i^2$$</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> ElasticNet
+elastic_net <span style="color:#f92672">=</span> ElasticNet(alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>, l1_ratio<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>)
+elastic_net<span style="color:#f92672">.</span>fit(X, y)
+elastic_net<span style="color:#f92672">.</span>predict([[<span style="color:#ae81ff">1.5</span>]])
+</code></pre></div><ul>
+<li>Early stopping</li>
+</ul>
+<h3 id="logistic-regression">Logistic regression</h3>
+<p>estimates the probability that an instance belongs to a particular class.</p>
+<p>$$\hat{p}=h_\theta(\textbf{x})=\sigma\left(\theta^T\cdot\textbf{x}\right)$$</p>
+<p>The logistic regression loss function is convex</p>
+<p>$$J(\theta)=-\frac{1}{m}\sum_{i=1}^{m}\left[y^{(i)}\text{log}\left(\hat{p}^{(I)}\right)+\left(1-y^{(i)}\right)\text{log}\left(1-\hat{p}^{(I)}\right)\right]$$</p>
+<p>and its derivative is</p>
+<p>$$\frac{\delta}{\delta\theta_j}=\frac{1}{m}\sum_{i=1}^{m}\left(\sigma\left( \theta^T\cdot \textbf{x}^{(i)}-y^{(I)} \right) \right)x_j^{(I)}$$</p>
+<p>To train a logistic regression model</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> LogisticRegression
+log_reg <span style="color:#f92672">=</span> LogisticRegression
+log_reg<span style="color:#f92672">.</span>fit(X, y)
+</code></pre></div><h3 id="softmax-regression--multinomial-logistic-regression">Softmax Regression / Multinomial Logistic Regression</h3>
+<p>Softmax score for class <em>k</em></p>
+<p>$$s_k(\textbf{x})=\left(\theta^{(k)}\right)^T\cdot\textbf{x}$$</p>
+<p>Softmax function</p>
+
+
+$$\hat{p}_k=\sigma(\textbf{s}(\textbf{x}))_k=\frac{exp(s_k(\textbf{x}))}{\sum_{j=1}^{K}exp(s_j(\textbf{x}))}$$
+
+<p>Softmax prediction</p>
+<p>$$\hat{y}=\underset{k}{\text{argmax }}\sigma(\textbf{s}(\textbf{x}))_k=\underset{k}{\text{argmax }}s_k(\textbf{x})=\underset{k}{\text{argmax }}\left(\left(\theta^{(k)}\right)^T\cdot\textbf{x}\right)$$</p>
+<p>Cross entropy cost function</p>
+<p>$$J(\Theta)=-\frac{1}{m}\sum_{i=1}^{m}\sum_{k=1}^{K}y_k^{(i)}\text{log}\left(\hat{p}_k^{(i)}\right)$$</p>
+<p>Cross entropy gradient vector</p>
+<p>$$\nabla_{\theta^{(k)}}J(\Theta)=\frac{1}{m}\sum_{i=1}^{m}\left(\hat{p}_k^{(i)}-y_k^{(i)}\right)\textbf{x}^{(i)}$$</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">softmax_reg <span style="color:#f92672">=</span> LogisticRegression(multi_class<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;multinomial&#34;</span>, solver<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;lbfgs&#34;</span>, C<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
+softmax_reg<span style="color:#f92672">.</span>fit(X, y)
+softmax_reg<span style="color:#f92672">.</span>predict([[<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>]])
+softmax_reg<span style="color:#f92672">.</span>predict_proba([[<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>]])
+</code></pre></div><h3 id="support-vector-machines">Support Vector Machines</h3>
+<p>Support vectors are data instances on the &ldquo;fog lines&rdquo; of the decision boundary &ldquo;street&rdquo;.</p>
+<p><em>Soft margin classification</em> allows some margin violations, controlled by the <code>C</code> parameter.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">iris <span style="color:#f92672">=</span> datasets<span style="color:#f92672">.</span>load_iris()
+X <span style="color:#f92672">=</span> iris[<span style="color:#e6db74">&#34;data&#34;</span>][:, (<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)]  <span style="color:#75715e"># petal length, petal width</span>
+y <span style="color:#f92672">=</span> (iris[<span style="color:#e6db74">&#34;target&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>)<span style="color:#f92672">.</span>astype(np<span style="color:#f92672">.</span>float64)  <span style="color:#75715e"># Iris-Virginica</span>
+
+svm_clf <span style="color:#f92672">=</span> Pipeline([
+        (<span style="color:#e6db74">&#34;scaler&#34;</span>, StandardScaler()),
+        (<span style="color:#e6db74">&#34;linear_svc&#34;</span>, LinearSVC(C<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, loss<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hinge&#34;</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)),
+    ])
+
+svm_clf<span style="color:#f92672">.</span>fit(X, y)
+</code></pre></div><h3 id="nonlinear-svm-classification">Nonlinear SVM Classification</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">polynomial_svm_clf <span style="color:#f92672">=</span> Pipeline([
+        (<span style="color:#e6db74">&#34;poly_features&#34;</span>, PolynomialFeatures(degree<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)),
+        (<span style="color:#e6db74">&#34;scaler&#34;</span>, StandardScaler()),
+        (<span style="color:#e6db74">&#34;svm_clf&#34;</span>, LinearSVC(C<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, loss<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hinge&#34;</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>))
+    ])
+
+polynomial_svm_clf<span style="color:#f92672">.</span>fit(X, y)
+</code></pre></div><p>The SVC class implements the <em>kernel trick,</em> whatever that is, which runs higher degree polynomial efficiently.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">poly_kernel_svm_clf <span style="color:#f92672">=</span> Pipeline([
+        (<span style="color:#e6db74">&#34;scaler&#34;</span>, StandardScaler()),
+        (<span style="color:#e6db74">&#34;svm_clf&#34;</span>, SVC(kernel<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;poly&#34;</span>, degree<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, coef0<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, C<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>))
+    ])
+poly_kernel_svm_clf<span style="color:#f92672">.</span>fit(X, y)
+</code></pre></div><p>Gaussian radial bias function (RBF)</p>
+<p>$$\phi_\gamma(\textbf{x},l)=\text{exp}\left(-\gamma\left|\textbf{x}-l\right|^2\right)$$</p>
+<p>Increasing <code>gamma</code> makes the bell-shape curve narrower.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">rbf_kernel_svm_clf <span style="color:#f92672">=</span> Pipeline([
+        (<span style="color:#e6db74">&#34;scaler&#34;</span>, StandardScaler()),
+        (<span style="color:#e6db74">&#34;svm_clf&#34;</span>, SVC(kernel<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rbf&#34;</span>, gamma<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>, C<span style="color:#f92672">=</span><span style="color:#ae81ff">0.001</span>))
+    ])
+rbf_kernel_svm_clf<span style="color:#f92672">.</span>fit(X, y)
+</code></pre></div><h3 id="svm-regression">SVM Regression</h3>
+<p>SVMs also support linear and nonlinear regression.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">svm_reg <span style="color:#f92672">=</span> LinearSVR(epsilon<span style="color:#f92672">=</span><span style="color:#ae81ff">1.5</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+svm_reg<span style="color:#f92672">.</span>fit(X, y)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">svm_poly_reg <span style="color:#f92672">=</span> SVR(kernel<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;poly&#34;</span>, degree<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, C<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>, epsilon<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>, gamma<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;auto&#34;</span>)
+svm_poly_reg<span style="color:#f92672">.</span>fit(X, y)
+</code></pre></div><h3 id="decision-trees">Decision Trees</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">iris <span style="color:#f92672">=</span> load_iris()
+X <span style="color:#f92672">=</span> iris<span style="color:#f92672">.</span>data[:, <span style="color:#ae81ff">2</span>:] <span style="color:#75715e"># petal length and width</span>
+y <span style="color:#f92672">=</span> iris<span style="color:#f92672">.</span>target
+tree_clf <span style="color:#f92672">=</span> DecisionTreeClassifier(max_depth<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+tree_clf<span style="color:#f92672">.</span>fit(X, y)
+</code></pre></div><p>A decision tree is a white box model that can be visualized.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> sklearn.tree <span style="color:#f92672">import</span> export_graphviz
+export_graphviz(
+        tree_clf,
+        out_file<span style="color:#f92672">=</span>image_path(<span style="color:#e6db74">&#34;iris_tree.dot&#34;</span>),
+        feature_names<span style="color:#f92672">=</span>iris<span style="color:#f92672">.</span>feature_names[<span style="color:#ae81ff">2</span>:],
+        class_names<span style="color:#f92672">=</span>iris<span style="color:#f92672">.</span>target_names,
+        rounded<span style="color:#f92672">=</span>True,
+        filled<span style="color:#f92672">=</span>True
+    )
+</code></pre></div><p>Decision tree prediction</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">tree_clf<span style="color:#f92672">.</span>predict_proba([[<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">1.5</span>]])
+tree_clf<span style="color:#f92672">.</span>predict([[<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">1.5</span>]])
+</code></pre></div><p>Regularization hyperparameters</p>
+<ul>
+<li><code>max_depth</code></li>
+<li><code>min_samples_split</code></li>
+<li><code>min_samples_leaf</code></li>
+<li><code>min_weight_fraction_leaf</code></li>
+<li><code>max_leaf_nodes</code></li>
+<li><code>max_features</code></li>
+</ul>
+<h3 id="regression-trees">Regression Trees</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">tree_reg <span style="color:#f92672">=</span> DecisionTreeRegressor(max_depth<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+tree_reg<span style="color:#f92672">.</span>fit(X, y)
+</code></pre></div><p>Weaknesses of decision trees</p>
+<ul>
+<li>Sensitive to orientation of training data.  PCA can help.</li>
+<li>Sensitive to small variations of training data.</li>
+</ul>
+<h3 id="ensemble-methods">Ensemble Methods</h3>
+<p>An ensemble can be a <em>strong learner</em> even if each classifier is a <em>weak learner</em>, if there are enough of them and they are diverse enough.</p>
+<p>A <em>hard voting</em> classifier predicts the class that gets the most votes.</p>
+<p>A <em>soft voting</em> classifier makes predictions based on the averages of class probabilities.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># set voting=&#39;soft&#39; for soft voting</span>
+log_clf <span style="color:#f92672">=</span> LogisticRegression(solver<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;liblinear&#34;</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+rnd_clf <span style="color:#f92672">=</span> RandomForestClassifier(n_estimators<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+svm_clf <span style="color:#f92672">=</span> SVC(gamma<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;auto&#34;</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+voting_clf <span style="color:#f92672">=</span> VotingClassifier(
+    estimators<span style="color:#f92672">=</span>[(<span style="color:#e6db74">&#39;lr&#39;</span>, log_clf), (<span style="color:#e6db74">&#39;rf&#39;</span>, rnd_clf), (<span style="color:#e6db74">&#39;svc&#39;</span>, svm_clf)],
+    voting<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;hard&#39;</span>)
+</code></pre></div><p><em>Bagging</em> (bootstrap aggregating) is training classifiers on different subsets of data <em>with</em> replacement.</p>
+<p><em>Pasting</em> is the same thing <em>without</em> replacement.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># set bootstrap=False for pasting</span>
+<span style="color:#75715e"># set oob_score=True for out-of-bag evaluation</span>
+<span style="color:#75715e"># set max_features and bootstrap_features to sample random subspaces</span>
+bag_clf <span style="color:#f92672">=</span> BaggingClassifier(
+    DecisionTreeClassifier(random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>), n_estimators<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>,
+    max_samples<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>, bootstrap<span style="color:#f92672">=</span>True, n_jobs<span style="color:#f92672">=-</span><span style="color:#ae81ff">1</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+bag_clf<span style="color:#f92672">.</span>fit(X_train, y_train)
+y_pred <span style="color:#f92672">=</span> bag_clf<span style="color:#f92672">.</span>predict(X_test)
+</code></pre></div><p><em>Random patches</em> sample both training instances and features.</p>
+<p>A <em>random forest</em> is an ensemble of decision trees.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">iris <span style="color:#f92672">=</span> load_iris()
+rnd_clf <span style="color:#f92672">=</span> RandomForestClassifier(n_estimators<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>, n_jobs<span style="color:#f92672">=-</span><span style="color:#ae81ff">1</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+rnd_clf<span style="color:#f92672">.</span>fit(iris[<span style="color:#e6db74">&#34;data&#34;</span>], iris[<span style="color:#e6db74">&#34;target&#34;</span>])
+</code></pre></div><p>The <code>ExtraTreesClassifier</code> (extra = extremely randomized) uses random thresholds for each feature and has higher bias &amp; lower variance than the <code>RandomForestClassifier</code>.</p>
+<p>The <code>RandomForestClassifier</code> has a <code>feature_importances_</code> variable which is handy for selecting features.</p>
+<h3 id="boosting">Boosting</h3>
+<p><em>Boosting</em> (hypothesis boosting) combines weak learners into a strong learner by training learners sequentially.</p>
+<p><em>AdaBoost</em> (adaptive boosting) trains each learner on instances that its predecessor underfitted.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">ada_clf <span style="color:#f92672">=</span> AdaBoostClassifier(
+    DecisionTreeClassifier(max_depth<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>), n_estimators<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>,
+    algorithm<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;SAMME.R&#34;</span>, learning_rate<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+ada_clf<span style="color:#f92672">.</span>fit(X_train, y_train)
+</code></pre></div><p><em>Gradient boosting</em> tries to fit the new predictor to the residual errors made by the previous predictor.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">gbrt <span style="color:#f92672">=</span> GradientBoostingRegressor(max_depth<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, n_estimators<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, learning_rate<span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+gbrt<span style="color:#f92672">.</span>fit(X, y)
+</code></pre></div><h3 id="stacking-stacked-generalization">Stacking (stacked generalization)</h3>
+<p><em>Stacking</em> trains a model to make a final prediction, instead of hard or soft voting.</p>
+<p>The final predictor is called a <em>blender</em>.</p>
+<p>The blender is typically trained on a hold-out data set.</p>
+<h3 id="dimensionality-reduction">Dimensionality Reduction</h3>
+<p><em>Principle Component Analysis</em> (PCA) identifies the hyperplane that lies closest to the data, then projects the data onto it.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">pca <span style="color:#f92672">=</span> PCA(n_components <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>)
+X2D <span style="color:#f92672">=</span> pca<span style="color:#f92672">.</span>fit_transform(X)
+</code></pre></div><p>The principle components can then be accessed with the  <code>components_</code> variable.  Also interesting is the <code>explained_variance_ratio_</code> variable.</p>
+<p>To find the minimum components to preserve a given variance, use</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">pca <span style="color:#f92672">=</span> PCA(n_components<span style="color:#f92672">=</span><span style="color:#ae81ff">0.95</span>)
+X_reduced <span style="color:#f92672">=</span> pca<span style="color:#f92672">.</span>fit_transform(X_train)
+</code></pre></div><p>Reconstruct the original set with</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">X_recovered <span style="color:#f92672">=</span> pca<span style="color:#f92672">.</span>inverse_transform(X_reduced)
+</code></pre></div><p>PCA loads the entire dataset into memory.  For large datasets, use Incremental PCA.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">n_batches <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>
+inc_pca <span style="color:#f92672">=</span> IncrementalPCA(n_components<span style="color:#f92672">=</span><span style="color:#ae81ff">154</span>)
+<span style="color:#66d9ef">for</span> X_batch <span style="color:#f92672">in</span> np<span style="color:#f92672">.</span>array_split(X_train, n_batches):
+    inc_pca<span style="color:#f92672">.</span>partial_fit(X_batch)
+X_reduced <span style="color:#f92672">=</span> inc_pca<span style="color:#f92672">.</span>transform(X_train)
+</code></pre></div><p>When <em>d</em> is much smaller than <em>n</em>, randomized PCA can give much faster results.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">rnd_pca <span style="color:#f92672">=</span> PCA(n_components<span style="color:#f92672">=</span><span style="color:#ae81ff">154</span>, svd_solver<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;randomized&#34;</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+X_reduced <span style="color:#f92672">=</span> rnd_pca<span style="color:#f92672">.</span>fit_transform(X_train)
+</code></pre></div><h3 id="kernel-pca">Kernel PCA</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">rbf_pca <span style="color:#f92672">=</span> KernelPCA(n_components <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, kernel<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rbf&#34;</span>, gamma<span style="color:#f92672">=</span><span style="color:#ae81ff">0.04</span>)
+X_reduced <span style="color:#f92672">=</span> rbf_pca<span style="color:#f92672">.</span>fit_transform(X)
+</code></pre></div><h3 id="other">Other</h3>
+<ul>
+<li><em>Locally Linear Embedding</em> (LLE) is a manifold learning technique that looks at how each instance relates to its neighbors, then tries to preserve the relationship in lower dimensions.</li>
+<li><em>Multidimensional Scaling</em> (MDS) attempts to preserve the distances between instances</li>
+<li><em>Isomap</em> creates a graph between instances, then reduces dimensionality while trying to preserve geodesic distances between instances</li>
+<li><em>t-Distributed Stochastic Neighbor Embedding</em> (t-SNE) reduces dimensionality while keeping similar instances together and dissimilar instances apart.  Used mostly for visualization.</li>
+<li><em>Linear discriminant analysis</em> (LDA) is a classifier that learns the most discriminative axes between the classes.</li>
+</ul>
+
+				</section>
+			</article>
+		</main>
+	</div> 
+
+	
+
+</div> 
+
+
+
+
+</div> 
+
+<footer class="doc-footer">
+	
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+<script src="http://surfingwithstyle.com//js/bootie-docs.js"></script>
+
+</body>
+</html>

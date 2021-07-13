@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Surfing With Style">
+    <link rel="icon" href="http://surfingwithstyle.com//favicon.ico">
+    <title>Python - Surfing With Style</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+        href="http://surfingwithstyle.com//css/highlight/github.css">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/theme.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/bootie-docs.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/site.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/math.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/mini-metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/calculator.css">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML"></script>
+</head>
+
+<body role="document">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="http://surfingwithstyle.com//">Surfing With Style</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tools
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/tools/timer/">Timer</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/calculator/">Calculator</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/old-english-letters/">Old English Letters</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Study
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/study/flashcards/">Flashcards</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Practice
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/practice/metronome/">Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome/">Scheduled Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/accelerating-metronome/">Accelerating Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome-presets/">Presets</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/chords/">Chords</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Notes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/notes/data-science/">Data Science</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/ms/">MS</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/python/">Python</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/designpatterns/">Design Patterns</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/git/">Git</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/solid/">SOLID</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/sql/">SQL</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Other ...</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="">Tools2</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Books</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                
+
+                
+
+
+                
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div class="container">
+
+<div class="row">
+	<div class="col-sm-offset-2 col-sm-8 doc-main">
+		<main role="main">
+			<article>
+				<a id="title"></a>
+				<h1 class="doc-entry-title">Python</h1>
+				<div class="doc-entry-meta">
+					<span><time datetime="2020-06-18">June 18, 2020</time></span>
+				</div>
+				<section>
+					<h1 id="python">Python</h1>
+<p>Links:<br>
+<a href="http://docs.python-guide.org/en/latest/writing/tests/">Testing Your Code</a><br>
+<a href="http://docs.python-requests.org/en/master/">Requests: HTTP for Humans™</a><br>
+<a href="http://docs.sqlalchemy.org/en/latest/">SQL Alchemy</a><br>
+<a href="http://flask-sqlalchemy.pocoo.org/2.3/">Flask SQLAlchemy</a><br>
+<a href="http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html">Example Google Style Python Docstrings</a><br>
+<a href="http://www.jrsoftware.org/isinfo.php">Inno Setup install wizard creator</a><br>
+<a href="http://www.nltk.org/api/nltk.tokenize.html">nltk.tokenize</a><br>
+<a href="https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/">The beginner&rsquo;s guide to contributing to a GitHub project</a><br>
+<a href="https://blog.algorithmia.com/how-to-version-control-your-production-machine-learning-models/">How to Version Control Your Production Machine Learning Models</a><br>
+<a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database">The Flask Mega-Tutorial Part IV: Database</a><br>
+<a href="https://devcenter.heroku.com/articles/getting-started-with-python#provision-a-database">Getting Started on Heroku with Python</a><br>
+<a href="https://docs.pytest.org/en/latest/customize.html">pytest Configuration</a><br>
+<a href="https://docs.pytest.org/en/latest/getting-started.html">pytest Installation and Getting Started</a><br>
+<a href="https://docs.python.org/3/distutils/packageindex.html">The Python Package Index (PyPI)</a><br>
+<a href="https://docs.python.org/3/library/pdb.html">pdb — The Python Debugger</a><br>
+<a href="https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556">Mixins for Fun and Profit</a><br>
+<a href="https://github.com/MarcDiethelm/contributing/blob/master/README.md">Contributing to a Github Project</a><br>
+<a href="https://ipython.readthedocs.io/en/stable/interactive/magics.html">Magic Commands</a><br>
+<a href="https://numpydoc.readthedocs.io/en/latest/format.html">NumPy Docstring Guide</a><br>
+<a href="https://opensource.org/licenses/MIT">The MIT License</a><br>
+<a href="https://packaging.python.org/tutorials/distributing-packages/">Packaging Python Projects</a><br>
+<a href="https://pypi.org/">PyPI package browser</a><br>
+<a href="https://realpython.com/instance-class-and-static-methods-demystified/">Python&rsquo;s Instance, Class, and Static Methods Demystified</a><br>
+<a href="https://realpython.com/primer-on-python-decorators/">Primer on Python Decorators</a><br>
+<a href="https://shuaiw.github.io/2017/07/30/versioning-data-science.html">Versioning Data Science</a><br>
+<a href="https://web.stanford.edu/~mrosenfe/soc_meth_proj3/matrix_OLS_NYU_notes.pdf">OLS in Matrix Form</a><br>
+<a href="https://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a><br>
+<a href="https://www.fullstackpython.com/integration-testing.html">Integration Testing</a><br>
+<a href="https://www.jetbrains.com/pycharm/download/">PyCharm</a><br>
+<a href="https://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf">A Whirlwind Tour of Python</a><br>
+<a href="https://www.oreilly.com/programming/free/files/how-to-make-mistakes-in-python.pdf">How to Make Mistakes in Python</a><br>
+<a href="https://www.pylint.org/">pylint</a><br>
+<a href="https://www.python-course.eu/python3_class_and_instance_attributes.php">Class and Instance Attributes</a><br>
+<a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 &ndash; Style Guide for Python Code</a><br>
+<a href="https://www.python.org/dev/peps/pep-0257/">PEP 257 - Docstring Conventions</a><br>
+<a href="https://www.sqlalchemy.org/">SQLAlchemy</a><br>
+<a href="https://test.pypi.org/">Test Python package publishing</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># create a requirements.txt</span>
+<span style="color:#960050;background-color:#1e0010">$</span> pip freeze <span style="color:#f92672">&gt;</span> requirements<span style="color:#f92672">.</span>txt
+
+<span style="color:#75715e"># confirm TensorFlow sees the GPU</span>
+<span style="color:#f92672">from</span> tensorflow.python.client <span style="color:#f92672">import</span> device_lib
+<span style="color:#66d9ef">assert</span> <span style="color:#e6db74">&#39;GPU&#39;</span> <span style="color:#f92672">in</span> str(device_lib<span style="color:#f92672">.</span>list_local_devices())
+
+<span style="color:#75715e"># confirm Keras sees the GPU</span>
+<span style="color:#f92672">from</span> keras <span style="color:#f92672">import</span> backend
+<span style="color:#66d9ef">assert</span> len(backend<span style="color:#f92672">.</span>tensorflow_backend<span style="color:#f92672">.</span>_get_available_gpus()) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>
+
+<span style="color:#75715e"># confirm PyTorch is using the GPU</span>
+<span style="color:#f92672">from</span> torch <span style="color:#f92672">import</span> cuda
+<span style="color:#66d9ef">assert</span> cuda<span style="color:#f92672">.</span>is_available()
+<span style="color:#66d9ef">assert</span> cuda<span style="color:#f92672">.</span>device_count() <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">print</span>(cuda<span style="color:#f92672">.</span>get_device_name(cuda<span style="color:#f92672">.</span>current_device()))
+
+Common Jupyter keystrokes
+SHIFT<span style="color:#f92672">+</span>ENTER
+CTRL<span style="color:#f92672">+</span>ENTER
+UP<span style="color:#f92672">/</span>DOWN
+TAB
+SHIFT<span style="color:#f92672">+</span>TAB
+SHIFT<span style="color:#f92672">+</span>TAB,SHIFT<span style="color:#f92672">+</span>TAB
+ESC,H
+CTRL<span style="color:#f92672">+</span>SHIFT<span style="color:#f92672">+</span>P
+
+Common magic keywords:
+<span style="color:#f92672">%</span>matplotlib
+<span style="color:#f92672">%</span>timeit
+<span style="color:#f92672">%</span>pdb
+
+<span style="color:#75715e"># convert a notebook to HTML, slides</span>
+jupyter nbconvert <span style="color:#f92672">--</span>to html notebook<span style="color:#f92672">.</span>ipynb
+jupyter nbconvert notebook<span style="color:#f92672">.</span>ipynb <span style="color:#f92672">--</span>to slides
+jupyter nbconvert notebook<span style="color:#f92672">.</span>ipynb <span style="color:#f92672">--</span>to slides <span style="color:#f92672">--</span>post serve
+
+<span style="color:#75715e"># Continue one line with &#39;\&#39;</span>
+
+<span style="color:#75715e"># Continue multiple lines with parenthetical expression &#39;(...)&#39; (preferred)</span>
+
+<span style="color:#75715e"># Separate multiple statements on one line with &#39;;&#39;</span>
+
+<span style="color:#75715e"># All variables are pointers (including ints)</span>
+
+<span style="color:#75715e"># Everything is an object (including ints)</span>
+
+<span style="color:#75715e"># floor division</span>
+a <span style="color:#f92672">//</span> b
+
+<span style="color:#75715e"># exponentiation</span>
+a <span style="color:#f92672">**</span> b
+
+<span style="color:#75715e"># bit SHIFT left, right</span>
+a <span style="color:#f92672">&lt;&lt;</span> b; a <span style="color:#f92672">&gt;&gt;</span> b
+
+<span style="color:#75715e"># bitwise NOT</span>
+<span style="color:#f92672">~</span>a
+
+<span style="color:#75715e"># output binary</span>
+bin(<span style="color:#ae81ff">10</span>)
+
+<span style="color:#75715e"># Boolean operators: and, or, not</span>
+
+<span style="color:#75715e"># boolean XOR</span>
+(x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">!=</span> (x <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>)
+
+<span style="color:#75715e"># identity operators</span>
+a <span style="color:#f92672">is</span> b
+a <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> b
+
+<span style="color:#75715e"># membership operators</span>
+a <span style="color:#f92672">in</span> b
+a <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> b
+
+<span style="color:#75715e"># complex numbers</span>
+x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">2j</span>
+
+<span style="color:#75715e"># null</span>
+x <span style="color:#f92672">=</span> None
+
+<span style="color:#75715e"># length of a string, list, tuple</span>
+len(s)
+
+<span style="color:#75715e"># string case</span>
+str<span style="color:#f92672">.</span>upper()
+str<span style="color:#f92672">.</span>lower()
+str<span style="color:#f92672">.</span>capitalize()
+str<span style="color:#f92672">.</span>title()
+
+<span style="color:#75715e"># string, list concatenation</span>
+a <span style="color:#f92672">+</span> b
+
+<span style="color:#75715e"># string power</span>
+<span style="color:#ae81ff">5</span> <span style="color:#f92672">*</span> s
+
+<span style="color:#75715e"># list</span>
+[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+
+<span style="color:#75715e"># tuple</span>
+(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)
+<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>
+
+<span style="color:#75715e"># dict</span>
+{<span style="color:#e6db74">&#39;a&#39;</span>:<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;b&#39;</span>:<span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#39;c&#39;</span>:<span style="color:#ae81ff">3</span>}
+
+<span style="color:#75715e"># set</span>
+{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>}
+
+<span style="color:#75715e"># list append</span>
+x<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">11</span>)
+
+<span style="color:#75715e"># list sort</span>
+x<span style="color:#f92672">.</span>sort()
+
+<span style="color:#75715e"># last element of list</span>
+x[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+
+<span style="color:#75715e"># first 3 elements of list</span>
+x[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">3</span>]
+x[:<span style="color:#ae81ff">3</span>]
+
+<span style="color:#75715e"># last 3 elements of list</span>
+x[<span style="color:#f92672">-</span><span style="color:#ae81ff">3</span>:len(x)]
+x[<span style="color:#f92672">-</span><span style="color:#ae81ff">3</span>:]
+
+<span style="color:#75715e"># select every other element of list</span>
+x[<span style="color:#ae81ff">0</span>:len(x):<span style="color:#ae81ff">2</span>]
+x[::<span style="color:#ae81ff">2</span>]
+
+<span style="color:#75715e"># reverse list</span>
+x[::<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+
+<span style="color:#75715e"># slicing works on LHS of assignment</span>
+x[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">3</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>]
+
+<span style="color:#75715e"># Tuples are immutable.</span>
+
+<span style="color:#75715e"># Indexing, slicing, and many other list functions work on tuples.</span>
+
+<span style="color:#75715e"># set operations</span>
+primes <span style="color:#f92672">|</span> odds <span style="color:#f92672">&lt;=&gt;</span> primes<span style="color:#f92672">.</span>union(odds)
+primes <span style="color:#f92672">&amp;</span> odds <span style="color:#f92672">&lt;=&gt;</span> primes<span style="color:#f92672">.</span>intersection(odds)
+primes <span style="color:#f92672">-</span> odds <span style="color:#f92672">&lt;=&gt;</span> primes<span style="color:#f92672">.</span>difference(odds)
+primes <span style="color:#f92672">^</span> odds <span style="color:#f92672">&lt;=&gt;</span> primes<span style="color:#f92672">.</span>symmetric_difference(odds)
+
+<span style="color:#75715e"># other useful collections (there are still more)</span>
+collections<span style="color:#f92672">.</span>namedtuple  <span style="color:#75715e"># Like a tuple, but each value has a name</span>
+collections<span style="color:#f92672">.</span>defaultdict <span style="color:#75715e"># Like a dictionary, but unspecified keys have a user-specified default value</span>
+collections<span style="color:#f92672">.</span>OrderedDict <span style="color:#75715e"># Like a dictionary, but the order of keys is maintained</span>
+
+<span style="color:#66d9ef">if</span> x <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+    <span style="color:#66d9ef">print</span>(x, <span style="color:#e6db74">&#34;is zero&#34;</span>)
+<span style="color:#66d9ef">elif</span> x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+    <span style="color:#66d9ef">print</span>(x, <span style="color:#e6db74">&#34;is positive&#34;</span>)
+<span style="color:#66d9ef">elif</span> x <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>:
+    <span style="color:#66d9ef">print</span>(x, <span style="color:#e6db74">&#34;is negative&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">print</span>(x, <span style="color:#e6db74">&#34;is unlike anything I&#39;ve ever seen...&#34;</span>)
+
+<span style="color:#66d9ef">for</span> N <span style="color:#f92672">in</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>]:
+    <span style="color:#66d9ef">print</span>(N, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>) <span style="color:#75715e"># print all on same line</span>
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
+    <span style="color:#66d9ef">print</span>(i, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)
+
+<span style="color:#75715e"># range object</span>
+list(range(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">10</span>))
+list(range(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>))
+
+i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">10</span>:
+    <span style="color:#66d9ef">print</span>(i, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)
+    i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+
+<span style="color:#66d9ef">break</span>
+
+<span style="color:#66d9ef">continue</span>
+
+<span style="color:#75715e"># define functions with def</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">f</span>(val):
+    <span style="color:#66d9ef">return</span> (<span style="color:#e6db74">&#39;f&#39;</span>, val)
+
+Functions can have default arguments<span style="color:#f92672">.</span>
+
+Functions can be called using named arguments<span style="color:#f92672">.</span>
+
+<span style="color:#75715e"># varargs - the significant things are the &#39;*&#39; and &#39;**&#39; modifiers</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">catch_all</span>(<span style="color:#f92672">*</span>args, <span style="color:#f92672">**</span>kwargs):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;args =&#34;</span>, args)
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;kwargs = &#34;</span>, kwargs)
+
+<span style="color:#75715e"># lambda statement - functions are objects too</span>
+add <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> x, y: x <span style="color:#f92672">+</span> y
+    add(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)
+
+<span style="color:#75715e"># sort list of dict alphabetically by first name</span>
+sorted(data, key<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span> item: item[<span style="color:#e6db74">&#39;first&#39;</span>])
+
+<span style="color:#66d9ef">try</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;try something here&#34;</span>)
+<span style="color:#66d9ef">except</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;this happens only if it fails&#34;</span>)
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;this happens only if it succeeds&#34;</span>)
+<span style="color:#66d9ef">finally</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;this happens no matter what&#34;</span>)
+
+<span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">RuntimeError</span>(<span style="color:#e6db74">&#34;fail&#34;</span>)
+
+<span style="color:#66d9ef">try</span>:
+    x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">except</span> <span style="color:#a6e22e">ZeroDivisionError</span> <span style="color:#66d9ef">as</span> err:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Error class is:  &#34;</span>, type(err))
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Error message is:&#34;</span>, err)
+
+<span style="color:#75715e"># define a custom exception</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MySpecialError</span>(<span style="color:#a6e22e">ValueError</span>):
+    <span style="color:#66d9ef">pass</span>
+<span style="color:#66d9ef">raise</span> MySpecialError(<span style="color:#e6db74">&#34;here&#39;s the message&#34;</span>)
+
+<span style="color:#75715e"># zip</span>
+<span style="color:#66d9ef">for</span> lval, rval <span style="color:#f92672">in</span> zip(L, R):
+    <span style="color:#66d9ef">print</span>(lval, rval)
+
+<span style="color:#75715e"># map</span>
+<span style="color:#66d9ef">for</span> val <span style="color:#f92672">in</span> map(square, range(<span style="color:#ae81ff">10</span>)):
+    <span style="color:#66d9ef">print</span>(val, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)
+
+<span style="color:#75715e"># filter</span>
+is_even <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> x: x <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">for</span> val <span style="color:#f92672">in</span> filter(is_even, range(<span style="color:#ae81ff">10</span>)):
+    <span style="color:#66d9ef">print</span>(val, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)
+
+<span style="color:#75715e"># unzip</span>
+z <span style="color:#f92672">=</span> zip(L1, L2)
+new_L1, new_L2 <span style="color:#f92672">=</span> zip(<span style="color:#f92672">*</span>z)
+
+<span style="color:#75715e"># The itertools module contains permutation, combination and product functions.</span>
+
+<span style="color:#75715e"># &#34;ternary operator&#34;</span>
+val <span style="color:#66d9ef">if</span> val <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">-</span>val
+
+<span style="color:#75715e"># list comprehensions - [&lt;em&gt;expr&lt;/em&gt; for &lt;em&gt;var&lt;/em&gt; in &lt;em&gt;iterable&lt;/em&gt;]</span>
+[i <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">20</span>) <span style="color:#66d9ef">if</span> i <span style="color:#f92672">%</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>]
+
+<span style="color:#75715e"># set comprehension</span>
+{n<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span> <span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">12</span>)}
+
+<span style="color:#75715e"># dict comprehension</span>
+{n:n<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span> <span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">6</span>)}
+
+<span style="color:#75715e"># generator expression</span>
+(n<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span> <span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">12</span>))
+
+<span style="color:#75715e"># to print a generator expression</span>
+list(n<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span> <span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">12</span>))
+
+A generator <span style="color:#f92672">is</span> used up after one iteration<span style="color:#f92672">.</span>
+
+Generator functions <span style="color:#66d9ef">return</span> values <span style="color:#66d9ef">with</span> <span style="color:#e6db74">&#39;yield&#39;</span><span style="color:#f92672">.</span>
+
+<span style="color:#75715e"># requires all imported functions to be prefixed with package name</span>
+<span style="color:#f92672">import</span> math
+<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
+
+<span style="color:#75715e"># imported functions can be used w/o prefix</span>
+<span style="color:#f92672">from</span> math <span style="color:#f92672">import</span> cos, pi
+<span style="color:#f92672">from</span> math <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+
+<span style="color:#75715e"># standard libraries</span>
+os <span style="color:#f92672">and</span> sys <span style="color:#f92672">-</span> Tools <span style="color:#66d9ef">for</span> interfacing <span style="color:#66d9ef">with</span> the operating system, including navigating file directory structures <span style="color:#f92672">and</span> executing shell commands
+math <span style="color:#f92672">and</span> cmath <span style="color:#f92672">-</span> Mathematical functions <span style="color:#f92672">and</span> operations on real <span style="color:#f92672">and</span> complex numbers 
+itertools <span style="color:#f92672">-</span> Tools <span style="color:#66d9ef">for</span> constructing <span style="color:#f92672">and</span> interacting <span style="color:#66d9ef">with</span> iterators <span style="color:#f92672">and</span> generators 
+functools <span style="color:#f92672">-</span> Tools that assist <span style="color:#66d9ef">with</span> functional programming 
+random <span style="color:#f92672">-</span> Tools <span style="color:#66d9ef">for</span> generating pseudorandom numbers
+pickle <span style="color:#f92672">-</span> Tools <span style="color:#66d9ef">for</span> object persistence: saving objects to <span style="color:#f92672">and</span> loading objects <span style="color:#f92672">from</span> disk 
+json <span style="color:#f92672">and</span> csv <span style="color:#f92672">-</span> Tools <span style="color:#66d9ef">for</span> reading JSON<span style="color:#f92672">-</span>formatted <span style="color:#f92672">and</span> CSV<span style="color:#f92672">-</span>formatted files 
+urllib <span style="color:#f92672">-</span> Tools <span style="color:#66d9ef">for</span> doing HTTP <span style="color:#f92672">and</span> other web requests
+
+<span style="color:#75715e"># string trimming</span>
+line<span style="color:#f92672">.</span>strip()
+line<span style="color:#f92672">.</span>lstrip()
+line<span style="color:#f92672">.</span>rstrip()
+
+<span style="color:#75715e"># justify</span>
+line<span style="color:#f92672">.</span>ljust()
+line<span style="color:#f92672">.</span>rjust()
+
+<span style="color:#75715e"># find / replace</span>
+line<span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#39;fox&#39;</span>)
+line<span style="color:#f92672">.</span>rfind(<span style="color:#e6db74">&#39;fox&#39;</span>)
+line<span style="color:#f92672">.</span>index(<span style="color:#e6db74">&#39;fox&#39;</span>)
+line<span style="color:#f92672">.</span>rindex(<span style="color:#e6db74">&#39;fox&#39;</span>)
+line<span style="color:#f92672">.</span>startswith(<span style="color:#e6db74">&#39;fox&#39;</span>)
+line<span style="color:#f92672">.</span>endswith(<span style="color:#e6db74">&#39;dog&#39;</span>)
+line<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;brown&#39;</span>, <span style="color:#e6db74">&#39;red&#39;</span>)
+
+<span style="color:#75715e"># splitting</span>
+line<span style="color:#f92672">.</span>partition(<span style="color:#e6db74">&#39;fox&#39;</span>)
+line<span style="color:#f92672">.</span>split()
+
+<span style="color:#75715e"># formatting</span>
+<span style="color:#e6db74">&#34;pi = {0:.3f}&#34;</span><span style="color:#f92672">.</span>format(pi)
+
+<span style="color:#75715e"># regex</span>
+<span style="color:#f92672">import</span> re
+regex <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>compile(<span style="color:#e6db74">&#39;\s+&#39;</span>)
+regex<span style="color:#f92672">.</span>split(line)
+found <span style="color:#f92672">=</span> regex<span style="color:#f92672">.</span>match(s)
+
+<span style="color:#75715e"># Common tools include numpy, scipy, pandas, matplotlib, scikit-learn.</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Employee</span>:
+   <span style="color:#e6db74">&#39;Common base class for all employees&#39;</span>
+   empCount <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+   <span style="color:#66d9ef">def</span> __init__(self, name, salary):
+      self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
+      self<span style="color:#f92672">.</span>salary <span style="color:#f92672">=</span> salary
+      Employee<span style="color:#f92672">.</span>empCount <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+   
+   <span style="color:#66d9ef">def</span> __del__(self):
+      class_name <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>__name__
+      <span style="color:#66d9ef">print</span> class_name, <span style="color:#e6db74">&#34;destroyed&#34;</span>
+
+   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">displayCount</span>(self):
+     <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Total Employee </span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> Employee<span style="color:#f92672">.</span>empCount
+
+   <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">displayEmployee</span>(self):
+      <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Name : &#34;</span>, self<span style="color:#f92672">.</span>name,  <span style="color:#e6db74">&#34;, Salary: &#34;</span>, self<span style="color:#f92672">.</span>salary
+
+The getattr(obj, name[, default]) <span style="color:#960050;background-color:#1e0010">−</span> to access the attribute of object<span style="color:#f92672">.</span>
+The hasattr(obj,name) <span style="color:#960050;background-color:#1e0010">−</span> to check <span style="color:#66d9ef">if</span> an attribute exists <span style="color:#f92672">or</span> <span style="color:#f92672">not</span><span style="color:#f92672">.</span>
+The setattr(obj,name,value) <span style="color:#960050;background-color:#1e0010">−</span> to set an attribute<span style="color:#f92672">.</span> If attribute does <span style="color:#f92672">not</span> exist, then it would be created<span style="color:#f92672">.</span>
+The delattr(obj, name) <span style="color:#960050;background-color:#1e0010">−</span> to delete an attribute<span style="color:#f92672">.</span>
+
+__dict__ <span style="color:#960050;background-color:#1e0010">−</span> Dictionary containing the class<span style="color:#e6db74">&#39;s namespace.</span>
+__doc__ <span style="color:#960050;background-color:#1e0010">−</span> Class documentation string <span style="color:#f92672">or</span> none, <span style="color:#66d9ef">if</span> undefined<span style="color:#f92672">.</span> 
+__name__ <span style="color:#960050;background-color:#1e0010">−</span> Class name<span style="color:#f92672">.</span>
+__module__ <span style="color:#960050;background-color:#1e0010">−</span> Module name <span style="color:#f92672">in</span> which the <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">is</span> defined<span style="color:#f92672">.</span> This attribute <span style="color:#f92672">is</span> <span style="color:#e6db74">&#34;__main__&#34;</span> <span style="color:#f92672">in</span> interactive mode<span style="color:#f92672">.</span> 
+__bases__ <span style="color:#960050;background-color:#1e0010">−</span> A possibly empty tuple containing the base classes, <span style="color:#f92672">in</span> the order of their occurrence <span style="color:#f92672">in</span> the base <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">list</span><span style="color:#f92672">.</span>
+
+<span style="color:#75715e"># multiple inheritance</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SubClassName</span> (ParentClass1[, ParentClass2, <span style="color:#f92672">...</span>]):
+   <span style="color:#e6db74">&#39;Optional class documentation string&#39;</span>
+   class_suite
+
+__init__ ( self [,args<span style="color:#f92672">...</span>] ) 
+Constructor (<span style="color:#66d9ef">with</span> any optional arguments) 
+Sample Call : obj <span style="color:#f92672">=</span> className(args)
+
+__del__( self )
+Destructor, deletes an object
+Sample Call : <span style="color:#66d9ef">del</span> obj
+
+__repr__( self )
+Evaluable string representation
+Sample Call : repr(obj)
+
+__str__( self )
+Printable string representation
+Sample Call : str(obj)
+
+__cmp__ ( self, x )
+Object comparison
+Sample Call : cmp(obj, x)
+
+<span style="color:#75715e"># typecast</span>
+int(<span style="color:#ae81ff">4.0</span>)
+float(<span style="color:#ae81ff">7</span>)
+
+<span style="color:#75715e"># string interpolation</span>
+f<span style="color:#e6db74">&#34;Nice to meet you {name}.  I am {machine}.&#34;</span>
+
+<span style="color:#75715e"># remove item from list</span>
+<span style="color:#66d9ef">del</span> student_names[<span style="color:#ae81ff">2</span>]
+
+<span style="color:#75715e"># catch all exceptions</span>
+<span style="color:#66d9ef">try</span>:
+    x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span>:
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Fail!&#34;</span>)
+
+<span style="color:#75715e"># converting a list to a set removes duplicates and sorts it</span>
+set([<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>]) <span style="color:#f92672">==</span> (<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>)
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">save_file</span>(student):
+    <span style="color:#66d9ef">try</span>:
+        f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;students.txt&#34;</span>, <span style="color:#e6db74">&#34;a&#34;</span>)
+        f<span style="color:#f92672">.</span>write(student <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
+        f<span style="color:#f92672">.</span>close()
+    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span>:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Could not save file&#34;</span>)
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">read_file</span>():
+    <span style="color:#66d9ef">try</span>:
+        f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#34;students.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>)
+        <span style="color:#66d9ef">for</span> student <span style="color:#f92672">in</span> f<span style="color:#f92672">.</span>readlines():
+            add_student(student)
+        f<span style="color:#f92672">.</span>close()
+    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span>:
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Could not read file&#34;</span>)
+
+<span style="color:#75715e"># There are no access modifiers.  All class methods and members are public.</span>
+
+<span style="color:#75715e"># By convention, methods are marked &#34;private&#34; by preceding them with an underscore.</span>
+
+<span style="color:#75715e"># There are no interfaces.</span>
+
+pip install virtualenv
+virtualenv <span style="color:#f92672">&amp;</span>lt;name<span style="color:#f92672">&amp;</span>gt;
+source <span style="color:#f92672">&amp;</span>lt;path<span style="color:#f92672">&amp;</span>gt;<span style="color:#f92672">&amp;</span>lt;name<span style="color:#f92672">&amp;</span>gt;<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>activate
+deactivate
+
+<span style="color:#75715e"># create .exe</span>
+pip install pyinstaller
+pyinstaller <span style="color:#f92672">--</span>onefile <span style="color:#f92672">&amp;</span>lt;filename containing entry point<span style="color:#f92672">&amp;</span>gt;
+
+<span style="color:#75715e"># Use InnoSetup to create installer, see links.</span>
+
+os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(<span style="color:#f92672">&lt;</span>em<span style="color:#f92672">&gt;</span>string<span style="color:#f92672">&lt;/</span>em<span style="color:#f92672">&gt;</span>, <span style="color:#f92672">&lt;</span>em<span style="color:#f92672">&gt;</span>string<span style="color:#f92672">&lt;/</span>em<span style="color:#f92672">&gt;</span>)
+os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>isdir(<span style="color:#f92672">&lt;</span>em<span style="color:#f92672">&gt;</span>string<span style="color:#f92672">&lt;/</span>em<span style="color:#f92672">&gt;</span>)
+os<span style="color:#f92672">.</span>makedirs(<span style="color:#f92672">&lt;</span>em<span style="color:#f92672">&gt;</span>string<span style="color:#f92672">&lt;/</span>em<span style="color:#f92672">&gt;</span>)
+
+<span style="color:#f92672">import</span> os
+<span style="color:#f92672">import</span> tarfile
+<span style="color:#f92672">from</span> six.moves <span style="color:#f92672">import</span> urllib
+
+DOWNLOAD_ROOT <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&amp;lt;URL&amp;gt;&#34;</span>
+HOUSING_PATH <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(<span style="color:#e6db74">&#34;datasets&#34;</span>, <span style="color:#e6db74">&#34;housing&#34;</span>)
+HOUSING_URL <span style="color:#f92672">=</span> DOWNLOAD_ROOT <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;datasets/housing/housing.tgz&#34;</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fetch_housing_data</span>(housing_url<span style="color:#f92672">=</span>HOUSING_URL, housing_path<span style="color:#f92672">=</span>HOUSING_PATH):
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>isdir(housing_path):
+        os<span style="color:#f92672">.</span>makedirs(housing_path)
+    tgz_path <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(housing_path, <span style="color:#e6db74">&#34;housing.tgz&#34;</span>)
+    urllib<span style="color:#f92672">.</span>request<span style="color:#f92672">.</span>urlretrieve(housing_url, tgz_path)
+    housing_tgz <span style="color:#f92672">=</span> tarfile<span style="color:#f92672">.</span>open(tgz_path)
+    housing_tgz<span style="color:#f92672">.</span>extractall(path<span style="color:#f92672">=</span>housing_path)
+    housing_tgz<span style="color:#f92672">.</span>close()
+
+conda upgrade conda
+conda upgrade <span style="color:#f92672">--</span>all
+conda install package_name
+conda install numpy<span style="color:#f92672">=</span><span style="color:#ae81ff">1.10</span>
+conda remove package_name
+conda update package_name
+conda list
+conda search <span style="color:#f92672">*</span>beautifulsoup<span style="color:#f92672">*</span>
+conda create <span style="color:#f92672">-</span>n env_name list of packages
+conda create <span style="color:#f92672">-</span>n py2 python<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
+conda create <span style="color:#f92672">-</span>n py python<span style="color:#f92672">=</span><span style="color:#ae81ff">3.3</span>
+source activate my_env
+source deactivate
+conda env export <span style="color:#f92672">&gt;</span> environment<span style="color:#f92672">.</span>yaml
+conda env create <span style="color:#f92672">-</span>f environment<span style="color:#f92672">.</span>yaml
+conda env list
+conda env remove <span style="color:#f92672">-</span>n env_name
+pip freeze <span style="color:#f92672">&gt;</span> requirements<span style="color:#f92672">.</span>txt
+pip install <span style="color:#f92672">-</span>r requirements<span style="color:#f92672">.</span>txt
+
+conda install jupyter notebook
+jupyter notebook
+conda install nb_conda
+
+Then <span style="color:#66d9ef">if</span> you run the notebook server <span style="color:#f92672">from</span> a conda environment, you<span style="color:#e6db74">&#39;ll also have access to the &#34;Conda&#34; tab.</span>
+
+Magic keywords
+
+<span style="color:#75715e"># set up matplotlib to work interactively in the notebook</span>
+<span style="color:#f92672">%</span>matplotlib
+
+<span style="color:#75715e"># time how long it takes for a function to run</span>
+<span style="color:#f92672">%</span>timeit fibo1(<span style="color:#ae81ff">20</span>)
+
+<span style="color:#75715e"># time how long it takes for a whole cell to run</span>
+<span style="color:#f92672">%%</span>timeit
+
+<span style="color:#75715e"># render figures directly in the notebook</span>
+<span style="color:#f92672">%</span>matplotlib inline
+
+<span style="color:#75715e"># On higher resolution screens, use</span>
+<span style="color:#f92672">%</span>config InlineBackend<span style="color:#f92672">.</span>figure_format <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;retina&#39;</span>
+
+<span style="color:#75715e"># turn on the interactive debugger</span>
+<span style="color:#f92672">%</span>pdb
+
+jupyter nbconvert <span style="color:#f92672">--</span>to html notebook<span style="color:#f92672">.</span>ipynb
+jupyter nbconvert notebook<span style="color:#f92672">.</span>ipynb <span style="color:#f92672">--</span>to slides
+jupyter nbconvert notebook<span style="color:#f92672">.</span>ipynb <span style="color:#f92672">--</span>to slides <span style="color:#f92672">--</span>post serve
+
+<span style="color:#75715e"># booleans can be added</span>
+True <span style="color:#f92672">+</span> True <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>
+
+<span style="color:#75715e"># read in CSV into a list of dict</span>
+<span style="color:#f92672">import</span> unicodecsv
+<span style="color:#66d9ef">with</span> open(enrollments_filename, <span style="color:#e6db74">&#39;rb&#39;</span>) <span style="color:#66d9ef">as</span> f:
+    reader <span style="color:#f92672">=</span> unicodecsv<span style="color:#f92672">.</span>DictReader(f)
+    enrollments <span style="color:#f92672">=</span> list(reader)
+
+<span style="color:#75715e"># clear the display in a jupyter notebook</span>
+<span style="color:#f92672">from</span> IPython.display <span style="color:#f92672">import</span> display, clear_output
+clear_output(wait<span style="color:#f92672">=</span>True)
+display(<span style="color:#f92672">...</span>)
+
+<span style="color:#75715e"># download an image</span>
+<span style="color:#f92672">import</span> requests
+<span style="color:#f92672">from</span> PIL <span style="color:#f92672">import</span> Image
+<span style="color:#f92672">from</span> io <span style="color:#f92672">import</span> BytesIO
+r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(url)
+i <span style="color:#f92672">=</span> Image<span style="color:#f92672">.</span>open(BytesIO(r<span style="color:#f92672">.</span>content))
+</code></pre></div>
+				</section>
+			</article>
+		</main>
+	</div> 
+
+	
+
+</div> 
+
+
+
+
+</div> 
+
+<footer class="doc-footer">
+	
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+<script src="http://surfingwithstyle.com//js/bootie-docs.js"></script>
+
+</body>
+</html>

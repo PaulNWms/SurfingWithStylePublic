@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Surfing With Style</title>
+    <link>http://surfingwithstyle.com/notes/web/</link>
+    <description>Recent content in Web on Surfing With Style</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Dec 2019 08:36:11 -0800</lastBuildDate><atom:link href="http://surfingwithstyle.com/notes/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WebAssembly</title>
+      <link>http://surfingwithstyle.com/notes/web/webassembly/</link>
+      <pubDate>Sun, 15 Dec 2019 08:17:10 -0800</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/web/webassembly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTML</title>
+      <link>http://surfingwithstyle.com/notes/web/html/</link>
+      <pubDate>Sun, 15 Dec 2019 08:17:00 -0800</pubDate>
+      
+      <guid>http://surfingwithstyle.com/notes/web/html/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Surfing With Style">
+    <link rel="icon" href="http://surfingwithstyle.com//favicon.ico">
+    <title>Deep Learning - Surfing With Style</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet"
+        href="http://surfingwithstyle.com//css/highlight/github.css">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/theme.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/bootie-docs.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/site.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/math.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/mini-metronome.css">
+    <link rel="stylesheet" href="http://surfingwithstyle.com//css/calculator.css">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML"></script>
+</head>
+
+<body role="document">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="http://surfingwithstyle.com//">Surfing With Style</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                
+                
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tools
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/tools/timer/">Timer</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/calculator/">Calculator</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/tools/old-english-letters/">Old English Letters</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Study
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/study/flashcards/">Flashcards</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Practice
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/practice/metronome/">Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome/">Scheduled Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/accelerating-metronome/">Accelerating Metronome</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/scheduled-metronome-presets/">Presets</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/practice/chords/">Chords</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Notes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="/notes/data-science/">Data Science</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/ms/">MS</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/python/">Python</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/designpatterns/">Design Patterns</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/git/">Git</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/solid/">SOLID</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="/notes/sql/">SQL</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Other ...</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        
+                        
+                        <a class="dropdown-item" href="">Tools2</a>
+                        
+                        
+                        
+                        <a class="dropdown-item" href="">Books</a>
+                        
+                        
+                    </div>
+                </li>
+                
+                
+
+                
+
+
+                
+            </ul>
+            
+        </div>
+    </nav>
+
+    <div class="container">
+
+<div class="row">
+	<div class="col-sm-offset-2 col-sm-8 doc-main">
+		<main role="main">
+			<article>
+				<a id="title"></a>
+				<h1 class="doc-entry-title">Deep Learning</h1>
+				<div class="doc-entry-meta">
+					<span><time datetime="2020-06-17">June 17, 2020</time></span>
+				</div>
+				<section>
+					<p>Links:<br>
+<a href="http://benchmark.ini.rub.de/?section=gtsrb&amp;subsection=dataset">German Traffic Sign dataset</a> and 
+<a href="https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project">project</a><br>
+<a href="http://blog.echen.me/2017/05/30/exploring-lstms/">Exploring LSTMs</a><br>
+<a href="http://blog.kaggle.com/2015/01/02/cifar-10-competition-winners-interviews-with-dr-ben-graham-phil-culliton-zygmunt-zajac/">CIFAR-10 Competition Winners</a><br>
+<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.216.4144&amp;rep=rep1&amp;type=pdf">A Theoretical and Empirical Analysis of Expected Sarsa</a><br>
+<a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.73.3097">Issues in Using Function Approximation for Reinforcement Learning (1993) </a><br>
+<a href="http://cnnlocalization.csail.mit.edu/Zhou_Learning_Deep_Features_CVPR_2016_paper.pdf">Learning Deep Features for Discriminative Localization</a><br>
+<a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a><br>
+<a href="http://cs231n.github.io/">CS231n: Convolutional Neural Networks for Visual Recognition</a><br>
+<a href="http://cs231n.github.io/neural-networks-1/#actfun">Commonly used activation functions</a><br>
+<a href="http://cs231n.github.io/understanding-cnn/">Visualizing what ConvNets learn)</a><br>
+<a href="http://karpathy.github.io/2016/05/31/rl/">Deep Reinforcement Learning: Pong from Pixels</a><br>
+<a href="http://linear.ups.edu/html/section-LC.html">Linear Combinations</a><br>
+<a href="http://neuralnetworksanddeeplearning.com/">Neural Networks and Deep Learning (book)</a><br>
+<a href="http://neuralnetworksanddeeplearning.com/chap5.html">Why are deep neural networks hard to train?</a><br>
+<a href="http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf">ImageNet Classiﬁcation with Deep Convolutional NeuralNetworks</a><br>
+<a href="http://proceedings.mlr.press/v37/jozefowicz15.pdf">An Empirical Explorationof Recurrent Network Architectures</a><br>
+<a href="http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf">Understanding the difﬁculty of training deep feedforward neural networks</a><br>
+<a href="http://read.pudn.com/downloads142/sourcecode/others/617477/inventory%20supply%20chain/04051310570412465(1).pdf">Inventory management in supply chains: a reinforcement learning approach</a><br>
+<a href="http://setosa.io/ev/image-kernels/">Image Kernels Explained Visually</a><br>
+<a href="http://tutorial.math.lamar.edu/pdf/Common_Derivatives_Integrals.pdf">common derivatives</a><br>
+<a href="http://ufldl.stanford.edu/housenumbers/">The Street View House Numbers (SVHN) Dataset</a> and 
+<a href="https://github.com/udacity/machine-learning/tree/master/projects/digit_recognition">project</a><br>
+<a href="http://www-anw.cs.umass.edu/legacy/pubs/1995_96/singh_s_ML96.pdf">Reinforcement Learning with Replacing Eligibility Traces</a><br>
+<a href="http://www.bioinf.jku.at/publications/older/2604.pdf">LSTM</a><br>
+<a href="http://www.creativeai.net/posts/W2C3baXvf2yJSLbY6/a-neural-parametric-singing-synthesizer">WaveNet model that generates songs</a><br>
+<a href="http://www.cs.toronto.edu/~graves/handwriting.cgi?text=My+name+is+Luka&amp;style=&amp;bias=0.15&amp;samples=3">automatic handwriting generation</a><br>
+<a href="http://www.cs.toronto.edu/~guerzhoy/321/lec/W09/rnn_gated.pdf">Learning Long-Term Dependencies with RNN</a><br>
+<a href="http://www.deeplearningbook.org/">Deep Learning (book)</a><br>
+<a href="http://www.image-net.org/challenges/LSVRC/">IMAGENET Large Scale Visual Recognition Challenge (ILSVRC)</a><br>
+<a href="http://www.leemon.com/papers/1993wb2.pdf"></a><br>
+<a href="http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/">CNNs for text classification</a><br>
+<a href="http://www.wildml.com/2018/02/introduction-to-learning-to-trade-with-reinforcement-learning/">Introduction to Learning to Trade with Reinforcement Learning</a><br>
+<a href="http://yann.lecun.com/exdb/mnist/">THE MNIST DATABASE of handwritten digits</a><br>
+<a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">Efficient BackProp</a><br>
+<a href="https://ai.googleblog.com/2017/03/assisting-pathologists-in-detecting.html">Assisting Pathologists in Detecting Cancer with Deep Learning </a><br>
+<a href="https://aiexperiments.withgoogle.com/">A.I. Experiments website</a><br>
+<a href="https://arxiv.org/abs/1206.5533">Practical recommendations for gradient-based training of deep architectures</a><br>
+<a href="https://arxiv.org/abs/1211.5063">On the difficulty of training Recurrent Neural Networks</a><br>
+<a href="https://arxiv.org/abs/1303.5778">Speech Recognition with Deep Recurrent Neural Networks</a><br>
+<a href="https://arxiv.org/abs/1409.3215">Sequence to Sequence Learning with Neural Networks</a><br>
+<a href="https://arxiv.org/abs/1411.4555">Show and Tell: A Neural Image Caption Generator</a><br>
+<a href="https://arxiv.org/abs/1412.3555">Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling</a><br>
+<a href="https://arxiv.org/abs/1502.01852">Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification</a><br>
+<a href="https://arxiv.org/abs/1502.03167">Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift</a><br>
+<a href="https://arxiv.org/abs/1502.04623">DRAW: A Recurrent Neural Network For Image Generation</a><br>
+<a href="https://arxiv.org/abs/1506.02078">Visualizing and Understanding Recurrent Networks</a><br>
+<a href="https://arxiv.org/abs/1507.05523">How to Generate a Good Word Embedding?</a><br>
+<a href="https://arxiv.org/abs/1507.06527">Deep Recurrent Q-Learning for Partially Observable MDPs</a><br>
+<a href="https://arxiv.org/abs/1509.06461">Deep Reinforcement Learning with Double Q-learning</a><br>
+<a href="https://arxiv.org/abs/1511.05952">Prioritized Experience Replay</a><br>
+<a href="https://arxiv.org/abs/1511.06581">Dueling Network Architectures for Deep Reinforcement Learning</a><br>
+<a href="https://arxiv.org/abs/1606.02228">Systematic evaluation of CNN advances on the ImageNet</a><br>
+<a href="https://arxiv.org/abs/1610.09975">Neural Speech Recognizer: Acoustic-to-Word LSTM Model for Large Vocabulary Speech Recognition</a><br>
+<a href="https://arxiv.org/abs/1611.03530">Understanding deep learning requires rethinking generalization</a><br>
+<a href="https://arxiv.org/abs/1703.03906v2">Massive Exploration of Neural Machine Translation Architectures</a><br>
+<a href="https://arxiv.org/pdf/1406.2661.pdf">Generative Adversarial Nets</a><br>
+<a href="https://arxiv.org/pdf/1409.1556.pdf">VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITIO</a><br>
+<a href="https://arxiv.org/pdf/1411.1792.pdf">How transferable are features in deep neural networks?</a><br>
+<a href="https://arxiv.org/pdf/1502.01852v1.pdf">Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification</a><br>
+<a href="https://arxiv.org/pdf/1502.03167v2.pdf">Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift</a><br>
+<a href="https://arxiv.org/pdf/1503.04069.pdf">LSTM: A Search Space Odyssey</a><br>
+<a href="https://arxiv.org/pdf/1511.06939.pdf">SESSION-BASED RECOMMENDATIONS WITH RECURRENT NEURAL NETWORKS</a><br>
+<a href="https://arxiv.org/pdf/1512.03385v1.pdf">Deep Residual Learning for Image Recognition</a><br>
+<a href="https://arxiv.org/pdf/1606.03498.pdf">Improved Techniques for Training GANs</a><br>
+<a href="https://arxiv.org/pdf/1707.02286.pdf">EmergenceofLocomotionBehaviours inRichEnvironments</a><br>
+<a href="https://aws.amazon.com/lex/faqs/">Amazon Lex FAQs</a><br>
+<a href="https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html">Building powerful image classification models using very little data</a><br>
+<a href="https://blog.keras.io/how-convolutional-neural-networks-see-the-world.html">How convolutional neural networks see the world</a><br>
+<a href="https://blog.openai.com/dota-2/">DotA 2 bot by Open AI</a><br>
+<a href="https://blogs.nvidia.com/blog/2016/11/04/saving-endangered-species/?adbsc=social_20170303_70517416">Reading Barcodes on Hooves: How Deep Learning Is Helping Save Endangered Zebras</a><br>
+<a href="https://code.facebook.com/posts/1978007565818999/a-novel-approach-to-neural-machine-translation/">Facebook&rsquo;s CNN approach for language translation</a><br>
+<a href="https://code.fb.com/ml-applications/building-an-efficient-neural-language-model-over-a-billion-words/">Building an efficient neural language model over a billion words</a><br>
+<a href="https://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a><br>
+<a href="https://cs.nyu.edu/~deigen/depth/">Depth Map Prediction from a Single Image using a Multi-Scale Deep Network</a><br>
+<a href="https://deepdreamgenerator.com/">Deep Dream Generator</a><br>
+<a href="https://deepmind.com/">DeepMind</a><br>
+<a href="https://deepmind.com/blog/alphago-zero-learning-scratch/">AlphaGo Zero: Learning from scratch</a><br>
+<a href="https://deepmind.com/blog/producing-flexible-behaviours-simulated-environments/">Producing flexible behaviours in simulated environments</a><br>
+<a href="https://deepmind.com/blog/wavenet-generative-model-raw-audio/">WaveNet</a><br>
+<a href="https://deepmind.com/research/alphago/">AlphaGo</a><br>
+<a href="https://deepmind.com/research/dqn/">Human-level control through Deep Reinforcement Learning</a><br>
+<a href="https://deepmind.com/research/dqn/">Play Atari games with a CNN and reinforcement learning</a> and its <a href="https://sites.google.com/a/deepmind.com/dqn/">source code</a><br>
+<a href="https://en.wikipedia.org/wiki/Bias_of_an_estimator">Bias of an estimator</a><br>
+<a href="https://en.wikipedia.org/wiki/Conditional_probability_distribution">Conditional probability distribution</a><br>
+<a href="https://en.wikipedia.org/wiki/Convergent_series">Convergent series</a><br>
+<a href="https://en.wikipedia.org/wiki/Divergent_series">Divergent series</a><br>
+<a href="https://en.wikipedia.org/wiki/Expected_value">Expected value</a><br>
+<a href="https://en.wikipedia.org/wiki/Geometric_series">Geometric series</a><br>
+<a href="https://en.wikipedia.org/wiki/Law_of_large_numbers">Law of large numbers</a><br>
+<a href="https://en.wikipedia.org/wiki/Markov_reward_model">Markov reward model</a><br>
+<a href="https://en.wikipedia.org/wiki/Mean_squared_error">Mean Squared Error (MSE) (usually used in regression problems)</a><br>
+<a href="https://en.wikipedia.org/wiki/Mean_squared_error">Mean squared error</a><br>
+<a href="https://en.wikipedia.org/wiki/Negative_binomial_distribution">Negative binomial distribution</a><br>
+<a href="https://en.wikipedia.org/wiki/Recurrent_neural_network#Elman_networks_and_Jordan_networks">Elman and Jordan networks</a><br>
+<a href="https://en.wikipedia.org/wiki/Time_delay_neural_network">Time delay neural network</a><br>
+<a href="https://en.wikipedia.org/wiki/Vanishing_gradient_problem">Vanishing gradient problem</a><br>
+<a href="https://en.wikipedia.org/wiki/Word2vec">Word2vec</a><br>
+<a href="https://experiments.withgoogle.com/what-neural-nets-see">What Neural Networks See</a><br>
+<a href="https://github.com/alexisbcook/ResNetCAM-keras">ResNetCAM-keras</a><br>
+<a href="https://github.com/alexisbcook/keras_transfer_cifar10">Keras Transfer Learning on CIFAR-10</a><br>
+<a href="https://github.com/jcjohnson/cnn-benchmarks">Benchmarks for popular CNN models</a><br>
+<a href="https://github.com/openai/gym">OpenAI Gym GitHub</a><br>
+<a href="https://github.com/ucaiado/QLearning_Trading">Learning to trade under the reinforcement learning framework </a><br>
+<a href="https://github.com/udacity/rl-cheatsheet/blob/master/cheatsheet.pdf">Reinforcement Learning Cheat Sheet</a><br>
+<a href="https://gym.openai.com/docs/">Getting Started with OpenAI Gym</a><br>
+<a href="https://keon.io/deep-q-learning/">Deep Q-Learning with Keras and Gym</a><br>
+<a href="https://machinelearningmastery.com/check-point-deep-learning-models-keras/">How to Check-Point Deep Learning Models in Keras</a><br>
+<a href="https://machinelearningmastery.com/grid-search-hyperparameters-deep-learning-models-python-keras/">How to Grid Search Hyperparameters for Deep Learning Models in Python With Keras</a><br>
+<a href="https://machinelearningmastery.com/image-augmentation-deep-learning-keras/">Image Augmentation for Deep Learning With Keras</a><br>
+<a href="https://nips.cc/">NeurIPS</a><br>
+<a href="https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog1402_1">Elman network</a><br>
+<a href="https://openai.com/blog/adversarial-example-research/">Attacking Machine Learning with Adversarial Examples</a><br>
+<a href="https://openframeworks.cc/">OpenFrameworks </a><br>
+<a href="https://papers.nips.cc/paper/1740-low-power-wireless-communication-via-reinforcement-learning.pdf">Low Power Wireless Communication via Reinforcement Learning</a><br>
+<a href="https://pdfs.semanticscholar.org/3fbc/45152f20403266b02c4c2adab26fb367522d.pdf">SEQUENCE-TO-SEQUENCE RNNS FOR TEXT SUMMARIZATION</a><br>
+<a href="https://pdfs.semanticscholar.org/54c4/cf3a8168c1b70f91cf78a3dc98b671935492.pdf">Reinforcement Learning for Robots Using Neural Networks</a><br>
+<a href="https://pythonprogramming.net/game-frames-open-cv-python-plays-gta-v/">Reading game frames in Python with OpenCV - Python Plays GTA V</a><br>
+<a href="https://pytorch.org/tutorials/intermediate/reinforcement_q_learning.html">Reinforcement Learning (DQN) Tutorial</a><br>
+<a href="https://quickdraw.withgoogle.com/#">Play pictionary with a CNN</a><br>
+<a href="https://s3-us-west-1.amazonaws.com/udacity-drlnd/bookdraft2018.pdf">Reinforcement Learning (book)</a> and <a href="https://github.com/ShangtongZhang/reinforcement-learning-an-introduction">Python implementation</a><br>
+<a href="https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Keras_Cheat_Sheet_Python.pdf">Keras Cheat Sheet</a><br>
+<a href="https://selfdrivingcars.mit.edu/">MIT 6.S094: Deep Learning for Self-Driving Cars</a><br>
+<a href="https://selfdrivingcars.mit.edu/deeptraffic/">Deep Traffic</a><br>
+<a href="https://skymind.ai/wiki/lstm">A Beginner&rsquo;s Guide to LSTMs and Recurrent Neural Networks</a><br>
+<a href="https://socratic.org/algebra/exponents-and-exponential-functions/geometric-sequences-and-exponential-functions">Geometric Sequences and Exponential Functions</a><br>
+<a href="https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf">Human-level control through deep reinforcement learning</a><br>
+<a href="https://www.aclweb.org/anthology/P15-2116">A Long Short-Term Memory Model for Answer Sentence Selection in Question Answering</a><br>
+<a href="https://www.autodraw.com/">AutoDraw</a><br>
+<a href="https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf">Dropout: A Simple Way to Prevent Neural Networks from Overﬁtting</a><br>
+<a href="https://www.digitaltrends.com/photography/faceapp-neural-net-image-editing/">FaceApp uses neural networks to change your look, now available on Android</a><br>
+<a href="https://www.droneomega.com/gps-drone-navigation-works/">How GPS Drone Navigation Works</a><br>
+<a href="https://www.getrevue.co/profile/wildml">Deep Learning Newsletter</a><br>
+<a href="https://www.ics.uci.edu/~pjsadows/notes.pdf">cross entropy (usually used in classification problems)</a><br>
+<a href="https://www.kaggle.com/benhamner/popular-datasets-over-time/code">Popular Datasets Over Time</a><br>
+<a href="https://www.manning.com/books/grokking-deep-learning">Grokking Deep Learning</a><br>
+<a href="https://www.nature.com/articles/nature21056.epdf">Nature publication detailing cancer-detecting CNN</a><br>
+<a href="https://www.technologyreview.com/s/604087/the-dark-secret-at-the-heart-of-ai/">The Dark Secret at the Heart of AI</a><br>
+<a href="https://www.technologyreview.com/s/604273/finding-solace-in-defeat-by-artificial-intelligence/?set=604287">Finding Solace in Defeat by Artificial Intelligence</a><br>
+<a href="https://www.youtube.com/watch?time_continue=1&amp;v=0FW99AQmMc8">Visually-Indicated Sounds</a><br>
+<a href="https://www.youtube.com/watch?v=AMDiR61f86Y">Intelligent Flying Machines (IFM)</a><br>
+<a href="https://youtu.be/ghEmQSxT6tw">Visualizing and Understanding Deep Neural Networks by Matt Zeiler</a></p>
+<p><!-- raw HTML omitted -->Type<!-- raw HTML omitted --> of machine learning: supervised vs. unsupervised</p>
+<p><!-- raw HTML omitted -->Method<!-- raw HTML omitted --> of machine learning: parametric (trial-and-error) vs. non-parametric (&ldquo;counting&rdquo;)</p>
+<p>Deep learning is a class of parametric model.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># stare at this</span>
+weight <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span>
+goal_pred <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.8</span>
+input <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>
+<span style="color:#66d9ef">for</span> iteration <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">20</span>):
+    pred <span style="color:#f92672">=</span> input <span style="color:#f92672">*</span> weight
+    error <span style="color:#f92672">=</span> (pred <span style="color:#f92672">-</span> goal_pred) <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>
+    derivative <span style="color:#f92672">=</span> input <span style="color:#f92672">*</span> (pred <span style="color:#f92672">-</span> goal_pred)
+    weight <span style="color:#f92672">=</span> weight <span style="color:#f92672">-</span> (alpha <span style="color:#f92672">*</span> derivative)
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Error:&#34;</span> <span style="color:#f92672">+</span> str(error) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; Prediction:&#34;</span> <span style="color:#f92672">+</span> str(pred))
+</code></pre></div><p>Stochastic Gradient Descent updates the weights after each input.
+Batch Gradient Descent updates the weights after each batch of input.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># start at this</span>
+<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
+np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>seed(<span style="color:#ae81ff">1</span>)
+ 
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">relu</span>(x):
+    <span style="color:#66d9ef">return</span> (x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) <span style="color:#f92672">*</span> x <span style="color:#75715e"># returns x if x &gt; 0</span>
+                       <span style="color:#75715e"># return 0 otherwise</span>
+ 
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">relu2deriv</span>(output):
+    <span style="color:#66d9ef">return</span> output<span style="color:#f92672">&gt;</span><span style="color:#ae81ff">0</span> <span style="color:#75715e"># returns 1 for input &gt; 0</span>
+                    <span style="color:#75715e"># return 0 otherwise</span>
+streetlights <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array( [[ <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span> ],
+                          [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span> ],
+                          [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span> ],
+                          [ <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span> ] ] )
+ 
+walk_vs_stop <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array([[ <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>]])<span style="color:#f92672">.</span>T
+ 
+alpha <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>
+hidden_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+ 
+weights_0_1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>random((<span style="color:#ae81ff">3</span>,hidden_size)) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+weights_1_2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>random((hidden_size,<span style="color:#ae81ff">1</span>)) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
+ 
+<span style="color:#66d9ef">for</span> iteration <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">60</span>):
+    layer_2_error <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(streetlights)):
+        layer_0 <span style="color:#f92672">=</span> streetlights[i:i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]
+        layer_1 <span style="color:#f92672">=</span> relu(np<span style="color:#f92672">.</span>dot(layer_0,weights_0_1))
+        layer_2 <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>dot(layer_1,weights_1_2)
+ 
+        layer_2_error <span style="color:#f92672">+=</span> np<span style="color:#f92672">.</span>sum((layer_2 <span style="color:#f92672">-</span> walk_vs_stop[i:i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]) <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>)
+        layer_2_delta <span style="color:#f92672">=</span> (layer_2 <span style="color:#f92672">-</span> walk_vs_stop[i:i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>])
+        layer_1_delta<span style="color:#f92672">=</span>layer_2_delta<span style="color:#f92672">.</span>dot(weights_1_2<span style="color:#f92672">.</span>T)<span style="color:#f92672">*</span>relu2deriv(layer_1)
+        weights_1_2 <span style="color:#f92672">-=</span> alpha <span style="color:#f92672">*</span> layer_1<span style="color:#f92672">.</span>T<span style="color:#f92672">.</span>dot(layer_2_delta)
+        weights_0_1 <span style="color:#f92672">-=</span> alpha <span style="color:#f92672">*</span> layer_0<span style="color:#f92672">.</span>T<span style="color:#f92672">.</span>dot(layer_1_delta)
+ 
+    <span style="color:#66d9ef">if</span>(iteration <span style="color:#f92672">%</span> <span style="color:#ae81ff">10</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">9</span>):
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Error:&#34;</span> <span style="color:#f92672">+</span> str(layer_2_error))
+</code></pre></div><p>Normalization techniques:</p>
+<ul>
+<li>minibatch</li>
+<li>early stopping</li>
+<li>dropout</li>
+</ul>
+<p>Activation functions:</p>
+<ul>
+<li>relu is fast</li>
+<li>sigmoid is often used for output because it squishes the values between 0 and 1</li>
+<li>tanh is often used for middle layers because it squishes the values between -1 and 1</li>
+</ul>
+<p>Output activation functions:</p>
+<ul>
+<li>predicting raw data values (like temperature) =&gt; no activation</li>
+<li>predicting yes/no probabilities =&gt; sigmoid</li>
+<li>predicting &ldquo;which one&rdquo; probabilities =&gt; softmax</li>
+</ul>
+<p>function   forward prop                     back prop delta</p>
+<ul>
+<li>Relu     ones_and_zeros = (input &gt; 0)     mask = output &gt; 0
+output = input*ones_and_zeros    deriv = output * mask</li>
+<li>Sigmoid  output = 1/(1 + np.exp(-input))  deriv = output*(1-output)</li>
+<li>Tanh     output = np.tanh(input)          deriv = 1 - (output**2)</li>
+<li>Softmax  temp = np.exp(input)             temp = (output - true)
+output /= np.sum(temp)           output = temp/len(true)</li>
+</ul>
+<p>A convolution layer aggregates the kernels with sum pooling, mean pooling, or max pooling.  Max pooling is the most common.</p>
+<p>When a neural network needs to use the same idea in mutliple places, endeavor to use the same weights in both places.</p>
+<p>The perceptron step works as follows. For a point with coordinates (p,q), label y, and prediction given by the equation ŷ = step(w₁x₁ + w₂x₂ + b):
+∀ points:
+- If the point is correctly classified, do nothing.
+- If the point is classified positive, but it has a negative label, subtract αp, αq, and α from w₁, w₂ and b respectively.
+- If the point is classified negative, but it has a positive label, add αp, αq, and α from w₁, w₂ and b respectively.</p>
+<p>By replacing the step function with the sigmoid function, ŷ = σ(w₁x₁ + w₂x₂ + b) becomes a probability that the point is above or below the line.</p>
+<p>$$Softmax=\sum(\mathbf{z})_j=$$</p>
+<p>$$\frac{e^{z_j}}{\sum_{k=1}^{K}e^{z_k}}$$</p>
+<p>$$CrossEntropy=-\sum_{i=1}^m y_i ln(p_i) + (1-y_i)ln(1-p_i)$$</p>
+<p>$$MultiClassCE=-\sum_{i=1}^n \sum_{j=1}^m y_{ij} ln(p_{ij})$$</p>
+<p>$$Error=-\frac{1}{m}\sum_{i=1}^m (1-y_i)ln(1-\hat{y}_i) + y_i ln(\hat{y}_i)$$</p>
+<p>$$E(W,b)=-\frac{1}{m}\sum_{i=1}^m (1-y_i)ln(1-\sigma(Wx^{(i)}+b)) + y_i ln(\sigma(Wx^{(i)}+b))$$</p>
+<p>$$MultiClassError=-\sum_{i=1}^n \sum_{j=1}^m y_{ij} ln(\hat{y}_{ij})$$</p>
+<p>The derivative of the sigmoid function is really simple (here the tick means first-order derivative):</p>
+<p>$$\sigma'(x) = \sigma(x) (1-\sigma(x))$$</p>
+<p>After applying some calculus, this is the gradient step (here the tick means new value):</p>
+<p>$$w_i' \leftarrow w_i + \alpha (y - \hat{y}) x_i \qquad b' \leftarrow b + \alpha (y - \hat{y})$$</p>
+<p>Feedforward:</p>
+<p>$$\hat{y} = \sigma \circ W^{(n)} \circ \ldots \circ \sigma \circ W^{(2)} \circ \sigma \circ W^{(1)}(x)$$
+$$\nabla E = (\ldots, \frac{\delta E}{\delta W_{ij}^{(k)}}, \ldots)$$</p>
+<p>Backpropagation:</p>
+<p>$$\forall W_{ij}^{(k)}\text{ in }\nabla E: \quad W_{ij}^{'(k)} \leftarrow W_{ij}^{(k)} - \alpha\frac{\delta E}{\delta W_{ij}^{(k)}}$$</p>
+<p>If you can&rsquo;t find the right size of pants, it&rsquo;s better to go for the slightly larger pair and use a belt.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Putting together a </span>
+[Keras](https:<span style="color:#f92672">//</span>keras<span style="color:#f92672">.</span>io<span style="color:#f92672">/</span>getting<span style="color:#f92672">-</span>started<span style="color:#f92672">/</span>sequential<span style="color:#f92672">-</span>model<span style="color:#f92672">-</span>guide<span style="color:#f92672">/</span>) network <span style="color:#f92672">is</span> straightforward:
+model <span style="color:#f92672">=</span> Sequential()
+model<span style="color:#f92672">.</span>add(<span style="color:#f92672">...</span>) <span style="color:#75715e"># a bunch of layers here</span>
+model<span style="color:#f92672">.</span>compile(loss<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;binary_crossentropy&#39;</span>, optimizer<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;rmsprop&#39;</span>, metrics<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;accuracy&#39;</span>])
+model<span style="color:#f92672">.</span>fit(x_train, y_train, epochs<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>, batch_size<span style="color:#f92672">=</span><span style="color:#ae81ff">128</span>)
+score <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>evaluate(x_test, y_test, batch_size<span style="color:#f92672">=</span><span style="color:#ae81ff">128</span>)
+</code></pre></div><p>An epoch is a single forward and backward pass of the whole dataset.</p>
+<p>Backpropagation (another notation):</p>
+<p>$$\delta^h_j = \sum{W_{jk}\delta^0_kf'(h_j)}$$
+$$\Delta w_{ij} = \eta \delta^h_jx_i$$</p>
+<p>Limitations of MLPs:</p>
+<ul>
+<li>use a lot of parameters because they only use fully connected layers</li>
+<li>only accept vectors as input</li>
+</ul>
+<p>Four Cases when Using Transfer Learning
+A large data set might have one million images. A small data could have two-thousand images. The dividing line between a large data set and small data set is somewhat subjective. Overfitting is a concern when using transfer learning with a small data set. 
+Images of dogs and images of wolves would be considered similar; the images would share common characteristics. A data set of flower images would be different from a data set of dog images. 
+Each of the four transfer learning cases has its own approach. In the following sections, we will look at each case one by one.
+Demonstration Network
+To explain how each situation works, we will start with a generic pre-trained convolutional neural network and explain how to adjust the network for each case. Our example network contains three convolutional layers and three fully connected layers:</p>
+<p>General Overview of a Neural Network
+Here is an generalized overview of what the convolutional neural network does: 
+the first layer will detect edges in the image
+the second layer will detect shapes
+the third convolutional layer detects higher level features
+Each transfer learning case will use the pre-trained convolutional neural network in a different way.
+Case 1: Small Data Set, Similar Data</p>
+<p>Case 1: Small Data Set with Similar Data
+If the new data set is small and similar to the original training data:
+slice off the end of the neural network
+add a new fully connected layer that matches the number of classes in the new data set
+randomize the weights of the new fully connected layer; freeze all the weights from the pre-trained network
+train the network to update the weights of the new fully connected layer
+To avoid overfitting on the small data set, the weights of the original network will be held constant rather than re-training the weights. 
+Since the data sets are similar, images from each data set will have similar higher level features. Therefore most or all of the pre-trained neural network layers already contain relevant information about the new data set and should be kept.
+Here&rsquo;s how to visualize this approach:</p>
+<p>Neural Network with Small Data Set, Similar Data
+Case 2: Small Data Set, Different Data</p>
+<p>Case 2: Small Data Set, Different Data
+If the new data set is small and different from the original training data:
+slice off most of the pre-trained layers near the beginning of the network
+add to the remaining pre-trained layers a new fully connected layer that matches the number of classes in the new data set
+randomize the weights of the new fully connected layer; freeze all the weights from the pre-trained network
+train the network to update the weights of the new fully connected layer
+Because the data set is small, overfitting is still a concern. To combat overfitting, the weights of the original neural network will be held constant, like in the first case.
+But the original training set and the new data set do not share higher level features. In this case, the new network will only use the layers containing lower level features.
+Here is how to visualize this approach:</p>
+<p>Neural Network with Small Data Set, Different Data
+Case 3: Large Data Set, Similar Data</p>
+<p>Case 3: Large Data Set, Similar Data
+If the new data set is large and similar to the original training data:
+remove the last fully connected layer and replace with a layer matching the number of classes in the new data set
+randomly initialize the weights in the new fully connected layer
+initialize the rest of the weights using the pre-trained weights 
+re-train the entire neural network
+Overfitting is not as much of a concern when training on a large data set; therefore, you can re-train all of the weights.
+Because the original training set and the new data set share higher level features, the entire neural network is used as well.
+Here is how to visualize this approach:</p>
+<p>Neural Network with Large Data Set, Similar Data
+Case 4: Large Data Set, Different Data</p>
+<p>Case 4: Large Data Set, Different Data
+If the new data set is large and different from the original training data:
+remove the last fully connected layer and replace with a layer matching the number of classes in the new data set
+retrain the network from scratch with randomly initialized weights
+alternatively, you could just use the same strategy as the &ldquo;large and similar&rdquo; data case
+Even though the data set is different from the training data, initializing the weights from the pre-trained network might make training faster. So this case is exactly the same as the case with a large, similar data set.
+If using the pre-trained network as a starting point does not produce a successful model, another option is to randomly initialize the convolutional neural network weights and train the network from scratch.
+Here is how to visualize this approach:</p>
+<p>Neural Network with Large Data Set, Different Data</p>
+
+				</section>
+			</article>
+		</main>
+	</div> 
+
+	
+
+</div> 
+
+
+
+
+</div> 
+
+<footer class="doc-footer">
+	
+</footer>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+<script src="http://surfingwithstyle.com//js/bootie-docs.js"></script>
+
+</body>
+</html>
